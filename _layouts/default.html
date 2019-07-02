@@ -23,15 +23,16 @@
     <div class="site">
       <div class="sidebar" id="sidebar">
         <div class="header">
-          <h1 class="title"><a href="/"><img id="logo" src="/images/logo.png"></a></h1>
-          <span class="tagline">A responsive Jekyll theme</span>
+          <h1 class="title"><a href="/"><img id="logo" src="/images/photo.jpg"></a></h1>
+          <span class="nameTitle">Jiachen Cui</span>
+          <span class="tagline">A UI/UX Portfolio</span>
         </div>
         <div class="posts">
           <ul class="posts-list">
             {% for post in site.posts %}
               <li class="post-link">
                 <a class="post-title" href="{{ post.url }}">
-                  <span class="post-date">{{ post.date | date_to_string }}</span>
+                  <!--  <span class="post-date">{{ post.date | date_to_string }}</span> -->
                   {{ post.title }}
                 </a>
               </li>
@@ -40,9 +41,9 @@
         </div>
         <div class="footer">
           <span id="footer-links">
-            <a href="" class="footer-link">About</a> <span class="separator">&bull;</span>
-            <a href="" class="footer-link">Twitter</a> <span class="separator">&bull;</span>
-            <a href="" class="footer-link">GitHub</a>
+            <a href="" class="footer-link">Home</a> <span class="separator">&bull;</span>
+            <a href="https://medium.com/@cjcnex" class="footer-link">Medium</a> <span class="separator">&bull;</span>
+            <a href="https://www.linkedin.com/in/jiachen-edric-cui/" class="footer-link">LinkedIn</a>
           </span>
         </div>
       </div>

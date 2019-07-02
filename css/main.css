@@ -50,6 +50,7 @@ a:hover {
 /*****************************************************************************/
 #logo {
   max-width: 128px;
+  border-radius: 50%;
 }
 
 .posts a {
@@ -96,6 +97,16 @@ a:hover {
   display: block;
 }
 
+.nameTitle {
+  font-size: 1.5em;
+  width: 100%;
+  color: #000000;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 0.5em;
+  display: block;
+}
+
 .posts {
   border-top: 1px solid #e7e7e7;
   margin-top: 1em;
@@ -111,6 +122,10 @@ a:hover {
   overflow: hidden;
   float: center;
   text-align: center;
+}
+
+.footer-link {
+
 }
 
 /*****************************************************************************/
@@ -153,7 +168,7 @@ a:hover {
 
 .post h2 {
   margin-top: 1.25em;
-  margin-left: -0.5em;
+  margin-left: 0;
   margin-bottom: 1.25em;
 }
 
