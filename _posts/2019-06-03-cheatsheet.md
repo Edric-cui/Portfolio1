@@ -1,4 +1,10 @@
-
+---
+layout: post
+title: Cheatsheet
+cover: cover.jpg
+date: 2019-06-03 10:00:00
+categories: posts
+---
 #Jekyll Markdown Quick Reference
 
 
