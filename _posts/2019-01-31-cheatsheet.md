@@ -2,7 +2,7 @@
 layout: post
 title: Cheatsheet
 cover: cover.jpg
-date: 2019-06-03 10:00:00
+date: 2019-01-31 00:00:00
 categories: posts
 ---
 #Jekyll Markdown Quick Reference
@@ -31,7 +31,7 @@ A link to [Jekyll Now](http://github.com/barryclark/jekyll-now/). A big ass lite
 
 An image, located within /images
 
-![an image alt text]({{ site.baseurl }}/images/jekyll-logo.png "an image title")
+![an image alt text]({{ site.baseurl }}/images/logo.jpg "an image title")
 
 * A bulletted list
 - alternative syntax 1
