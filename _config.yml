@@ -12,3 +12,18 @@ kramdown:
   input: GFM
 
 highlighter: rouge
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- node_modules
+- gulpfile.js
+- package.json
+- _site
+- src
+- vendor
+- CNAME
+- LICENSE
+- Rakefile
+- old
+- vendor/bundle/
