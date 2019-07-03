@@ -10,10 +10,10 @@ baseurl: /Portfolio1/
 markdown: kramdown
 kramdown:
   input: GFM
-  
+
 highlighter: rouge
 
-theme: Flex
+
 gems:
   - jekyll-feed
 exclude:
