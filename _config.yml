@@ -12,10 +12,3 @@ kramdown:
   input: GFM
 
 highlighter: rouge
-
-
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
