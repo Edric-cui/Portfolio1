@@ -143,7 +143,17 @@ a:hover {
   color: #787878;
 }
 
-#cover-photo-container,
+#post-info {
+  max-width: 725px;
+}
+
+#cover-photo,
+#cover-photo-container {
+  width: 95%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #info-container {
   display: block;
 }
