@@ -27,3 +27,8 @@ exclude:
 - Rakefile
 - old
 - vendor/bundle/
+defaults:
+  - scope:
+      path: "assets/mcon"
+    values:
+      image: true
