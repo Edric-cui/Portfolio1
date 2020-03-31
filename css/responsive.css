@@ -1,4 +1,4 @@
-@media (max-width:1309px) {
+@media (max-width:1320px) {
   #cover-photo {
 
   }
@@ -7,8 +7,15 @@
     padding-top: 3.45em;
   }
 
-  .posts {
+  .post {
     font-size: 0.9em;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  #post-info {
+    margin-left: 8%;
+    margin-right: 8%;
   }
 
   .footer {
@@ -16,7 +23,7 @@
   }
 }
 
-@media (max-width:1090px) {
+/*@media (max-width:1090px) {
   #logo {
     max-width: 100px;
   }
@@ -32,6 +39,11 @@
 
   .posts {
     font-size: 0.85em;
+    margin-left: 4%;
+  }
+
+  #post-info {
+    margin-left: none;
   }
 
   .sidebar {
@@ -46,11 +58,12 @@
     font-size: 0.85em;
   }
 }
+*/
 
 /**
  * iPhone width
  **/
-@media (max-width:640px) {
+@media (max-width:920px) {
   #logo {
     max-width: 75px;
   }
@@ -63,8 +76,16 @@
     font-size: 2.5em;
   }
 
+  .posts {
+    margin-left: none;
+  }
+
+  #post-info {
+    margin-left: none;
+  }
+
   .sidebar {
-    transition: 1s;
+    transition: 0.5s;
     margin-left: -100%;
     z-index: 3;
     width: 35%;
@@ -79,6 +100,7 @@
   #sidebar-button {
     display: block;
     z-index: 2;
+    padding: 24px;
   }
 }
 
