@@ -23,6 +23,11 @@
   }
 }
 
+.colophon {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
 /*@media (max-width:1090px) {
   #logo {
     max-width: 100px;
@@ -94,13 +99,19 @@
 
   .content {
     z-index: 1;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   #sidebar-button {
-    display: block;
+    display:block;
     z-index: 2;
     padding: 24px;
+  }
+
+  .colophon {
+      margin-left: none;
+      margin-right: none;
   }
 }
 

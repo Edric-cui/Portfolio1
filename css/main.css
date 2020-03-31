@@ -206,6 +206,8 @@ table tr th :last-child, table tr td :last-child {
 
 #post-info {
   max-width: 725px;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 #cover-photo,
@@ -235,6 +237,8 @@ table tr th :last-child, table tr td :last-child {
   line-height: 24px;
   max-width: 725px;
   clear: both;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .post h2 {
