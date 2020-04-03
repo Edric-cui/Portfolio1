@@ -150,6 +150,13 @@ hr {
   max-height: 600px;
 }
 
+.img-full {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 600px;
+}
+
 #img-caption {
   margin-top: -1.5em;
   margin-bottom: 2.5em;
