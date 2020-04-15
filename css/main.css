@@ -351,8 +351,8 @@ table tr th :last-child, table tr td :last-child {
 
 .post-title {
   font-weight: 600;
-  font-size: 1em;
-  text-transform: capitalize;
+  font-size: 0.9em;
+  text-align: left;
 }
 
 .post-date {
