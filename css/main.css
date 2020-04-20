@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-  color: #4a4a4a;
+  color: #2f3033;
   background-color: #fafbfc;
   font-family: 'Raleway', Arial, sans-serif;
   font-weight: 400;
@@ -241,7 +241,7 @@ table tr th :last-child, table tr td :last-child {
 }
 
 #title {
-  color: #4a4a4a;
+  color: #2f3033;
   margin-bottom: 0.35em;
   font-size: 3em;
   line-height: 40px;
