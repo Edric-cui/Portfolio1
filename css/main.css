@@ -280,12 +280,13 @@ table tr th :last-child, table tr td :last-child {
 
 .post p {
   font-family: 'Source Sans Pro', Arial, sans-serif;
-  font-size: 0.9em;
+  font-size: 1em;
   margin-bottom: 1.45em;
   text-align: justify;
 }
 
 .post ul, .post ol {
+  margin-top: 0.8em;
   margin-left: 2.35em;
   margin-bottom: 1.25em;
 }
