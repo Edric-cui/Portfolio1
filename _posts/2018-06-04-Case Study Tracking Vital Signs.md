@@ -19,7 +19,7 @@ categories: posts
 
 ## Background
 
-Our product aims to help doctors collect health information when patients are outside of hospital via a mobile app.
+Our product aims to help doctors collect health information when patients are outside of the hospital via a mobile app.
 
 The information we are collecting includes but not limited to **blood glucose, heart rate, blood pressure, medical exam reports (image), medication, journal**, etc.
 
@@ -39,7 +39,7 @@ This case study focuses on a series of iterations on the tracking of vital signs
 
 ### Problems I found through internal focus group
 
- - Adjusting time picker is inaccurate and often gives wrong answer if spinning too fast
+ - Adjusting time picker is inaccurate and often gives the wrong answer if spinning too fast
 
 > **Then a new iteration was released and survey was sent out**
 
@@ -51,7 +51,7 @@ Even though internal review is passed, we received a comment via user survey
 
 ### Solutions I proposed during design reviews
 
-The solutions were not only applied to this module, but to other input modules as well, making user experience consistent through out the app.
+The solutions were not only applied to this module, but to other input modules as well, making user experience consistent throughout the app.
 
 1. Simplify the process and make everything fit in one page (even for smaller devices)
 
@@ -63,7 +63,7 @@ The solutions were not only applied to this module, but to other input modules a
 
     1. Because of this, we can also make eating status control a horizontally scrollable control, so that all input can fit in one screen
 
-1. Replace the native time picker with numpad key input for more accurate and more efficient input. And change the font to Monospace so that they are immediately recognisable and can be distinguished between "zero 0",  Letter "O" and letter "o".
+1. Replace the native time picker with Numpad key input for more accurate and more efficient input. And change the font to Monospace so that they are immediately recognisable and can be distinguished between "zero 0",  Letter "O" and letter "o".
 
 ![Glucose]({{site.baseurl}}/assets/medopad/glucose.png){:class="img-responsive"}
 
@@ -139,11 +139,11 @@ connect to hospital's HIS system and acquire source image. This is currently imp
 
 ## 4. Notifications
 
-All modules above (and many doctors) share one common challenge, which is how to motivate users take their measurement at the required time and record them in the app as they do.
+All modules above (and many doctors) share one common challenge, which is how to motivate users to take their measurement at the required time and record them in the app as they do.
 
 Our previous solution is simply a timed notification with text to remind users to open the app and complete actions. I believe it has much room for improvement, so I started with some research.
 
-### Research on psychology
+### Research topics on psychology
 - there are 3 main parts involved according to psychology theories built from Maslow, Deci, etc.
 
 1. Intrinsic motivation
@@ -154,9 +154,9 @@ Simply put, intrinsic motivation is the most sustainable source of motivation. E
 
 Our users are referred by doctors, so they tend to have a strong extrinsic motivation at the beginning. Therefore, we intend to use this extrinsic motivation as a head-start, then build their intrinsic motivation by providing a visualised and tangible path to better health. Meanwhile, reduce the ease of completion to smooth the entire process.
 
-In this case study I will focus on the notification/reminder system, which acts as extrinsic motivation to remind users of what need to be done. **This system aims to require minimum efforts from users to complete the task of recording vital signs.**
+In this case study I will focus on the notification/reminder system, which acts as extrinsic motivation to remind users of what needs to be done. **This system aims to require minimum efforts from users to complete the task of recording vital signs.**
 
-I did research on how iOS and Android handle notification, and how to support in-line reply, and in-line actions.
+I researched on how iOS and Android handle notification, and how to support in-line reply, and in-line actions.
 
 In-line reply allow users to complete certain action without opening the app. It makes some repetitive actions less boring, and takes less time.
 
@@ -170,14 +170,14 @@ If they have taken their meds already, then they can tap "taken" without confirm
 
 Some patients are requested to write journals regularly, which are normally just a sentence or two. Hence I added in-line reply for users to quickly finish their journal.
 
-For modules that require other tracking devices, users can decide if they are ready or snooze it. If they are ready, they will be taken to the specific screen respectively. This is achieved on Android after discussing with engineers on enabling multiple thread operation. However, we haven't find a similar solution on iOS.
+For modules that require other tracking devices, users can decide if they are ready or snooze it. If they are ready, they will be taken to the specific screen respectively. This is achieved on Android after discussing with engineers on enabling multiple thread operation. However, we haven't found a similar solution on iOS.
 
 ![Android Notifications]({{site.baseurl}}/assets/medopad/android notifications.jpg){:class="img-responsive"}
 
 
 # Learnings
 
-1. Taught in school so many times bu still relevant, "understanding user and their motivation is key to good design".
+1. Taught in school so many times but still relevant, "understanding user and their motivation is key to good design".
 
 1. there are many ways to understand users, and sometimes they don't even know themselves very well. For example, medical experts know patients more than anyone, and they can provide valuable opinions.
 

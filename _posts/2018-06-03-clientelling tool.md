@@ -18,7 +18,7 @@ categories: posts
 
 **Clienteling**
 
-> Clienteling is a technique used by retail sales associates to establish long-term relationships with key customers based on data about their preferences, behaviors and purchases.                   
+> Clienteling is a technique used by retail sales associates to establish long-term relationships with key customers based on data about their preferences, behaviors and purchases.
 ---Wikipedia
 
 ## Project Background
@@ -74,7 +74,7 @@ The findings from my user study can be summarised into the following:
 
 Device: iPad and iPad Mini only
 
-The design starts with dark mode because, 1. visually it aligns with the luxury style of the client; 2. a darker colour  tone would make salespeople and customer feel less dazzling.
+The design starts with dark mode because, 1. visually it aligns with the luxury style of the client; 2. a darker colour tone would make salespeople and customer feel less dazzling.
 
 ![rationale-1]({{site.baseurl}}/assets/mcon/rationale 1.png){:class="img-responsive"}
 
@@ -98,13 +98,13 @@ This design is more balanced between utilities and information layout.
 
 ---
 
-Another three-column view, but in a more traditional CRM way. This is aims to reduce user learning cost, since salespeople tend to have little training and rotation. The development cost is high because many elements in the page requires responsive layout change.
+Another three-column view, but in a more traditional CRM way. This aims to reduce user learning cost, since salespeople tend to have little training and rotation. The development cost is high because many elements in the page requires responsive layout change.
 
 ![rationale-4]({{site.baseurl}}/assets/mcon/rationale 4.jpg){:class="img-responsive"}
 
 ---
 
-**If I were give a chance to further complete this project, I would combine 1st and 2nd design, so that they can choose to either use it horizontally or vertically depending on their needs.**
+**If I would have a chance to further complete this project, I would combine 1st and 2nd design, so that they can choose to either use it horizontally or vertically depending on their needs.**
 
 
 ## ​Mockup

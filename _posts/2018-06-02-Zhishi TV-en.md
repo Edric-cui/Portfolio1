@@ -60,21 +60,21 @@ Expand/Hide
 ![TV Market]({{site.baseurl}}/assets/tvapp/tvmarket netflix.jpeg){:class="img-responsive"}
 
 **User Portrait**
-  - Majority part of the users were born in the 80s and 90s. The family structure is dominated by singles and small nuclear families with up to three members. There are more users in east China.
+  - The majority part of the users was born in the 80s and 90s. The family structure is dominated by singles and small nuclear families with up to three members. There are more users in east China.
 
 **Overview of video-on-demand app on TV**
-  - Video-on-demand is the one of the most important user demands. Among them, entertainment content such as films, series, and celebrity shows are most popular. They account for more than half of total TV app downloads. Among top 100 on-demand apps in Dangbei Market are content-mixed platforms. The top 10 tend to be TV versions of their mobile apps (Tencent, iQiyi, Youku, etc.).
+  - Video-on-demand is one of the most important user demands. Among them, entertainment content such as films, series, and celebrity shows are most popular. They account for more than half of total TV app downloads. Among top 100 on-demand apps in Dangbei Market are content-mixed platforms. The top 10 tend to be TV versions of their mobile apps (Tencent, iQiyi, Youku, etc.).
 
 **Short video app overview**
   - The user base of short video TV apps is still relatively small (on mobile this number is increasing rapidly). This type of app mainly focuses on vertical content, most being news and sports content. There are also some popular TV apps focusing on games and anime. Fitness-based video apps have also gained popularity, such as sports, yoga, and dancing. **Learning-oriented video apps are mainly about pre-school education.**
 
 **TV App Market Overview**
-  - It's totally chaotic. The mainstream app download markets include Xiaomi TV App Store, Aliyun App Market, Chipper Market, Dangbei Market, Sofa Manager, etc. The markets of Xiaomi and Ali are more mature but are limited to certain manufacturer. You can find hundreds of bad-quality apps, and even malware apps in these markets.
+  - It's totally chaotic. The mainstream app download markets include Xiaomi TV App Store, Aliyun App Market, Chipper Market, Dangbei Market, Sofa Manager, etc. The markets of Xiaomi and Ali are more mature but are limited to certain manufacturers. You can find hundreds of bad-quality apps, and even malware apps in these markets.
 
   - The design of most apps is still in the exploratory stage, and there is no consistent experience. Different apps tend to have different interaction modes/remote layouts, resulting in a steep learning curve for new users.
 
 **Summary**
-  - The Smart TV market has a huge user base, rapid growth, long user comsumption time, and concentrated user behaviour. This market has important strategic significance for the long-term development of video distribution/production .
+  - The Smart TV market has a huge user base, rapid growth, long user consumption time, and concentrated user behaviour. This market has important strategic significance for the long-term development of video distribution/production.
 
   - At present, the backbone of large-screen Internet users is the 26-35 year-olds in economically developed provinces, which basically coincides with the target users of our knowledge-based short video app.
 
@@ -130,9 +130,9 @@ A total of 26 people were interviewed by 4 designers. We consolidated the result
 
 **Design opportunities**
 
-- Like MasterClass, learning and studying videos are can be combined with celebrities, such as Zhou Yiwei, Zhang Yi and other famous actors talking about acting. Luo Ji Thinking and Round Table School focus on thinking methodologies , and Readers focuses on reading and fictions. They are targets we aim, and can be distributed to specific user division in our TV app.
+- Like MasterClass, learning and studying videos are can be combined with celebrities, such as Zhou Yiwei, Zhang Yi and other famous actors talking about acting. Luo Ji Thinking and Round Table School focus on thinking methodologies, and Readers focuses on reading and fictions. They are targets we aim, and can be distributed to specific user division in our TV app.
 
-- From another perspective, users' needs may rise on a certain occasion. For example, before traveling, users tend to have high demands for destinations and guides. For fitness, please refer to  celebrities' fitness training videos, etc.
+- From another perspective, users' needs may arise on a certain occasion. For example, before travelling, users tend to have high demands for destinations and guides. For fitness, please refer to celebrities' fitness training videos, etc.
 
 - The interaction should be consistent with mobile apps, or even use the smartphone as a remote
 
@@ -142,12 +142,12 @@ A total of 26 people were interviewed by 4 designers. We consolidated the result
 
 ---
 
-### Hypothesis 2: Married and owns apartment
+### Hypothesis 2: Married and owns an apartment
 
 **User Traits**
 This kind of people will watch TV more frequently with family.
 
-Typical scenes include watching  dramas with their loved ones; watching movies; watching cartoons with children, watching news with the elderly, etc.
+Typical scenes include watching dramas with their loved ones; watching movies; watching cartoons with children, watching news with the elderly, etc.
 
 The role acts as a link between family members, the content format is more suitable for multiple people to watch, meaning mainly entertainment content such as movies and TV shows
 
@@ -208,7 +208,7 @@ The role acts as a link between family members, the content format is more suita
 - TV OS is slow
 
 **Possible Solution**
-- Pay attention to the simplicity and ease of use, consider use mobile phones to reduce the difficulty of interaction
+- Pay attention to the simplicity and ease of use, consider using mobile phones to reduce the difficulty of interaction
 
 **Summary**
 - **The content and methods of smart TV consumption of such users are based on the wishes of their parents. However, they themselves have a demand for knowledge-based interesting videos. If the content is appropriate, they may be able to guide their parents to watch them together. It is recommended as a secondary target user group. **
@@ -256,7 +256,7 @@ Expand/Hide
 
 **Conclusion**
   - We cannot provide content as rich as LiShiPing, but more focused on the knowledge-based and interesting content shared by celebrities
-  - LiShiPing's news reporting function is a good reference point for our products, because the product is also oriented to PGC producers. With this function, we can rely on the TV platform to obtain greater exposure, increase the visibility of the author and the app platform to achieve a win-win situation .
+  - LiShiPing's news reporting function is a good reference point for our products, because the product is also oriented to PGC producers. With this function, we can rely on the TV platform to obtain greater exposure, increase the visibility of the author and the app platform to achieve a win-win situation.
   - LiShiPing's design and details of its video playback interface is very worth learning. With the help of the TV platform, the emotion and experience are boosted due to large screen size
 
 </details>
@@ -289,7 +289,7 @@ Expand/Hide
   - The strength of entertainment short videos such as Douyin has diverted users to a certain extent.
 
 **Product Features**
-  - Recommend five short short videos daily
+  - Recommend five short videos daily
   - Find short videos by category
   - Search by video, author, user and tag
   - Follow quality authors and get their latest videos in time
@@ -445,7 +445,7 @@ Expand/Hide
 
 ## User research
 
-The preliminary research includes **Competitor Analysis**, **Behavior Analysis**, **Questionnaire**, **Interview**, **Focus Group**. In the end, we identified two main user groups using  statistics analysis. And I created 2 persona and a journey map.
+The preliminary research includes **Competitor Analysis**, **Behavior Analysis**, **Questionnaire**, **Interview**, **Focus Group**. In the end, we identified two main user groups using statistics analysis. And I created 2 personas and 2 journey maps.
 
 ### Research findings
 Common characteristics of target users
