@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Zhishi TV App-en
+title: Case Study - Zhishi TV App
 cover: tvapp-cover.jpg
-date: 2018-06-16 00:00:00
+date: 2018-06-02 00:00:00
 categories: posts
 ---
 
@@ -486,8 +486,14 @@ Family use scenarios, emphasising family experience and content recommendation. 
 
 ## Interaction Design
 Interaction description and user flow. The interactive instructions are made according to the remote control/smart phones.
+> You can right-click "Open Image in New Tab" for larger images
+（可以右键“新窗口打开 ”放大图片）
 
-> Note that edric is me, I contributed 80%+ of the interaction and mockup designs
+> Note that the author edric is me, I contributed 80%+ of the interaction and mockup designs
+
+The interaction follows Google's Android TV guideline because most smart TVs in China equipped with Android. Follwing Android guideline is also the best way to ensure performance and smoothness.
+
+AppleTV's interaction with iPhone, and touch-wheel  were also used as a reference.
 
 ![interactions 1]({{site.baseurl}}/assets/tvapp/interactions-1.png){:class="img-responsive"}
 

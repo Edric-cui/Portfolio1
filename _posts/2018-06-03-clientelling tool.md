@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Clientelling Tool
+title: Case Study - Clienteling Tool
 cover: mcon-cover.jpg
-date: 2018-06-15 00:00:00
+date: 2018-06-03 00:00:00
 categories: posts
 ---
 
@@ -14,12 +14,26 @@ categories: posts
 > You can right-click "Open Image in New Tab" for larger images)
 （可以右键“新窗口打开 ”放大图片）
 
+## Definition
+
+**Clienteling**
+
+> Clienteling is a technique used by retail sales associates to establish long-term relationships with key customers based on data about their preferences, behaviors and purchases.                   
+---Wikipedia
 
 ## Project Background
 
-The client [*confidential*] is expanding its business rapidly with new stores and franchisees. While the customer base is increasing, a great proportion of customer data is being omitted. Therefore the business is in need of a CRM system that can help them to collect, organise, analyse, and maintain customer information.
+The client [XXX] is expanding its business rapidly with new stores and franchisees. While the customer base is increasing, a great proportion of customer data is being omitted. Therefore the business is in need of a CRM system that can help them to collect, organise, analyse, and maintain customer information.
 
 This Clienteling UI prototype demonstrates the "collect" stage of the CRM system.
+
+- **The project was launched on a short notice.**
+
+- **It took only 3 weeks from receiving request, to carrying out interviews, then to wireframes and high-fidelity designs. I teamed up with a product owner and participated in all the stages mentioned**
+
+More designs were planned but then the project was cancelled due to other reasons.
+
+![store]({{site.baseurl}}/assets/mcon/valle store.jpg){:class="img-responsive"}
 
 ## User Research
 
@@ -53,6 +67,46 @@ The findings from my user study can be summarised into the following:
 
 - Create an intuitive, touchscreen-optimised, clean UI, with intuitive interactions and flat learning curve
 
+## Interaction  
+
+> You can right-click "Open Image in New Tab" for larger images)
+（可以右键“新窗口打开 ”放大图片）
+
+Device: iPad and iPad Mini only
+
+The design starts with dark mode because, 1. visually it aligns with the luxury style of the client; 2. a darker colour  tone would make salespeople and customer feel less dazzling.
+
+![rationale-1]({{site.baseurl}}/assets/mcon/rationale 1.png){:class="img-responsive"}
+
+---
+
+The visual key is the calendar in the top left corner. This sims to solve the problem where all the sale orders, contacts, and tasks are strictly time-related. A calendar would help the users organise their day.
+
+A two-column view displays information in a compact yet still breathable style.
+
+![rationale-2]({{site.baseurl}}/assets/mcon/rationale 2.jpg){:class="img-responsive"}
+
+---
+
+A three-column view utilise the screen to show an additional category.
+
+User research shows that the user's tasks can be divided into 3 categories, daily task, contacts, and transactions, and they are equally important.
+
+This design is more balanced between utilities and information layout.
+
+![rationale-3]({{site.baseurl}}/assets/mcon/rationale 3.jpg){:class="img-responsive"}
+
+---
+
+Another three-column view, but in a more traditional CRM way. This is aims to reduce user learning cost, since salespeople tend to have little training and rotation. The development cost is high because many elements in the page requires responsive layout change.
+
+![rationale-4]({{site.baseurl}}/assets/mcon/rationale 4.jpg){:class="img-responsive"}
+
+---
+
+**If I were give a chance to further complete this project, I would combine 1st and 2nd design, so that they can choose to either use it horizontally or vertically depending on their needs.**
+
+
 ## ​Mockup
 
 ![mockup1]({{site.baseurl}}/assets/mcon/preview route 1.jpg){:class="img-responsive"}
@@ -61,17 +115,12 @@ The findings from my user study can be summarised into the following:
 
 ![mockup3]({{site.baseurl}}/assets/mcon/preview route 3.jpg){:class="img-responsive"}
 
-## Interaction  
-
-![rationale-1]({{site.baseurl}}/assets/mcon/rationale 1.png){:class="img-responsive"}
-
-![rationale-2]({{site.baseurl}}/assets/mcon/rationale 2.jpg){:class="img-responsive"}
-
-![rationale-3]({{site.baseurl}}/assets/mcon/rationale 3.jpg){:class="img-responsive"}
-
-![rationale-4]({{site.baseurl}}/assets/mcon/rationale 4.jpg){:class="img-responsive"}
 
 ## Backend CRM Medium & High Fidelity Mockups (Interactive)
+
+These designs largely follow traditional CRM UI due to limited development resources.
+
+Originally planned to make optimization for iPad, taking advantage of touchscreen and gestures. However, the project was cancelled.
 
 ![portal-1]({{site.baseurl}}/assets/mcon/portal 1.png){:class="img-responsive"}
 
@@ -81,13 +130,17 @@ The findings from my user study can be summarised into the following:
 
 ![portal-4]({{site.baseurl}}/assets/mcon/portal 4.jpg){:class="img-responsive"}
 
+<!---
 ## Extra: Web-app dashboard concept
 
 ![dashboard]({{site.baseurl}}/assets/mcon/dashboard.png){:class="img-responsive"}
+--->
 
 ---
 
-###### User Interview Structure (Chinese, no translation)
+## User Interview (conducted in Chinese)
+
+### Questionnaire
 
 **目标用户：**
 * TimeVallee 门店销售3人（2个初级销售，1个资深销售）

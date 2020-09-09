@@ -2,19 +2,20 @@
 layout: post
 title: Case Study - Tracking Vital Signs
 cover: medopadcover.jpeg
-date: 2019-07-02 00:00:00
+date: 2018-06-04 00:00:00
 categories: posts
 ---
 
 ## How do I make tracking vital signs a better experience for patients
 
 > [Medopad rebranded to HUMA](https://www.telegraph.co.uk/technology/2020/04/15/medopad-rebrands-acquires-firms-boost-remote-monitoring-patients/)
+>Due to this rebranding, old and new designs are presented together here to explain my thinking, thus some UI appear inconsistent
 
 
 > You can right-click "Open Image in New Tab" for larger images)
 （可以右键“新窗口打开 ”放大图片）
 
-**Unfortunately, I cannot access some of the designs I created due to NDA. I'm contacting my managers for anonymized access, and will update later**
+**Unfortunately, I cannot display some of the designs I created due to NDA. I'm contacting my manager for anonymized access, and will update later**
 
 ## Background
 
@@ -46,13 +47,17 @@ Even though internal review is passed, we received a comment via user survey
 - Too many inputs, and filling in them doesn't feel consecutive
 
 
+![img]({{site.baseurl}}/assets/medopad/brainstorm.jpg){:class="img-responsive"}
+
 ### Solutions I proposed during design reviews
 
 The solutions were not only applied to this module, but to other input modules as well, making user experience consistent through out the app.
 
 1. Simplify the process and make everything fit in one page (even for smaller devices)
 
-1. Add a prominent "complete and thanks" screen to give users a sense of achievement
+1. Add a prominent "complete and thanks" screen, with animated checkmark to give users a sense of achievement (with lottie)
+
+![img]({{site.baseurl}}/assets/medopad/checkmark.gif){:class="img-responsive"}
 
 1. Add "eating status" segmented control, and then pair it with time of the day. If time is not edited, then changing eating status will change time too. By default, time is pre-filled with current hour and its corresponding "eating status"
 
