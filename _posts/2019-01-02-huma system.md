@@ -27,7 +27,7 @@ categories: posts
 
 ![layout and grid]({{site.baseurl}}/assets/medopad/layout-and-grid.png){:class="img-responsive"}
 
-![components]({{site.baseurl}}/assets/medopad/component.png){:class="img-responsive"}
+![components]({{site.baseurl}}/assets/medopad/components.png){:class="img-responsive"}
 
 
 ### Type scale (zh_Hans)
