@@ -6,10 +6,10 @@ date: 2018-06-04 00:00:00
 categories: posts
 ---
 
-## How do I make tracking vital signs a better experience for patients
+## How  I made tracking vital signs a better experience for patients
 
 > [Medopad rebranded to HUMA](https://www.telegraph.co.uk/technology/2020/04/15/medopad-rebrands-acquires-firms-boost-remote-monitoring-patients/)
->Due to this rebranding, old and new designs are presented together here to explain my thinking, thus some UI appear inconsistent
+>Due to this rebranding, old and new designs are presented together here to explain my thinking, thus some UI may appear inconsistent
 
 
 > You can right-click "Open Image in New Tab" for larger images)
@@ -179,9 +179,9 @@ For modules that require other tracking devices, users can decide if they are re
 
 1. Taught in school so many times but still relevant, "understanding user and their motivation is key to good design".
 
-1. there are many ways to understand users, and sometimes they don't even know themselves very well. For example, medical experts know patients more than anyone, and they can provide valuable opinions.
+1. There are many ways to understand users, and sometimes they don't even know themselves very well. For example, medical experts know patients more than anyone, and they can provide valuable opinions.
 
-1. even if it's impossible to test with real users, internal testing with colleagues, families, other team-members can still provide useful feedback.
+1. Even if it's impossible to test with real users, internal testing with colleagues, families, other team-members can still provide useful feedback.
 
 1. A user flow can be repeated many times, and then users may not flow as intended afterwards.
 
