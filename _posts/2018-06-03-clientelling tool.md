@@ -23,7 +23,7 @@ categories: posts
 
 ## Project Background
 
-The client [XXX] is expanding its business rapidly with new stores and franchisees. While the customer base is increasing, a great proportion of customer data is being omitted. Therefore the business is in need of a CRM system that can help them to collect, organise, analyse, and maintain customer information.
+The client [XXX] is expanding its business rapidly with new stores and franchisees. While the customer base is increasing, a great proportion of customer data is being omitted. Therefore the business is in need of a CRM system that can help them to **collect, organise, analyse**, and **maintain** customer information.
 
 This Clienteling UI prototype demonstrates the "collect" stage of the CRM system.
 
@@ -31,7 +31,9 @@ This Clienteling UI prototype demonstrates the "collect" stage of the CRM system
 
 - **It took only 3 weeks from receiving request, to carrying out interviews, then to wireframes and high-fidelity designs. I teamed up with a product owner and participated in all the stages mentioned**
 
-More designs were planned but then the project was cancelled due to other reasons.
+To spilt the tasks, the product owner (similar to project manager) was responsible for analysing needs from the client (shop owner); I was mainly responsible for researching end-users (salespeople).
+
+More designs were planned but then the project was cancelled due to business shut-down.
 
 ![store]({{site.baseurl}}/assets/mcon/valle store.jpg){:class="img-responsive"}
 
@@ -41,7 +43,7 @@ More designs were planned but then the project was cancelled due to other reason
 
 - One persona of the target user is generated
 
-The user of this tool will be primarily salespeople in stores. They use this tool to onboard clients, manage contacts, assign staff and schedules tasks. The hardware will be iPad (or other tablet).
+The user of this tool will be primarily salespeople in stores. They use this tool to onboard clients (customers), manage contacts, assign staff and schedules tasks. The hardware will be iPad (or other tablet).
 
 The findings from my user study can be summarised into the following:
 
@@ -65,7 +67,7 @@ The findings from my user study can be summarised into the following:
 ### Key Solutions:
 - Separate the clienteling tool (Dashboard) from CRM system on the interface level (backend is still connected)
 
-- Create an intuitive, touchscreen-optimised, clean UI, with intuitive interactions and flat learning curve
+- Create an intuitive, touchscreen-optimised, clean UI, with straightforward interactions, thus meaning a flat learning curve for users
 
 ## Interaction  
 

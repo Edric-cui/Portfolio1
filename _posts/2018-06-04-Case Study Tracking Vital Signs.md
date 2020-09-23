@@ -27,7 +27,7 @@ This case study focuses on a series of module on the tracking of vital signs.
 
 The development of this app is modular, meaning we create parallel modules that collect different types of information. This ensures that we can mix and match modules for different diseases.
 
-Since our product is a health system, we cannot iterate frequently, each version affects patients' life quality. Therefore, we tend to do thorough research, detailed planning, and testing for each public release. 
+Since our product is a health system, we cannot iterate frequently, each version affects patients' life quality. Therefore, we tend to do thorough research, detailed planning, and testing for each public release.
 
 ![img]({{site.baseurl}}/assets/medopad/background tracking.jpeg){:class="img-responsive"}
 
@@ -57,7 +57,7 @@ The solutions were not only applied to this module, but to other input modules a
 
 ![img]({{site.baseurl}}/assets/medopad/brainstorm.jpg){:class="img-responsive"}
 
-### Problems I found through internal focus group
+### Problems I found through internal focus group (pre-flight)
 
  - Adjusting time picker is inaccurate and often gives the wrong answer if spinning too fast
 
