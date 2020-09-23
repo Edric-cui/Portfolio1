@@ -53,9 +53,11 @@ The findings from my user study can be summarised into the following:
 
 - Sales advisor as a job has high liquidity, so they have low incentive to learn complex operations  
 
-- Education level tend to be relatively lower (most never attended university)  
+- No enough training is provided for new people, they were only taught very basic operations
 
-- Hardware will be handed to store customers during onboarding  
+- Education background tend to be relatively limited (most only attended high-school)  
+
+- Hardware (iPad) will be handed to store customers during onboarding, which means customer may need to interact with the UI and fill in information
 
 ### Pain Points:
 - Current Onboarding tools are often integrated in a complex CRM system, which have a steep learning curve
@@ -155,42 +157,49 @@ Originally planned to make optimization for iPad, taking advantage of touchscree
 ![dashboard]({{site.baseurl}}/assets/mcon/dashboard.png){:class="img-responsive"}
 --->
 
+## Learnings
+
+1. When users are not willingly using a product, better make the product as simple and fool-proof as possible
+
+1. Users may not want to answer honestly in user interviews, for example, when they don't want to learn to use a new tool; especially when they are not expecting any training.
+
 ---
 
-## User Interview (conducted in Chinese)
+## User Interviews (conducted in Chinese)
+
+**Target interviewees：**
+* TimeVallee Store Salesperson x3（Junior x2，Senior x1）
+* TimeVallee Store Manager x1
+
+**Materials：**
+* Consent form x5
+* Recorder x1
+* Smart Phone (to take footage of existing system) x1
+* Laptop (notes, mind map) x1
 
 ### Questionnaire
 
-**目标用户：**
-* TimeVallee 门店销售3人（2个初级销售，1个资深销售）
-* TimeVallee 门店经理1人
-
-**材料：**
-* 同意书x5
-* 录音笔x1
-* 手机（记录现有系统）x1
-* 电脑（思维导图，笔记）x1
-
-**开场介绍：**
+**Introduction：**
 
 你好，谢谢X经理的安排，感谢各位今日的配合，我是MCON的界面设计师崔佳晨，今天来延安路TimeVallee门店进行用户调研，目的是为了设计一款新的销售软件。请不用在意我，保持平时的工作方式即可。
 
 接下来的2小时内我会在门店观察记录一些你们工作的方式和流程，然后会与3个门店销售进行简单的访谈，大概30分钟，请畅所欲言，越真实越好，整个访谈都会保密而且匿名，你们的回答只会用于启发我们设计最适合你们使用的软件。
 
-**引导提纲（先问背景，其他问题按谈话内容随时调整）**
-* 受访者背景
-    * 年龄
-    * 学历
-    * 工作年限
-    * 行业经历
+**Interview Guidelines**
+**Ask for basic information first, the sequence of other questions can be adjusted flexibly**
+* Basic information
+    * Age
+    * Education
+    * Work years
+    * Work experience
         * “您为什么选择做这一行呢？”
-    * 培训经历
+    * Job training
         * “您入职前接受了培训吗？都培训了哪些内容？你觉得培训的效果如何呢？“
         * “您在这里工作期间接受过培训吗？都培训了哪些内容？你觉得培训的效果如何呢？”
     * “您平时使用经常使用电子产品吗？手机/电脑/平板电脑？”
     * ”店里的顾客都是什么样的？“
 
-* 产品
+* Product
     * ”您以前使用过类似的系统吗？“
     * “您觉得门店当前招揽顾客用的工具怎么样？哪里好用/不好用？可以举个例子吗？“
     * “您觉得门店现在的订单管理系统怎么样？（举例）”
@@ -201,7 +210,7 @@ Originally planned to make optimization for iPad, taking advantage of touchscree
         * “您最不希望改变的地方是什么？”
     * ”你觉得顾客希望看到什么样的改进？为什么“
 
-* 行为与场景
+* Behaviour and scenario
     * “您是如何使用当前的系统登录客户的？”
     * “您最常用的功能有哪些，可以举出几个例子吗？”
     * ”您联系顾客一般用什么呢？电话？短信？微信？其他？“

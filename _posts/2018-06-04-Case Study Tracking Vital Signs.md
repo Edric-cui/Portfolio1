@@ -180,7 +180,7 @@ For modules that require other tracking devices, users can decide if they are re
 
 # Learnings
 
-1. Taught in school so many times but still relevant, "understanding user and their motivation is key to good design".
+1. Taught in school so many times but still relevant, "understanding user and their motivation is the key to good design".
 
 1. There are many ways to understand users, and sometimes they don't even know themselves very well. For example, medical experts know patients more than anyone, and they can provide valuable opinions.
 

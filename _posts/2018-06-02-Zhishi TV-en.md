@@ -491,7 +491,7 @@ Interaction description and user flow. The interactive instructions are made acc
 
 > I contributed to 80%+ of the interaction and mockup designs, as seen on top right corner "by_edirc"
 
-The interaction follows Google's Android TV guideline because most smart TVs in China equipped with Android. Follwing Android guideline is also the best way to ensure performance and smoothness.
+The interaction follows Google's Android TV guideline because most smart TVs in China equipped with Android. Following Android guideline is also the best way to ensure performance and smoothness.
 
 AppleTV's interaction with iPhone, and touch-wheel  were also used as a reference.
 
