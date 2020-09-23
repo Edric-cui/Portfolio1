@@ -23,31 +23,23 @@ Our product aims to help doctors collect health information when patients are ou
 
 The information we are collecting includes but not limited to **blood glucose, heart rate, blood pressure, medical exam reports (image), medication, journal**, etc.
 
-This case study focuses on a series of iterations on the tracking of vital signs.
+This case study focuses on a series of module on the tracking of vital signs.
+
+The development of this app is modular, meaning we create parallel modules that collect different types of information. This ensures that we can mix and match modules for different diseases.
+
+Since our product is a health system, we cannot iterate frequently, each version affects patients' life quality. Therefore, we tend to do thorough research, detailed planning, and testing for each public release. 
 
 ![img]({{site.baseurl}}/assets/medopad/background tracking.jpeg){:class="img-responsive"}
 
 ##  1. Glucose Tracking
 
-### Problems I discovered through research with medical professionals
+### User needs I realised through research with medical professionals
 
 - Tracking glucose is tedious and repetitive. Patients with diabetes may need to track glucose as often as possible, up to 6 times a day
 
 - Glucose value alone is not a good indicator, it's much more useful when paired with eating habits, e.g. "after breakfast", "before lunch", "after lunch", "after dinner", "before bed", etc.
 
 -  A significant part of our users use small devices therefore need to consider showing all fields in one screen
-
-### Problems I found through internal focus group
-
- - Adjusting time picker is inaccurate and often gives the wrong answer if spinning too fast
-
-> **Then a new iteration was released and survey was sent out**
-
-Even though internal review is passed, we received a comment via user survey
-- Too many inputs, and filling in them doesn't feel consecutive
-
-
-![img]({{site.baseurl}}/assets/medopad/brainstorm.jpg){:class="img-responsive"}
 
 ### Solutions I proposed during design reviews
 
@@ -63,15 +55,26 @@ The solutions were not only applied to this module, but to other input modules a
 
     1. Because of this, we can also make eating status control a horizontally scrollable control, so that all input can fit in one screen
 
+![img]({{site.baseurl}}/assets/medopad/brainstorm.jpg){:class="img-responsive"}
+
+### Problems I found through internal focus group
+
+ - Adjusting time picker is inaccurate and often gives the wrong answer if spinning too fast
+
+ - Too many inputs, and filling in them doesn't feel consecutive
+
+
+### Solutions I proposed
+
 1. Replace the native time picker with Numpad key input for more accurate and more efficient input. And change the font to Monospace so that they are immediately recognisable and can be distinguished between "zero 0",  Letter "O" and letter "o".
 
 ![Glucose]({{site.baseurl}}/assets/medopad/glucose.png){:class="img-responsive"}
 
-**the solutions above were refined and tweaked during a few the internal design reviews, until most internal testers feel the process makes sense and smooth**
-
 For the problem raised from survey after 1st release, I also proposed a solution
 
 - Switch to the next input field upon completing the previous one, and when the last input is done. collapse the keyboard so that user can just go hit "next" button
+
+**the solutions above were refined and tweaked during a few the internal design reviews, until most internal testers feel the process makes sense and smooth**
 
 ### User feedback
 
