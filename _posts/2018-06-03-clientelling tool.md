@@ -102,10 +102,27 @@ Another three-column view, but in a more traditional CRM way. This aims to reduc
 
 ![rationale-4]({{site.baseurl}}/assets/mcon/rationale 4.jpg){:class="img-responsive"}
 
+**If I had a chance to further complete this project, I would use the 2nd design as main layout, adding calendar view in 1st design, and side column detail from 3rd design. As well as creating an alternative vertical layout**
+
 ---
 
-**If I would have a chance to further complete this project, I would combine 1st and 2nd design, so that they can choose to either use it horizontally or vertically depending on their needs.**
+## Maybe the best case for A/B Testing
 
+In order to choose between those designs shown above, I proposed to PM on carrying out an A/B testing for this project, and got approved (although it didn't happen due to business problem).
+
+![AorB Testing]({{site.baseurl}}/assets/mcon/abtesting.jpg){:class="img-responsive"}
+
+Here's why I believe A/B testing is suitable for this project:
+
+First of all, salespeople work face-to-face with customers, meaning they will know how customers react to the UI at first glance, and even comments. Customer satisfaction will also be reflected on onboarding rate.
+
+Additionally, the salespeople will set-up follow-up calls with customers in most circumstances. Therefore, we can simply add a few quick questions to the follow-up call, making it an opportunity to collect feedback on user experience.
+
+Then salespeople can use follow-up survey (sales call) to test if our system left customers with a good impression, which can also help us trace the retention rate and drop-off rate.
+
+One of the cons of A/B testing is that it measures quantity not quality. However, with salespeople helping designers collect qualitative feedback, we make this disadvantage into a advantage.
+
+---
 
 ## ​Mockup
 
