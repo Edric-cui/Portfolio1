@@ -489,7 +489,7 @@ Interaction description and user flow. The interactive instructions are made acc
 > You can right-click "Open Image in New Tab" for larger images
 （可以右键“新窗口打开 ”放大图片）
 
-> Note that the author edric is me, I contributed 80%+ of the interaction and mockup designs
+> I contributed to 80%+ of the interaction and mockup designs, as seen on top right corner "by_edirc"
 
 The interaction follows Google's Android TV guideline because most smart TVs in China equipped with Android. Follwing Android guideline is also the best way to ensure performance and smoothness.
 
