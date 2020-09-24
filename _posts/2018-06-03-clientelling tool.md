@@ -66,7 +66,7 @@ The findings from my user study can be summarised into the following:
 
 - The interface is the same for store manager and sales advisor, causing information overload for sales advisor
 
-### Key Solutions:
+### Design Principles:
 - Separate the clienteling tool (Dashboard) from CRM system on the interface level (backend is still connected)
 
 - Create an intuitive, touchscreen-optimised, clean UI, with straightforward interactions, thus meaning a flat learning curve for users
@@ -106,6 +106,8 @@ Another three-column view, but in a more traditional CRM way. This aims to reduc
 
 ![rationale-4]({{site.baseurl}}/assets/mcon/rationale 4.jpg){:class="img-responsive"}
 
+---
+
 **If I had a chance to further complete this project, I would use the 2nd design as main layout, adding calendar view in 1st design, and side column detail from 3rd design. As well as creating an alternative vertical layout**
 
 ---
@@ -137,7 +139,7 @@ One of the cons of A/B testing is that it measures quantity not quality. However
 ![mockup3]({{site.baseurl}}/assets/mcon/preview route 3.jpg){:class="img-responsive"}
 
 
-## Backend CRM Medium & High Fidelity Mockups (Interactive)
+## Backend CRM Hi-Fi Mockup + interactive prototypes + wireframes
 
 These designs largely follow traditional CRM UI due to limited development resources.
 
