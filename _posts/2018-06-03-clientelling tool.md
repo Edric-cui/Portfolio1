@@ -161,7 +161,7 @@ Originally planned to make optimization for iPad, taking advantage of touchscree
 
 1. When users are not willingly using a product, better make the product as simple and fool-proof as possible
 
-1. Users may not want to answer honestly in user interviews, for example, when they don't want to learn to use a new tool; especially when they are not expecting any training.
+1. Users may not want to answer honestly in user interviews, for example, when they don't want to learn to use a new tool; especially when they are not expecting any training. Therefore, I need to think about how users' interest conflict and create questionnaire accordingly
 
 ---
 
