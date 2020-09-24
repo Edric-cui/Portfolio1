@@ -66,13 +66,13 @@ The solutions were not only applied to this module, but to other input modules a
 
 ### Solutions I proposed
 
-1. Replace the native time picker with Numpad key input for more accurate and more efficient input. And change the font to Monospace so that they are immediately recognisable and can be distinguished between "zero 0",  Letter "O" and letter "o".
+- Replace the native time picker with Numpad key input for more accurate and more efficient input. And change the font to Monospace so that they are immediately recognisable and can be distinguished between "zero 0",  Letter "O" and letter "o".
 
 ![Glucose]({{site.baseurl}}/assets/medopad/glucose.png){:class="img-responsive"}
 
-For the problem raised from survey after 1st release, I also proposed a solution
+- Switch to the next input field upon completing the previous one, and change keyboard "Enter" key to Next to hint users to move on. When the last input is done,  keyboard collapses and user can just go hit the primary button.
 
-- Switch to the next input field upon completing the previous one, and when the last input is done. collapse the keyboard so that user can just go hit "next" button
+![keyboard action]({{site.baseurl}}/assets/medopad/keyboard action.png){:class="img-responsive"}
 
 **the solutions above were refined and tweaked during a few the internal design reviews, until most internal testers feel the process makes sense and smooth**
 

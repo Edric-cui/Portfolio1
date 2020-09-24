@@ -89,6 +89,8 @@ Then L10n was carried out at both frontend and backend, from text translation to
 
 During COVID-19 outbreak, we got a great opportunity to work the German Public Health Department. Since we had this L10n process built and tested in China, it took us much less time and effort localising it into German.
 
+![l10n to German]({{site.baseurl}}/assets/design_system/german app.png){:class="img-responsive"}
+
 ---
 
 ## LeetCode App Design System
