@@ -81,12 +81,19 @@ For iOS, due to OS restrictions and high development cost, we used iOS system de
 
 ![iOS Type Scale]({{site.baseurl}}/assets/design_system/iostypescale.png){:class="img-responsive"}
 
+### Localization (L10n)/internationalization (i18n)
+
+Initially, launching of China projects required L10n, I helped analysing needs and requests to help engineers sort out priorities and flow.
+
+Then L10n was carried out at both frontend and backend, from text translation to the handling of format, text, data, semantic relations, etc. During phase 2, me and engineers together optimised formatting and layout, and created a automated process to help localise to other languages. In the end, a scalable process was tested and built.
+
+During COVID-19 outbreak, we got a great opportunity to work the German Public Health Department. Since we had this L10n process built and tested in China, it took us much less time and effort localising it into German.
 
 ---
 
 ## LeetCode App Design System
 
-I am also currently building the design system for LeetCode app (in development).
+I also participated in building the design system for LeetCode app (in development).
 
 This design system started with support for Light and Dark mode, which helps to reduce future rework.
 
