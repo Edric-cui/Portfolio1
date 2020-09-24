@@ -98,9 +98,7 @@ Expand/Hide
 Expand/Hide
 </summary>
 
-We started interviews with families and friends. As part of user research. we created assumptions based on our own experience and interview results.
-
-A total of 26 people were interviewed by 4 designers. We consolidated the results as follow.
+We started interviews with families and friends. As part of user research. we created assumptions based on our life experience, and talk to colleagues, families and friends.
 
 ### Assumption 1: New grads to workplace
 
@@ -445,7 +443,9 @@ Expand/Hide
 
 ## User research
 
-The preliminary research includes **Competitor Analysis**, **Behaviour Analysis**, **SWOT Analysis**, **Questionnaire**, **Interview**. In the end, we identified two main user groups using statistics analysis. And I created 2 personas and 2 journey maps.
+The preliminary research includes **Competitor Analysis**, **Behaviour Analysis**, **SWOT Analysis**, **Questionnaire**, **Interview**. A total of 26 people were interviewed by 4 designers.
+
+At the end, we identified two main user groups using statistics analysis. And I created 2 personas and 2 journey maps.
 
 ### Research findings
 Common characteristics of target users
@@ -458,7 +458,7 @@ Target user needs
 1. Overall, there is a strong demand for interesting and intellectual content
 1. There is a potential demand for short video on TV
 1. A better and more immersive interactive experience
-1. Lighter APP
+1. Lighter App
 
 ---
 
