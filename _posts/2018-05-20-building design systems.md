@@ -52,13 +52,35 @@ After all, this is a principle but not a fixed rule, so when platform has its ow
 
 ![components]({{site.baseurl}}/assets/design_system/components.png){:class="img-responsive"}
 
-<!--
-### Type scale (zh_Hans)
 
-![Android Type Scale]({{site.baseurl}}/assets/design_system/androidtypescale.png){:class="img-responsive"}
+### Typography
+
+As a key part of localisation process, I also had some research in typography.
+
+I proposed Noto Sans as our primary font because:
+
+1. It supports most languages in the world, since we plan to launch our product in multiple countries, this font significantly reduces localisation cost
+
+1. Noto Sans is built-in in Android. Therefore, it can reduce app package size. This is particularly important as east asian language font files are significantly larger than their Latin counterparts (e.g. Chinese, Japanese, Korean, etc.).
+
+1. Visually, Noto Sans looks neutral and calm, and gives users a sense of familiarity, hence a sense of trust, which we – as a health app – desperately need.
+
+My proposal was accepted and I lead the localisation process in China.
+
+![Android Type Scale]({{site.baseurl}}/assets/design_system/androidtypescale.jpg){:class="img-responsive"}
+
+- Most system default line heights were designed for Cyrillic and Latin script. However, normally a larger line-heigh is required for Chinese characters.
+
+- Since Chinese characters are naturally monospace, in most cases, character spacing remains 0.
+
+- In Android, Noto Sans Simplified Chinese has only 2 weights, regular (400) and bold (700). If a higher value is specified, the system draws outline to the characters to simulate bolder fonts, which produces an ugly result. Therefore, before a perfect solution is found, only two weights are used.
+
+---
+
+For iOS, due to OS restrictions and high development cost, we used iOS system default font at the beginning (SF Pro and PingFang SC). The next step is to build typography components in iOS that includes specified font, line-height, and character spacing.
 
 ![iOS Type Scale]({{site.baseurl}}/assets/design_system/iostypescale.png){:class="img-responsive"}
--->
+
 
 ---
 
