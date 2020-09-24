@@ -445,7 +445,7 @@ Expand/Hide
 
 ## User research
 
-The preliminary research includes **Competitor Analysis**, **Behavior Analysis**, **Questionnaire**, **Interview**, **Focus Group**. In the end, we identified two main user groups using statistics analysis. And I created 2 personas and 2 journey maps.
+The preliminary research includes **Competitor Analysis**, **Behaviour Analysis**, **SWOT Analysis**, **Questionnaire**, **Interview**. In the end, we identified two main user groups using statistics analysis. And I created 2 personas and 2 journey maps.
 
 ### Research findings
 Common characteristics of target users
@@ -468,7 +468,7 @@ Target user needs
 
 First, quantify the answers from user interviews before statistical analysis can be performed.
 
-I used the K-means Cluster algorithm to measure the geometric distance between users (R studio). Then, the outliers that are removed, by adjustign K value, the nodes with similar distances are divided into one cluster. 3 clusters represent 3 user groups. According to the analysis hypothesis of the user group in the early stage, it is further integrated into 2 groups and 2 usage scenarios.
+I used the K-means Cluster algorithm to measure the geometric distance between users (R studio). Then, the outliers that are removed, by adjusting K value, the nodes with similar distances are divided into one cluster. 3 clusters represent 3 user groups. According to the analysis hypothesis of the user group in the early stage, it is further integrated into 2 groups and 2 usage scenarios.
 
 ![exported chart 01]({{site.baseurl}}/assets/tvapp/k means cluster.jpg){:class="img-responsive"}
 
@@ -508,6 +508,18 @@ AppleTV's interaction with iPhone, and touch-wheel  were also used as a referenc
 ![interactions 6]({{site.baseurl}}/assets/tvapp/interactions-6.png){:class="img-responsive"}
 
 
-## High Fidelity Mockups
+## High Fidelity Mockups (highlights)
 
   ![high fidelity]({{site.baseurl}}/assets/tvapp/high-fid.jpg){:class="img-responsive"}
+
+  ![high fidelity]({{site.baseurl}}/assets/tvapp/high-fid 2.jpg){:class="img-responsive"}
+
+## Learnings
+
+1. Quantitative methods can produce strong evidence for qualitative study, transforming heuristics into well-supported opinions.
+
+1. It's important to have a concise, high-level, yet clear idea to guide the design, just  like the product concept mentioned above. With it, even though we digressed a few times along the way, we managed to adhere to the core concepts.
+
+1. I need to be careful not doing research/analysis to prove that we are right. I only looked at evidence that supports ourselves, and ignored those who disagree. Eventually reaching a biased conclusion.
+
+1. Yet, it's difficult to predict the future, just like no one expected the bankrupt of LeTV (乐视). However, these attempts are not futile, because I have learned and grown from it.
