@@ -43,7 +43,7 @@ More designs were planned but then the project was cancelled due to business shu
 
 - One persona of the target user is generated
 
-The user of this tool will be primarily salespeople in stores. They use this tool to onboard clients (customers), manage contacts, assign staff and schedules tasks. The hardware will be iPad (or other tablet).
+The user of this tool will be primarily salespeople in stores. They use this tool to onboard clients (customers), manage contacts, assign staff and schedules tasks. The hardware will be iPad (or iPad Mini).
 
 The findings from my user study can be summarised into the following:
 
@@ -84,15 +84,15 @@ The design starts with dark mode because, 1. visually it aligns with the luxury 
 
 ---
 
-The visual key is the calendar in the top left corner. This sims to solve the problem where all the sale orders, contacts, and tasks are strictly time-related. A calendar would help the users organise their day.
+The visual key is the calendar in the top left corner. This aims to help the salespeople to organise their days since all the sale orders, contacts, and tasks are strictly time-related.
 
-A two-column view displays information in a compact yet still breathable style.
+A two-column view displays a large amount of information in a compact way.
 
 ![rationale-2]({{site.baseurl}}/assets/mcon/rationale 2.jpg){:class="img-responsive"}
 
 ---
 
-A three-column view utilise the screen to show an additional category.
+A three-column view utilise the screen size to show an additional category, at the cost of reduce information in each category.
 
 User research shows that the user's tasks can be divided into 3 categories, daily task, contacts, and transactions, and they are equally important.
 
@@ -102,7 +102,7 @@ This design is more balanced between utilities and information layout.
 
 ---
 
-Another three-column view, but in a more traditional CRM way. This aims to reduce user learning cost, since salespeople tend to have little training and rotation. The development cost is high because many elements in the page requires responsive layout change.
+Another three-column view, but in a more traditional CRM way. This aims to reduce user learning cost, since salespeople tend to have little training and many rotations. The development cost is high because many elements in the page are responsive to layout change (when the side panel is open).
 
 ![rationale-4]({{site.baseurl}}/assets/mcon/rationale 4.jpg){:class="img-responsive"}
 
@@ -126,7 +126,7 @@ Additionally, the salespeople will set-up follow-up calls with customers in most
 
 Then salespeople can use follow-up survey (sales call) to test if our system left customers with a good impression, which can also help us trace the retention rate and drop-off rate.
 
-One of the cons of A/B testing is that it measures quantity not quality. However, with salespeople helping designers collect qualitative feedback, we make this disadvantage into a advantage.
+One of the cons of A/B testing is that it measures quantity not quality. However, with salespeople helping designers collect qualitative feedback, we can overcome this disadvantage.
 
 ---
 
@@ -143,7 +143,7 @@ One of the cons of A/B testing is that it measures quantity not quality. However
 
 These designs largely follow traditional CRM UI due to limited development resources.
 
-Originally planned to make optimization for iPad, taking advantage of touchscreen and gestures. However, the project was cancelled.
+Originally planned to make optimization for iPad, taking advantage of touchscreen and gestures. Unfortunately, the project was later cancelled.
 
 ![portal-1]({{site.baseurl}}/assets/mcon/portal 1.png){:class="img-responsive"}
 
