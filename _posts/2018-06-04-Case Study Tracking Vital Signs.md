@@ -120,7 +120,7 @@ Best solution:
 connect to hospital's HIS system and acquire source image. This is currently impossible due to legal and technical limitation
 
 **Second best:**
-**Shoot photos of x-ray films from a backlit panel, with some other tips**
+**Shoot photos of x-ray films from a backlit panel, with clear instructions**
 
 ![xray userflow]({{site.baseurl}}/assets/medopad/xray userflow.png){:class="img-responsive"}
 
@@ -133,6 +133,8 @@ connect to hospital's HIS system and acquire source image. This is currently imp
 ### Challenge
 
 - During phase 1, the actual outcome was not ideal. More than half of photos were unusable according to the doctor (we cannot pin-point patient's photo thus no analytics can be done). The reason behind is that we cannot provide immediate feedback on the quality of photos, hence users do not know if they have followed the instruction correctly.
+
+### Solutions
 
 - I proposed a possible solution which is to allow doctors to markup the photo so that the patient knows where to pay attention next time.
 
@@ -188,7 +190,7 @@ For modules that require other tracking devices, users can decide if they are re
 
 1. A user flow can be repeated many times, and then users may not flow as intended afterwards.
 
-1. Need to keep track of new features and changes released to each platform, sometimes they provide better and native solution than your hacks.
+1. Need to keep track of new features and changes released to each platform, sometimes they provide better and native solution than your hacks. (e.g. iOS 14 Numpad key replaced time picker in some places)
 
 ![postit]({{site.baseurl}}/assets/medopad/postit.jpg){:class="img-responsive"}
 
