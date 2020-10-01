@@ -108,13 +108,52 @@ The solutions were not only applied to this module, but to other input modules a
 
 
 
-## 3. Parkinson's Disease X-ray Films
+## 3. Growth Hormone Deficiency (GHD) Syndrome
 
-### Problems I found through research with medical professionals
+### Background
+
+GHDS is a medical condition resulting from not enough growth hormone (GH), generally showing the symptom of short height. Most patients are recommended to be treated with synthetic human growth hormone at young ages (mostly between 1-15). Once synthetic human GH injection started, height needs be traced along with injection frequency (varies between patients) to monitor the effect of medication, and normally this regular injection will last 10-12 months.
+
+This project aims to create an app on the backbone of our existing app, with 1 new module and other customised features on other modules.
+
+I worked closely with a product manager on this project. The PM helped sets up a general framework with his medical background, and I design flows, interaction, rationale, etc. for each module.
+
+List of Modules:
+
+ - **Height Z-score (NEW)**
+ - Photos (for X-ray films)
+ - Medication tracker
+ - 88
+ - placeholder
+
+and
+ - Push Notification
+
+
+### 3.1 Height Z-score Module
+
+Height Z-score is also called Height-by-Age Z-Score / Z-Score / height SDS, it is the number of standard deviations of the actual height of a child from the median height of the children of his/her age as determined from the standard sample.
+
+![Height Z Score]({{site.baseurl}}/assets/medopad/height z score.jpg){:class="img-responsive"}
+
+This module is the core to this GHD project, because doctors use it to track how effective are the injections, and adjust treatment accordingly. Users will need to submit data with this module periodically.
+
+I designed this module as well as the calculation methods and logic behind it. I considered error states, historical submission, display value and calculation value, etc.
+
+
+
+
+### 3.2 Photo Module for X-ray films
+
+X-ray films are also important factors in determining a patient's condition.
+
+#### Problems I found through research with medical professionals
 
 - Taking photos of X-ray films using a phone is often problematic because x-ray films are made of special materials and are meant to be viewed by medical specialists.
 
 - However it is not impossible if users are given instructions and opportunities to redo.
+
+#### Solution
 
 Best solution:
 connect to hospital's HIS system and acquire source image. This is currently impossible due to legal and technical limitation
@@ -124,17 +163,15 @@ connect to hospital's HIS system and acquire source image. This is currently imp
 
 ![xray userflow]({{site.baseurl}}/assets/medopad/xray userflow.png){:class="img-responsive"}
 
-### Solution
-
 - To create an instruction with clear examples to help users understand what could go wrong, and more importantly, how to avoid mistakes.
 
 ![module overview]({{site.baseurl}}/assets/medopad/photo overview.png){:class="img-responsive"}
 
-### Challenge
+#### Challenge
 
 - During phase 1, the actual outcome was not ideal. More than half of photos were unusable according to the doctor (we cannot pin-point patient's photo thus no analytics can be done). The reason behind is that we cannot provide immediate feedback on the quality of photos, hence users do not know if they have followed the instruction correctly.
 
-### Solutions
+#### Solutions
 
 - I proposed a possible solution which is to allow doctors to markup the photo so that the patient knows where to pay attention next time.
 
@@ -142,13 +179,26 @@ connect to hospital's HIS system and acquire source image. This is currently imp
 
 ![module overview]({{site.baseurl}}/assets/medopad/instructions.png){:class="img-responsive"}
 
-## 4. Notifications
+### 3.3 Medication tracker
+
+Implemented improvements:
+
+- auto-complete
+- fuzzy search
+
+Suggested but not Implemented due to time constrain:
+
+- adding multiple medications at once (bulk operation)
+- 
+
+
+### 3.4 Push Notification
 
 All modules above (and many doctors) share one common challenge, which is how to motivate users to take their measurement at the required time and record them in the app as they do.
 
 Our previous solution is simply a timed notification with text to remind users to open the app and complete actions. I believe it has much room for improvement, so I started with some research.
 
-### Research topics on psychology
+#### Research topics on psychology
 - there are 3 main parts involved according to psychology theories built from Maslow, Deci, etc.
 
 1. Intrinsic motivation
@@ -165,7 +215,7 @@ I researched on how iOS and Android handle notification, and how to support in-l
 
 In-line reply allow users to complete certain action without opening the app. It makes some repetitive actions less boring, and takes less time.
 
-### Solution I proposed
+#### Solution I proposed
 
 For medication tracker module, once users have set up routine medications and reminder. They will received a push notification with two options: "taken" and "remind me in 30min".
 
