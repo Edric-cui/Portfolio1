@@ -31,6 +31,16 @@ Since our product is a health system, we cannot iterate frequently, each version
 
 ![img]({{site.baseurl}}/assets/medopad/background tracking.jpeg){:class="img-responsive"}
 
+## App Structure
+
+Our solution has 3 parts, a mobile app for patients, a web portal for doctors, and an admin console for administrators.
+
+I will focus the app in this case study. It has a modular structure so that we can mix&match modules to create bespoke versions for different diseases.
+
+The app's structure will be like this:
+
+![app structure]({{site.baseurl}}/assets/medopad/app structure.png){:class="img-responsive"}
+
 ##  1. Glucose Tracking
 
 ### User needs I realised through research with medical professionals
@@ -105,8 +115,6 @@ The solutions were not only applied to this module, but to other input modules a
 - Stats shows an increase in the completion rate of this module (comparing to previous versions)
 
 - For 1st iteration we used text-to-speech, which is a slightly robotic voice, but we quickly updated it with professional voice actor, and received a number of positive feedback saying the calm voice and tone helped me to relax, and hope to see more of it.
-
-
 
 ## 3. Growth Hormone Deficiency (GHD) Syndrome
 
@@ -189,7 +197,8 @@ Implemented improvements:
 Suggested but not Implemented due to time constrain:
 
 - adding multiple medications at once (bulk operation)
-- 
+
+> **"In other apps, I had to scroll a pretty long list to find what I'm looking for, but now this one only needs a few characters to find my drug"**
 
 
 ### 3.4 Push Notification
@@ -223,9 +232,9 @@ If they have taken their meds already, then they can tap "taken" without confirm
 
 ![iOS Notifications]({{site.baseurl}}/assets/medopad/ios notifications.jpg){:class="img-responsive"}
 
-Some patients are requested to write journals regularly, which are normally just a sentence or two. Hence I added in-line reply for users to quickly finish their journal.
+Some patients are requested to write journals regularly, which are normally just a sentence or two. Hence I added in-line reply for users to quickly submit their journal.
 
-For modules that require other tracking devices, users can decide if they are ready or snooze it. If they are ready, they will be taken to the specific screen respectively. This is achieved on Android after discussing with engineers on enabling multiple thread operation. However, we haven't found a similar solution on iOS.
+For modules that require external devices, users can snooze the notification. If they are ready, they will be taken to the specific screen respectively. This is achieved on Android with multiple thread operation enabled. However, we haven't found a perfect solution on iOS yet.
 
 ![Android Notifications]({{site.baseurl}}/assets/medopad/android notifications.jpg){:class="img-responsive"}
 
