@@ -9,15 +9,15 @@ categories: posts
 ## How  I made tracking vital signs a better experience for patients
 
 > [Medopad rebranded to HUMA](https://www.telegraph.co.uk/technology/2020/04/15/medopad-rebrands-acquires-firms-boost-remote-monitoring-patients/)
->Due to this rebranding, old and new designs are presented together here to explain my thinking, thus some UI may appear inconsistent
+>Due to rebranding, old and new designs are presented together, designs may appear inconsistent
 
 
 > You can right-click "Open Image in New Tab" for larger images)
 （可以右键“新窗口打开 ”放大图片）
 
-**Unfortunately, I cannot display some of the designs I created due to NDA. I'm contacting my manager for anonymized access, and will update later**
+**Note that some designs and documentations cannot be made public due to NDA**
 
-## Background
+## Product Background
 
 Our product aims to help doctors collect health information when patients are outside of the hospital via a mobile app.
 
@@ -80,6 +80,8 @@ The solutions were not only applied to this module, but to other input modules a
 
 ![Glucose]({{site.baseurl}}/assets/medopad/glucose.png){:class="img-responsive"}
 
+![Gutenberg]({{site.baseurl}}/assets/medopad/gutenberg.png){:class="img-responsive"}
+
 - Switch to the next input field upon completing the previous one, and change keyboard "Enter" key to Next to hint users to move on. When the last input is done,  keyboard collapses and user can just go hit the primary button.
 
 ![keyboard action]({{site.baseurl}}/assets/medopad/keyboard action.png){:class="img-responsive"}
@@ -91,6 +93,7 @@ The solutions were not only applied to this module, but to other input modules a
 - Stats shows an increase in the completion rate of this module (comparing to previous versions)
 
 ## 2. Blood Pressure & Heart Rate Tracking
+## (Illustration & voice guidance)
 
 ![Blood Pressure Overiew]({{site.baseurl}}/assets/medopad/bloodpressure overview.png){:class="img-responsive"}
 
@@ -140,7 +143,7 @@ and
 
 ### 3.1 Height Z-score Module
 
-Height Z-score is also called Height-by-Age Z-Score / Z-Score / height SDS, it is the number of standard deviations of the actual height of a child from the median height of the children of his/her age as determined from the standard sample.
+Height Z-score is also called Height-by-Age Z-Score / Z-Score / height SDS, it is the number of standard deviations of the actual height of a child from the median height of the population of the same age and gender.
 
 ![Height Z Score]({{site.baseurl}}/assets/medopad/height z score.jpg){:class="img-responsive"}
 
