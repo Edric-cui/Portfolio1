@@ -37,7 +37,7 @@ Our solution has 3 parts, a mobile app for patients, a web portal for doctors, a
 
 I will focus the app in this case study. It has a modular structure so that we can mix&match modules to create bespoke versions for different diseases.
 
-The app's structure will be like this:
+The app's structure is shown below:
 
 ![app structure]({{site.baseurl}}/assets/medopad/app structure.png){:class="img-responsive"}
 
@@ -80,6 +80,8 @@ The solutions were not only applied to this module, but to other input modules a
 
 ![Glucose]({{site.baseurl}}/assets/medopad/glucose.png){:class="img-responsive"}
 
+The layout used the GutenBerg Diagram as a reference.
+
 ![Gutenberg]({{site.baseurl}}/assets/medopad/gutenberg.png){:class="img-responsive"}
 
 - Switch to the next input field upon completing the previous one, and change keyboard "Enter" key to Next to hint users to move on. When the last input is done,  keyboard collapses and user can just go hit the primary button.
@@ -121,7 +123,7 @@ The solutions were not only applied to this module, but to other input modules a
 
 ## 3. Growth Hormone Deficiency (GHD) Syndrome
 
-### Background
+### About the project
 
 GHDS is a medical condition resulting from not enough growth hormone (GH), generally showing the symptom of short height. Most patients are recommended to be treated with synthetic human growth hormone at young ages (mostly between 1-15). Once synthetic human GH injection started, height needs be traced along with injection frequency (varies between patients) to monitor the effect of medication, and normally this regular injection will last 10-12 months.
 
@@ -132,13 +134,14 @@ I worked closely with a product manager on this project. The PM helped sets up a
 List of Modules:
 
  - **Height Z-score (NEW)**
- - Photos (for X-ray films)
- - Medication tracker
- - 88
- - placeholder
+ - **Photos (for X-ray films)**
+ - **Medication tracker**
+ - Journal
+ - Symptom
+ - Activity Tracker
 
 and
- - Push Notification
+ - **Push Notification**
 
 
 ### 3.1 Height Z-score Module
@@ -150,7 +153,6 @@ Height Z-score is also called Height-by-Age Z-Score / Z-Score / height SDS, it i
 This module is the core to this GHD project, because doctors use it to track how effective are the injections, and adjust treatment accordingly. Users will need to submit data with this module periodically.
 
 I designed this module as well as the calculation methods and logic behind it. I considered error states, historical submission, display value and calculation value, etc.
-
 
 
 
@@ -190,18 +192,19 @@ connect to hospital's HIS system and acquire source image. This is currently imp
 
 ![module overview]({{site.baseurl}}/assets/medopad/instructions.png){:class="img-responsive"}
 
+{:#img-caption}
+BDD (Behaviour-Driven-Documentation) for Push Notification
+<br> To Zoom, right-click "Open Image in New Tab"
+
 ### 3.3 Medication tracker
 
-Implemented improvements:
+Improvements I suggested:
 
 - auto-complete
 - fuzzy search
-
-Suggested but not Implemented due to time constrain:
-
 - adding multiple medications at once (bulk operation)
 
-> **"In other apps, I had to scroll a pretty long list to find what I'm looking for, but now this one only needs a few characters to find my drug"**
+> **"In other apps, I had to scroll a long list to locate what I'm looking for, but now this needs  only a few characters"**
 
 
 ### 3.4 Push Notification
@@ -213,31 +216,35 @@ Our previous solution is simply a timed notification with text to remind users t
 #### Research topics on psychology
 - there are 3 main parts involved according to psychology theories built from Maslow, Deci, etc.
 
-1. Intrinsic motivation
-1. Extrinsic motivation
-1. Ease of completion
+1. Intrinsic motivation (most sustainable)
+1. Extrinsic motivation (strong in the short term)
+1. Ease of completion (the catalyst)
 
-Simply put, intrinsic motivation is the most sustainable source of motivation. External motivation is strong in the short term. And ease of completion can boost up other factors.
+Our users are referred by doctors, so they tend to have a strong extrinsic motivation at the beginning. Therefore, we use this extrinsic motivation as a head-start, then build their intrinsic motivation by providing a visualised and tangible path to better health. Meanwhile, reduce the ease of completion to smooth the entire process.
 
-Our users are referred by doctors, so they tend to have a strong extrinsic motivation at the beginning. Therefore, we intend to use this extrinsic motivation as a head-start, then build their intrinsic motivation by providing a visualised and tangible path to better health. Meanwhile, reduce the ease of completion to smooth the entire process.
-
-In this case study I will focus on the notification/reminder system, which acts as extrinsic motivation to remind users of what needs to be done. **This system aims to require minimum efforts from users to complete the task of recording vital signs.**
+The notification/reminder system acts as an extrinsic motivation to remind users of what needs to be done. **This system aims to require minimum efforts from users to complete the task of recording vital signs.**
 
 I researched on how iOS and Android handle notification, and how to support in-line reply, and in-line actions.
 
 In-line reply allow users to complete certain action without opening the app. It makes some repetitive actions less boring, and takes less time.
 
+![Notifications BDD]({{site.baseurl}}/assets/medopad/notification bdd.png){:class="img-responsive"}
+
+{:#img-caption}
+BDD (Behaviour-Driven-Documentation) for Push Notification
+<br> Right-click "Open Image in New Tab"
+
 #### Solution I proposed
 
 For medication tracker module, once users have set up routine medications and reminder. They will received a push notification with two options: "taken" and "remind me in 30min".
 
-If they have taken their meds already, then they can tap "taken" without confirming it in-app. Or, they can delay the reminder it for 30 minutes, until they tap "taken".
+If they have taken their meds already, then they can tap "taken" without opening the app. Alternatively they can snooze the reminder.
 
 ![iOS Notifications]({{site.baseurl}}/assets/medopad/ios notifications.jpg){:class="img-responsive"}
 
-Some patients are requested to write journals regularly, which are normally just a sentence or two. Hence I added in-line reply for users to quickly submit their journal.
+I added in-line reply for users to quickly submit their journal, because most of the time patient only need to write a few words.
 
-For modules that require external devices, users can snooze the notification. If they are ready, they will be taken to the specific screen respectively. This is achieved on Android with multiple thread operation enabled. However, we haven't found a perfect solution on iOS yet.
+For modules that require external devices, users can snooze the notification. If they are ready, they will be taken to the specific screen respectively.
 
 ![Android Notifications]({{site.baseurl}}/assets/medopad/android notifications.jpg){:class="img-responsive"}
 
