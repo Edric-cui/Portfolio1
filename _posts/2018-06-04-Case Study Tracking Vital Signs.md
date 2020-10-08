@@ -57,10 +57,12 @@ The solutions were not only applied to this module, but to other input modules a
 
 1. Simplify the process and make everything fit in one page (even for smaller devices)
 
-1. Add a prominent "complete and thanks" screen, with animated checkmark to give users a sense of achievement (with lottie)
+1. Add a prominent "complete and thanks" screen, with animated checkmark to give users a sense of achievement (with *lottie* on iOS, *VectorDrawable* on Android)
+  - This animated icon concept is now a part of our design system
 
 ![img]({{site.baseurl}}/assets/medopad/checkmark.gif){:class="img-responsive"}
 
+{:start="3"}
 1. Add "eating status" segmented control, and then pair it with time of the day. If time is not edited, then changing eating status will change time too. By default, time is pre-filled with current hour and its corresponding "eating status"
 
     1. Because of this, we can also make eating status control a horizontally scrollable control, so that all input can fit in one screen
@@ -136,9 +138,9 @@ List of Modules:
  - **Height Z-score (NEW)**
  - **Photos (for X-ray films)**
  - **Medication tracker**
+ - Symptom tracker
  - Journal
- - Symptom
- - Activity Tracker
+ - Activity tracker
 
 and
  - **Push Notification**
@@ -148,12 +150,22 @@ and
 
 Height Z-score is also called Height-by-Age Z-Score / Z-Score / height SDS, it is the number of standard deviations of the actual height of a child from the median height of the population of the same age and gender.
 
-![Height Z Score]({{site.baseurl}}/assets/medopad/height z score.jpg){:class="img-responsive"}
+![Height SDS Distribution]({{site.baseurl}}/assets/medopad/height sds distribution.jpg){:class="img-responsive"}
 
 This module is the core to this GHD project, because doctors use it to track how effective are the injections, and adjust treatment accordingly. Users will need to submit data with this module periodically.
 
 I designed this module as well as the calculation methods and logic behind it. I considered error states, historical submission, display value and calculation value, etc.
 
+![Z-Score Wireframe]({{site.baseurl}}/assets/medopad/zscore wireframe.png){:class="img-responsive"}
+
+{:#img-caption}
+Height Z-Score Wireframe
+
+![Z-score Module]({{site.baseurl}}/assets/medopad/zscore module.png){:class="img-responsive"}
+
+{:#img-caption}
+Height Z-Score Module Screenshots
+<br> To zoom, right-click "Open Image in New Tab"
 
 
 ### 3.2 Photo Module for X-ray films
@@ -194,7 +206,7 @@ connect to hospital's HIS system and acquire source image. This is currently imp
 
 {:#img-caption}
 BDD (Behaviour-Driven-Documentation) for Push Notification
-<br> To Zoom, right-click "Open Image in New Tab"
+<br> To zoom, right-click "Open Image in New Tab"
 
 ### 3.3 Medication tracker
 
@@ -232,7 +244,7 @@ In-line reply allow users to complete certain action without opening the app. It
 
 {:#img-caption}
 BDD (Behaviour-Driven-Documentation) for Push Notification
-<br> Right-click "Open Image in New Tab"
+<br> To zoom, right-click "Open Image in New Tab"
 
 #### Solution I proposed
 
@@ -242,12 +254,19 @@ If they have taken their meds already, then they can tap "taken" without opening
 
 ![iOS Notifications]({{site.baseurl}}/assets/medopad/ios notifications.jpg){:class="img-responsive"}
 
+{:#img-caption}
+iOS Notifications
+<br> To zoom, right-click "Open Image in New Tab"
+
 I added in-line reply for users to quickly submit their journal, because most of the time patient only need to write a few words.
 
 For modules that require external devices, users can snooze the notification. If they are ready, they will be taken to the specific screen respectively.
 
 ![Android Notifications]({{site.baseurl}}/assets/medopad/android notifications.jpg){:class="img-responsive"}
 
+{:#img-caption}
+Android Notifications
+<br> To zoom, right-click "Open Image in New Tab"
 
 # Learnings
 
