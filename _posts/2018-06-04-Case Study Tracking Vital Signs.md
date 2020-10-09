@@ -99,7 +99,7 @@ The layout used the GutenBerg Diagram as a reference.
 ## 2. Blood Pressure & Heart Rate Tracking
 ## (Illustration & voice guidance)
 
-![Blood Pressure Overiew]({{site.baseurl}}/assets/medopad/bloodpressure overview.png){:class="img-responsive"}
+![Blood Pressure Overiew]({{site.baseurl}}/assets/medopad/blood pressure overview.png){:class="img-responsive"}
 
 ### Problems I found through research with medical professionals
 
@@ -109,13 +109,13 @@ The layout used the GutenBerg Diagram as a reference.
 
 ### Solutions
 
-1. I created an  illustration to help users maintain similar posture every measurement. Then a colleague helped me to make it an animation
+1. I created an illustration to help users maintain similar posture for every measurement. In later iterations, the illustration was made into animation by 3rd party animator.
 
-1. ![Blood Pressure Posture]({{site.baseurl}}/assets/medopad/bloodpressure posture.png){:class="img-responsive"}
+![Blood Pressure and Animation]({{site.baseurl}}/assets/medopad/bp hr animation.png){:class="img-responsive"}
 
+{:start="2"}
 1. I proposed to add a voice prompt to help users follow the instructions
-
-    1. In general, this module received positive feedback from our phase 1 testers, some specifically commented that the voice prompt being helpful.
+   * In general, this module received positive feedback from our phase 1 testers, some specifically commented that the voice prompt being helpful.
 
 ### User feedback
 
@@ -212,12 +212,17 @@ BDD (Behaviour-Driven-Documentation) for Push Notification
 
 Improvements I suggested:
 
-- auto-complete
-- fuzzy search
-- adding multiple medications at once (bulk operation)
+- Search dropdown
+- Fuzzy search
+- Adding multiple medications at once (bulk operation)
+
+![medication tracker]({{site.baseurl}}/assets/medopad/med tracker.png){:class="img-responsive"}
+
+{:#img-caption}
+Medication tracker and search
+<br> To zoom, right-click "Open Image in New Tab"
 
 > **"In other apps, I had to scroll a long list to locate what I'm looking for, but now this needs  only a few characters"**
-
 
 ### 3.4 Push Notification
 
