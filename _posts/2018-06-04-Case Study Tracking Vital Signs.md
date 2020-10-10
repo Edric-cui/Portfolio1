@@ -65,7 +65,7 @@ The solutions were not only applied to this module, but to other input modules a
 {:start="3"}
 1. Add "eating status" segmented control, and then pair it with time of the day. If time is not edited, then changing eating status will change time too. By default, time is pre-filled with current hour and its corresponding "eating status"
 
-    1. Because of this, we can also make eating status control a horizontally scrollable control, so that all input can fit in one screen
+    1. **However, according to later doctor feedback, I removed pairing eating status with time of the day**. According to the doctor, controlling time to eat is also part of their treatment, and there's doubt in the data collected –– we don't know if they actually had lunch or not. **Therefore, users need to manually select eating status so that the data collected are more reliable.**
 
 ![img]({{site.baseurl}}/assets/medopad/brainstorm.jpg){:class="img-responsive"}
 
@@ -80,17 +80,29 @@ The solutions were not only applied to this module, but to other input modules a
 
 - Replace the native time picker with Numpad key input for more accurate and more efficient input. And change the font to Monospace so that they are immediately recognisable and can be distinguished between "zero 0",  Letter "O" and letter "o".
 
-![Glucose]({{site.baseurl}}/assets/medopad/glucose.png){:class="img-responsive"}
+![Glucose Old]({{site.baseurl}}/assets/medopad/glucose old.png){:class="img-responsive"}
 
-The layout used the GutenBerg Diagram as a reference.
+{:#img-caption}
+Glucose Module (Old)
+<br> To zoom, right-click "Open Image in New Tab"
+
+- The layout used the GutenBerg Diagram as a reference.
 
 ![Gutenberg]({{site.baseurl}}/assets/medopad/gutenberg.png){:class="img-responsive"}
 
-- Switch to the next input field upon completing the previous one, and change keyboard "Enter" key to Next to hint users to move on. When the last input is done,  keyboard collapses and user can just go hit the primary button.
+- Switch to the next input field upon completing the previous one, and change keyboard "Enter" key to Next to hint users to move on. When the last input is done,  keyboard collapses and user can just go hit the primary button. **(Current Android only)**
 
 ![keyboard action]({{site.baseurl}}/assets/medopad/keyboard action.png){:class="img-responsive"}
 
 **the solutions above were refined and tweaked during a few the internal design reviews, until most internal testers feel the process makes sense and smooth**
+
+- After rebranding, I redesigned glucose module and further improved user experience according to user and doctor feedback. *The glucose meter illustration was removed due to business reasons.*
+
+![Glucose New]({{site.baseurl}}/assets/medopad/glucose new.png){:class="img-responsive"}
+
+{:#img-caption}
+Glucose Module (New)
+<br> To zoom, right-click "Open Image in New Tab"
 
 ### User feedback
 
@@ -210,7 +222,7 @@ BDD (Behaviour-Driven-Documentation) for Push Notification
 
 ### 3.3 Medication tracker
 
-Improvements I suggested:
+Improvements I designed:
 
 - Search dropdown
 - Fuzzy search
