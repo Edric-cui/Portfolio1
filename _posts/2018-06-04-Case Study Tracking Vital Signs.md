@@ -58,7 +58,7 @@ The solutions were not only applied to this module, but to other input modules a
 1. Simplify the process and make everything fit in one page (even for smaller devices)
 
 1. Add a prominent "complete and thanks" screen, with animated checkmark to give users a sense of achievement (with *lottie* on iOS, *VectorDrawable* on Android)
-  - This animated icon concept is now a part of our design system
+  - Animated icons are now part of our design system
 
 ![img]({{site.baseurl}}/assets/medopad/checkmark.gif){:class="img-responsive"}
 
