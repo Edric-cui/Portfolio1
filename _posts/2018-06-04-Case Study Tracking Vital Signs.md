@@ -145,7 +145,7 @@ This project aims to create an app on the backbone of our existing app, with 1 n
 
 I worked closely with a product manager on this project. The PM helped sets up a general framework with his medical background, and I design flows, interaction, rationale, etc. for each module.
 
-List of Modules:
+List of Modules (will elaborate items in bold):
 
  - **Height Z-score (NEW)**
  - **Photos (for X-ray films)**
@@ -179,6 +179,13 @@ Height Z-Score Wireframe
 Height Z-Score Module Screenshots
 <br> To zoom, right-click "Open Image in New Tab"
 
+![Z-score BDD]({{site.baseurl}}/assets/medopad/zscore bdd.png){:class="img-responsive"}
+
+{:#img-caption}
+BDD (Behaviour-Driven-Documentation) for Height Z-Score
+<br> To zoom, right-click "Open Image in New Tab"
+
+<object data="{{ {{site.baseurl}}/assets/medopad/zscore bdd.pdf }}" width="800" height="800" type='application/pdf'/>
 
 ### 3.2 Photo Module for X-ray films
 
