@@ -185,8 +185,6 @@ Height Z-Score Module Screenshots
 BDD (Behaviour-Driven-Documentation) for Height Z-Score
 <br> To zoom, right-click "Open Image in New Tab"
 
-<object data="{{ {{site.baseurl}}/assets/medopad/zscore bdd.pdf }}" width="800" height="800" type='application/pdf'/>
-
 ### 3.2 Photo Module for X-ray films
 
 X-ray films are also important factors in determining a patient's condition.
