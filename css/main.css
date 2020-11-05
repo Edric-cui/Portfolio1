@@ -147,9 +147,9 @@ hr {
 .img-responsive {
   margin: 0 auto;
   display: block;
-  max-width: 90%;
-  max-height: 500px;
+  max-width: 960px;
 }
+
 
 .img-full {
   margin: 0 auto;
@@ -229,7 +229,7 @@ table tr th :last-child, table tr td :last-child {
 }
 
 #post-info {
-  max-width: 725px;
+  max-width: 75%;
   margin-left: 8%;
   margin-right: 8%;
 }
@@ -259,7 +259,7 @@ table tr th :last-child, table tr td :last-child {
 
 .post {
   line-height: 24px;
-  max-width: 725px;
+  max-width: 75%;
   clear: both;
   margin-left: 8%;
   margin-right: 8%;

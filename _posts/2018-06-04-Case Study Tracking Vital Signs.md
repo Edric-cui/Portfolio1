@@ -182,7 +182,7 @@ Height Z-Score Module Screenshots
 ![Z-score BDD]({{site.baseurl}}/assets/medopad/zscore bdd.png){:class="img-responsive"}
 
 {:#img-caption}
-BDD (Behaviour-Driven-Documentation) for Height Z-Score
+BDD (Behaviour-Driven-Documentation) for Height Z-Score (Part)
 <br> To zoom, right-click "Open Image in New Tab"
 
 ### 3.2 Photo Module for X-ray films
