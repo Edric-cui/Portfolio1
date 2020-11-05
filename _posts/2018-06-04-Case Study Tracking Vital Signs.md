@@ -111,7 +111,7 @@ Glucose Module (New)
 ## 2. Blood Pressure & Heart Rate Tracking
 ## (Illustration & voice guidance)
 
-![Blood Pressure Overiew]({{site.baseurl}}/assets/medopad/blood pressure overview.png){:class="img-responsive"}
+![Blood Pressure Overview]({{site.baseurl}}/assets/medopad/blood pressure overview.png){:class="img-responsive"}
 
 ### Problems I found through research with medical professionals
 
