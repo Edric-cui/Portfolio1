@@ -115,11 +115,11 @@
   }
 }
 
-@media (min-width:1321px) {
+@media (min-width:1650px) {
       .img-responsive {
         margin: 0 auto;
         display: block;
-        max-width: 1320px;
+        max-width: 80%;
       }
 }
 
