@@ -115,6 +115,14 @@
   }
 }
 
+@media (min-width:1321px) {
+      .img-responsive {
+        margin: 0 auto;
+        display: block;
+        max-width: 1320px;
+      }
+}
+
 /*****************************************************************************/
 /*
 /* Sidebar responsive animations

@@ -147,7 +147,7 @@ hr {
 .img-responsive {
   margin: 0 auto;
   display: block;
-  max-width: 960px;
+  max-width: 100%;
 }
 
 
