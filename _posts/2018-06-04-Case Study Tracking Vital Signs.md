@@ -222,7 +222,7 @@ connect to hospital's HIS system and acquire source image. This is currently imp
 ![module overview]({{site.baseurl}}/assets/medopad/instructions.png){:class="img-responsive"}
 
 {:#img-caption}
-BDD (Behaviour-Driven-Documentation) for Push Notification
+Instructions on how to take photos of X-ray films
 <br> To zoom, right-click "Open Image in New Tab"
 
 ### 3.3 Medication tracker
