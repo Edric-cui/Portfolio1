@@ -29,7 +29,7 @@ The development of this app is modular, meaning we create parallel modules that 
 
 Since our product is a health system, we cannot iterate frequently, each version affects patients' life quality. Therefore, we tend to do thorough research, detailed planning, and testing for each public release.
 
-![img]({{site.baseurl}}/assets/medopad/background tracking.jpeg){:class="img-responsive"}
+![img]({{site.baseurl}}/assets/medopad/background tile.jpg){:class="img-responsive"}
 
 ## App Structure
 
