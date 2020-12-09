@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Case Study - Clienteling Tool
+title: Project - Clienteling Tool
 cover: mcon-cover.jpg
 date: 2018-06-03 00:00:00
 categories: posts

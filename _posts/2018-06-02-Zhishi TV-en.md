@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Case Study - Zhishi TV App
+title: Project - Zhishi TV App
 cover: tvapp-cover.jpg
 date: 2018-06-02 00:00:00
 categories: posts
