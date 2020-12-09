@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Gephi - Network Visualisation
-cover: datavizcover.jpg
-date: 2018-05-01 00:00:00
+title: 8-hour Task - Car Parking
+cover: carparking cover.jpg
+date: 2018-05-30 00:00:00
 categories: posts
 ---
 
