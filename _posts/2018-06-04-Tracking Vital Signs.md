@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project- Tracking Vital Signs
+title: Project - Tracking Vital Signs
 cover: medopadcover.jpeg
 date: 2018-06-04 00:00:00
 categories: posts
