@@ -6,9 +6,8 @@ date: 2018-06-03 00:00:00
 categories: posts
 ---
 
-# A Clienteling tool for a luxury distributor
+## A Clienteling tool for a luxury distributor
 
-<br>
 > Note: The original logo has been replaced with placeholder
 
 > You can right-click "Open Image in New Tab" for larger images)
