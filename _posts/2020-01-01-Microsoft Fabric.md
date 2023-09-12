@@ -8,7 +8,7 @@ categories: posts
 
 ## Microsoft Fabric
 
->Some content cannot be publicly shared and anonymized
+>Content are anonymized
 
 
 > You can right-click "Open Image in New Tab" to view images details)
@@ -39,9 +39,31 @@ I learned a lot about design language and system by actively adopt, repurpose, r
 
 Here are some examples of my input:
 
-### Tree 
+### Tree (branch and nodes)
 
-Reviewed usage case and drag-and-drop behavior
+Reviewed usage cases and drag-and-drop behavior
+
+Use case: File explorer
+
+![File explorer (with Tree component)]({{site.baseurl}}/assets/fabric/explorer.png){:class="img-responsive"}
+
+
+Layout and hierarchy 
+
+![Tree node indentation]({{site.baseurl}}/assets/fabric/tree.png){:class="img-responsive"}
+
+Drag and drop interaction
+
+1. Drag a node to a new position of the tree in the same level. 
+1. Drag a node to a new location of the tree in a different level.
+1. Drag a node into a container node. 
+1. Drag a node to a new location outside of tree
+1. Cancel drag.
+1. Drag a node from outside and drop in the tree
+1. Show disabled drop position (meaning this a certain area of the tree is not editable)
+
+![Tree node drag and drop]({{site.baseurl}}/assets/fabric/treedrag.png){:class="img-responsive"}
+
 
 ### Dialog/modal
 
