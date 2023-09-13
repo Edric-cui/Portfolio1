@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microsoft Fabric
+title: Microsoft Fabric (in progress)
 cover: fabric cover.jpg
 date: 2020-01-01 00:00:00
 categories: posts
@@ -15,18 +15,25 @@ categories: posts
 
 ## What does it solve and who's it for?
 
-Microsoft Fabric is a cloud SaaS platform that provides data solutions for enterprises. It solves the problem of having to use multiple tools and vendors for different analytics needs. Fabric user can be anyone who is part of the data lifecycle, such as data engineering, science, analytics, and BI.
+Microsoft Fabric is a cloud SaaS platform that provides data solutions for enterprises. It solves the problem of having to use multiple tools and vendors for different analytics needs. Fabric provide **experiences** across the entirity of the data lifecycle, such as data engineering, science, analytics, and BI.
+
+![Fabric structure]({{site.baseurl}}/assets/fabric/whatsfabric.png){:class="img-responsive"}
+
 
 ## As a part of Shared UX team
 
-A Shared UX team is a type of UX team that helps build and maintain the infrastructure and tools for developing and delivering user experiences. We also support the usage, scalability, accessibility of UX assets across different products under Fabric. 
+A Shared UX team is a type of UX team that helps build and maintain the infrastructure and cross-product experiences such as information architecture, navigation and hierarchy, etc. 
 
-Here are some challenges I face in my daily work, such as:
+We also support the usage, scalability, accessibility of UX across different experiences under Fabric. 
+
+Here are some challenges of this position:
 - Ensuring the consistency and quality of UX standards and practices across different teams and projects.
 - Balancing the needs and expectations of multiple product teams; balancing the degree of scalability (one-fits-all) as well as flexibility (case-by-case)
 - Communicating and collaborating effectively with other UX designers and stakeholders.
 
-To apparoch these challenges, 
+To apparoch these challenges, I maintain closely synced with my teams, especially the design system team. 
+
+We also have a pattern library with documentations and guidelines to help other product team designers stay consistent. Hence, Fabric will make customers feel like a single integrated platform.
 
 
 ![img label]({{site.baseurl}}/assets/fabric/img.png){:class="img-responsive"}
@@ -73,12 +80,6 @@ Co-worked on guidelines for action layout
 
 Revamped styles and visuals
 
-- list a
-
-- list b
-
-- 
-
 
 ## Fabric design system
 
@@ -86,34 +87,33 @@ Fabric design system leverages Fluent 2 but focus more on for-business scenarios
 
 Components and patterns
 
-### Main navigation 
+- Main navigation 
+  - Redefined responsive and reflow behavior
 
-Redefined responsive and reflow behavior
+- Notification system
+  - Feedback and engagement
 
-### Notification system
+- Contextual menu 
+  - Created a guideline for catagorizing menu options
+  - Added variations for selection and multi-selection
 
-Feedback and engagement
+- Monitoring hub
 
-### Contextual menu 
+- Settings
 
-Created a guideline for catagorizing menu options
-
-Added variations for selection and multi-selection
-
-### Monitoring hub
-
-### Settings
-
-### Filters
+- Filters
 
 
 ## Accessibility and responsive design examples
 
 ## Success measurement example 
-Qualitative
-How do I interview with customer 
+- Qualitative
+  - interview with customer 
 
-Quantitative
-Telemetry
+- Quantitative
+  - Telemetry
 
-## How does AI (ChatGPT) become as part of my daily work
+## How does AI (ChatGPT) become part of my daily work
+- AI helps me generate content for user interfaces, such as text labels, buttons, menus, etc.
+- AI also helps me evaluate the usability and accessibility of my designs, by comparing against design practices from a variety of similar products
+- AI also helps me making some small design decisions by searching through matrure design guidelines and standards, so that I don't need to look them up like in a dictionary
