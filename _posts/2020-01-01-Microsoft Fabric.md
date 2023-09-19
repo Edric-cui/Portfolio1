@@ -8,10 +8,11 @@ categories: posts
 
 ## Microsoft Fabric
 
->Content are anonymized
+>Images are not available until product launch globally
 
-
+<!--- 
 > You can right-click "Open Image in New Tab" to view images details)
+--->
 
 ## What does it solve and who's it for?
 
