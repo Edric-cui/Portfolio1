@@ -18,7 +18,7 @@ categories: posts
 
 Microsoft Fabric is a cloud SaaS platform that provides data solutions for enterprises. It solves the problem of having to use multiple tools and vendors for different analytics needs. Fabric provide **experiences** across the entirity of the data lifecycle, such as data engineering, science, analytics, and BI.
 
-![Fabric structure]({{site.baseurl}}/assets/fabric/whatsfabric.png){:class="img-responsive"}
+![Fabric structure]({{site.baseurl}}/assets/fabric/whatsfabric.jpg){:class="img-responsive"}
 
 
 ## As a part of Shared UX team
@@ -36,8 +36,11 @@ To apparoch these challenges, I maintain closely synced with my teams, especiall
 
 We also have a pattern library with documentations and guidelines to help other product team designers stay consistent. Hence, Fabric will make customers feel like a single integrated platform.
 
+<!--->
+-
+![Fabric product structure]({{site.baseurl}}/assets/fabric/whatsfabric.jpg){:class="img-responsive"}
 
-![img label]({{site.baseurl}}/assets/fabric/img.png){:class="img-responsive"}
+<--->
 
 ##  Contribute to Fluent 2
 
@@ -49,7 +52,7 @@ Here are some areas with my input:
 
 - Tree (branch and nodes)
 
-Reviewed use cases and drag-and-drop behavior
+  - Reviewed use cases and drag-and-drop behavior
 
 <!--- 
 Use case: File explorer
@@ -78,18 +81,18 @@ Drag and drop interaction
 
 - Dialog/modal
 
-Co-worked on layourt and usage guidelines.
+  - Co-worked on layourt and usage guidelines.
 
 - TimePickers and DatePickers
 
-Revamped styles and visuals of the component.
+  - Revamped styles and visuals of the component.
 
 
 ## Fabric design system
 
 Fabric design system leverages Fluent 2 with more focus on our product-specific scenarios. 
 
-Components and patterns
+**Components and patterns**
 
 - Top header navigation 
   - Redefined responsive and reflow behavior
