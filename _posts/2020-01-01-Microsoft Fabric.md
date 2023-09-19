@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microsoft Fabric (in progress)
+title: Microsoft Fabric
 cover: fabric cover.jpg
 date: 2020-01-01 00:00:00
 categories: posts
@@ -44,12 +44,13 @@ Fluent 2 is the next version of Microsoft’s design system.Many parts of it are
 
 I learned a lot about design language and system by actively adopt, repurpose, review, and contribute to Fluent 2.
 
-Here are some examples of my input:
+Here are some areas with my input:
 
-### Tree (branch and nodes)
+- Tree (branch and nodes)
 
-Reviewed usage cases and drag-and-drop behavior
+Reviewed use cases and drag-and-drop behavior
 
+<!--- 
 Use case: File explorer
 
 ![File explorer (with Tree component)]({{site.baseurl}}/assets/fabric/explorer.png){:class="img-responsive"}
@@ -71,47 +72,55 @@ Drag and drop interaction
 
 ![Tree node drag and drop]({{site.baseurl}}/assets/fabric/treedrag.png){:class="img-responsive"}
 
+-->
 
-### Dialog/modal
 
-Co-worked on guidelines for action layout
+- Dialog/modal
 
-### TimePickers and DatePickers
+Co-worked on layourt and usage guidelines.
 
-Revamped styles and visuals
+- TimePickers and DatePickers
+
+Revamped styles and visuals of the component.
 
 
 ## Fabric design system
 
-Fabric design system leverages Fluent 2 but focus more on for-business scenarios. 
+Fabric design system leverages Fluent 2 with more focus on our product-specific scenarios. 
 
 Components and patterns
 
-- Main navigation 
+- Top header navigation 
   - Redefined responsive and reflow behavior
 
 - Notification system
-  - Feedback and engagement
+  - Decision trees that help other designers make better decisions
+  - Provide real-time and async feedback to users
+  - Facilate user engagement with Fabric product
 
 - Contextual menu 
-  - Created a guideline for catagorizing menu options
-  - Added variations for selection and multi-selection
+  - Created a guideline to catagorize menu options for better clarity
+  - Added variations for single-selection and multi-selection
+  - Extended its functionality with searchable options and customizable range
 
 - Monitoring hub
+  - A centralized place to view and track activities across different products
+  - Information is highly centralized and interlinked, but still clear and relevant to users
 
 - Settings
+  - The first place users tend to seek for various configurations
+  - Provides high level of scalability to house settings options from other products
 
 - Filters
 
 
-## Accessibility and responsive design examples
+## Accessibility and responsive design
 
-## Success measurement example 
-- Qualitative
-  - interview with customer 
+- Keyboard navigation (Tab navigation)
 
-- Quantitative
-  - Telemetry
+- Reflow of page layout and elements until 320*256px. 
+
+- Work with engineers to meet accessibility requirments like ARIA attributes and properties (Roles, Landmarks, Headings, etc.)
 
 ## How does AI (ChatGPT) become part of my daily work
 - AI helps me generate content for user interfaces, such as text labels, buttons, menus, etc.
