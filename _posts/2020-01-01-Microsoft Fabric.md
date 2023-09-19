@@ -14,27 +14,27 @@ categories: posts
 > You can right-click "Open Image in New Tab" to view images details)
 --->
 
-## What does it solve and who's it for?
+## What is Microsoft Fabric and who benefits from it?
 
-Microsoft Fabric is a cloud SaaS platform that provides data solutions for enterprises. It solves the problem of having to use multiple tools and vendors for different analytics needs. Fabric provide **experiences** across the entirity of the data lifecycle, such as data engineering, science, analytics, and BI.
+Microsoft Fabric is a cloud SaaS platform that offers data solutions for enterprises. It simplifies the data analytics process by integrating different tools and vendors in one platform. Fabric covers the whole data lifecycle, from data engineering and science to analytics and BI.
 
 ![Fabric structure]({{site.baseurl}}/assets/fabric/whatsfabric.jpg){:class="img-responsive"}
 
 
-## As a part of Shared UX team
+## My role in the Shared UX team
 
-A Shared UX team is a type of UX team that helps build and maintain the infrastructure and cross-product experiences such as information architecture, navigation and hierarchy, etc. 
+I work in the Shared UX team, which is responsible for building and maintaining the infrastructure and cross-product experiences for Fabric. This includes aspects such as information architecture, navigation, and hierarchy. 
 
-We also support the usage, scalability, accessibility of UX across different experiences under Fabric. 
+Our team also ensures that the UX of Fabric is consistent, scalable, and accessible across different experiences. 
 
-Here are some challenges of this position:
-- Ensuring the consistency and quality of UX standards and practices across different teams and projects.
-- Balancing the needs and expectations of multiple product teams; balancing the degree of scalability (one-fits-all) as well as flexibility (case-by-case)
+Some of the challenges that I face in this role are:
+- Upholding the UX standards and practices across different teams and projects.
+- Balancing the needs and expectations of multiple product teams; finding the right trade-off between scalability (one-fits-all) and flexibility (case-by-case)
 - Communicating and collaborating effectively with other UX designers and stakeholders.
 
-To apparoch these challenges, I maintain closely synced with my teams, especially the design system team. 
+To overcome these challenges, I keep in close sync with my teams, especially the design system team. 
 
-We also have a pattern library with documentations and guidelines to help other product team designers stay consistent. Hence, Fabric will make customers feel like a single integrated platform.
+We also have a pattern library with documentations and guidelines to help other product team designers follow the same UX principles. This way, Fabric can provide a seamless and integrated experience for customers.
 
 <!--->
 -
@@ -44,15 +44,17 @@ We also have a pattern library with documentations and guidelines to help other 
 
 ##  Contribute to Fluent 2
 
-Fluent 2 is the next version of Microsoft’s design system.Many parts of it are still in design phase, and we are one of its contributors. This is a rare oppotunity for me because these general purpose and large design tend to revamp at long intervals. 
+## My contribution to Fluent 2
 
-I learned a lot about design language and system by actively adopt, repurpose, review, and contribute to Fluent 2.
+Fluent 2 is the next version of Microsoft’s design system. It is still under development, and I am one of its contributors. This is a rare opportunity for me because these general purpose and large design systems usually change after long periods of time. 
+
+I learned a lot about design language and system by actively adopting, repurposing, reviewing, and contributing to Fluent 2.
 
 Here are some areas with my input:
 
 - Tree (branch and nodes)
 
-  - Reviewed use cases and drag-and-drop behavior
+  - Analyzed use cases and drag-and-drop functionality
 
 <!--- 
 Use case: File explorer
@@ -81,11 +83,11 @@ Drag and drop interaction
 
 - Dialog/modal
 
-  - Co-worked on layourt and usage guidelines.
+  - Worked on layout and usage guidelines.
 
 - TimePickers and DatePickers
 
-  - Revamped styles and visuals of the component.
+  - Updated styles and visuals of the component.
 
 
 ## Fabric design system
@@ -98,22 +100,22 @@ Fabric design system leverages Fluent 2 with more focus on our product-specific 
   - Redefined responsive and reflow behavior
 
 - Notification system
-  - Decision trees that help other designers make better decisions
-  - Provide real-time and async feedback to users
-  - Facilate user engagement with Fabric product
+  - Created decision trees to help designers choose the best options
+  - Designed feedback mechanisms for users
+  - Enhanced user engagement with Fabric product
 
 - Contextual menu 
-  - Created a guideline to catagorize menu options for better clarity
+  - Developed a guideline to organize menu options for better clarity
   - Added variations for single-selection and multi-selection
-  - Extended its functionality with searchable options and customizable range
+  - Expanded its functionality with searchable options and customizable range
 
 - Monitoring hub
-  - A centralized place to view and track activities across different products
-  - Information is highly centralized and interlinked, but still clear and relevant to users
+  - Designed a central place to monitor and manage activities across different products
+  - Organized information in a clear and relevant way for users
 
 - Settings
-  - The first place users tend to seek for various configurations
-  - Provides high level of scalability to house settings options from other products
+  - Settings will become the first place users go to for various configurations
+  - Ensured high level of scalability to accommodate settings options from other products
 
 - Filters
 
@@ -124,9 +126,9 @@ Fabric design system leverages Fluent 2 with more focus on our product-specific 
 
 - Reflow of page layout and elements until 320*256px. 
 
-- Work with engineers to meet accessibility requirments like ARIA attributes and properties (Roles, Landmarks, Headings, etc.)
+- Work with engineers to meet accessibility standards like ARIA attributes and properties (Roles, Landmarks, Headings, etc.)
 
 ## How does AI (ChatGPT) become part of my daily work
-- AI helps me generate content for user interfaces, such as text labels, buttons, menus, etc.
-- AI also helps me evaluate the usability and accessibility of my designs, by comparing against design practices from a variety of similar products
-- AI also helps me making some small design decisions by searching through matrure design guidelines and standards, so that I don't need to look them up like in a dictionary
+- AI assists me in creating content for user interfaces, such as text labels, buttons, menus, etc.
+- AI also helps me assess the usability and accessibility of my designs, by comparing them with design practices from a variety of similar products
+- AI also helps me make some small design decisions by searching through established design guidelines and standards, so that I don't need to consult a dictionary
