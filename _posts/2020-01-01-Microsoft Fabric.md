@@ -16,7 +16,7 @@ categories: posts
 
 ## What is Microsoft Fabric and who benefits from it?
 
-Microsoft Fabric is a cloud SaaS platform that offers data solutions for enterprises. It simplifies the data analytics process by integrating different tools and vendors in one platform. Fabric covers the whole data lifecycle, from data engineering and science to analytics and BI.
+Microsoft Fabric is a cloud SaaS platform that offers data solutions for enterprises. It simplifies the data analytics process by integrating different tools and vendors in one platform. Fabric covers the whole data lifecycle, from data engineering and science to analytics and business intelligence.
 
 ![Fabric structure]({{site.baseurl}}/assets/fabric/whatsfabric.jpg){:class="img-responsive"}
 
