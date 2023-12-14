@@ -8,7 +8,7 @@ categories: posts
 
 ## Microsoft Fabric
 
->Images are not available until product launch globally
+>Some images of features in development are not available
 
 <!--- 
 > You can right-click "Open Image in New Tab" to view images details)
