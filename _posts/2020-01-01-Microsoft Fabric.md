@@ -11,8 +11,8 @@ categories: posts
 >Some images of features in development are not available
 
 <!--- 
-> You can right-click "Open Image in New Tab" to view images details)
---->
+ You can right-click "Open Image in New Tab" to view images details)
+-->
 
 ## What is Microsoft Fabric and who benefits from it?
 
@@ -36,11 +36,6 @@ To overcome these challenges, I keep in close sync with my teams, especially the
 
 We also have a pattern library with documentations and guidelines to help other product team designers follow the same UX principles. This way, Fabric can provide a seamless and integrated experience for customers.
 
-<!--->
--
-![Fabric product structure]({{site.baseurl}}/assets/fabric/whatsfabric.jpg){:class="img-responsive"}
-
-<--->
 
 ##  Contribute to Fluent 2
 
