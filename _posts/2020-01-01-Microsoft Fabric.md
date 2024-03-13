@@ -76,7 +76,7 @@ Drag and drop interaction
 -->
 
 
-- Dialog/modal
+- Dialog/modal/darwer
 
   - Worked on layout and usage guidelines.
 
@@ -91,28 +91,31 @@ Fabric design system leverages Fluent 2 with more focus on our product-specific 
 
 **Components and patterns**
 
-- Top header navigation 
+- Top-level header navigation 
   - Redefined responsive and reflow behavior
 
 - Notification system
-  - Created decision trees to help designers choose the best options
   - Designed feedback mechanisms for users
+  - Created decision trees to help designers use the most appropriate types of notifications
   - Enhanced user engagement with Fabric product
+
+- Workspace
+  - The central place where users create, store, retrieve, and organize items
+  - Optimized filter experience; added folder feature; integrated task flow organization view; added access control
+
+- Monitoring hub
+  - Designed a central place to monitor and manage activities across different products
+  - Organized information in a clear and relevant way for users
 
 - Contextual menu 
   - Developed a guideline to organize menu options for better clarity
   - Added variations for single-selection and multi-selection
   - Expanded its functionality with searchable options and customizable range
 
-- Monitoring hub
-  - Designed a central place to monitor and manage activities across different products
-  - Organized information in a clear and relevant way for users
-
 - Settings
-  - Settings will become the first place users go to for various configurations
+  - Settings is the first place users go to for various configurations
   - Ensured high level of scalability to accommodate settings options from other products
 
-- Filters
 
 
 ## Accessibility and responsive design
