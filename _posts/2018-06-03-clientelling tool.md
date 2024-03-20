@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project - Clienteling Tool
+title: TimeVallée (CRM)
 cover: mcon-cover.jpg
 date: 2018-06-03 00:00:00
 categories: posts
@@ -18,7 +18,6 @@ categories: posts
 **Clienteling**
 
 > Clienteling is a technique used by retail sales associates to establish long-term relationships with key customers based on data about their preferences, behaviors and purchases.
----Wikipedia
 
 ## Project Background
 

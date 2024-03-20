@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project - Zhishi TV App
+title: Zhishi TV App
 cover: tvapp-cover.jpg
 date: 2018-06-02 00:00:00
 categories: posts
