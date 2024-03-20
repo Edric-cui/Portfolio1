@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TimeVallée (CRM)
+title: TimeVallée - CRM
 cover: mcon-cover.jpg
 date: 2018-06-03 00:00:00
 categories: posts
