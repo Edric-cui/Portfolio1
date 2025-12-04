@@ -311,6 +311,10 @@ table tr th :last-child, table tr td :last-child {
   margin-bottom: 1.25em;
 }
 
+.post ul li + li, .post ol li + li {
+  margin-top: 0.4em; 
+}
+
 .post code {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
   border: 1px solid #ddd;
