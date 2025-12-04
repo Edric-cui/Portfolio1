@@ -8,7 +8,7 @@ categories: posts
 
 ## Microsoft Fabric — Shared UX, design systems, and cross-product patterns
 
->Some images are unavailable to show publicly
+>Some images are unavailable for general public
 
 ### TL;DR
 
