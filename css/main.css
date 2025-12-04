@@ -306,6 +306,7 @@ table tr th :last-child, table tr td :last-child {
 }
 
 .post ul, .post ol {
+  line-height: 1.25em;
   margin-top: 0.8em;
   margin-left: 2.35em;
   margin-bottom: 1.25em;
