@@ -18,7 +18,7 @@ html, body {
 body {
   color: #2f3033;
   background-color: #fafbfc;
-  font-family: 'Source Sans Pro', Arial, sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Raleway',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1em;
   overflow: hidden;
@@ -299,7 +299,7 @@ table tr th :last-child, table tr td :last-child {
 }
 
 .post p {
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: 'Raleway',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 1em;
   margin-bottom: 1.45em;
   text-align: left;
