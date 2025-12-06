@@ -23,6 +23,22 @@
       <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
       <script src="https://kit.fontawesome.com/6340c1c544.js"></script>
+      <script>
+        // Prevent flash of wrong theme by applying theme immediately
+        (function() {
+          var theme = localStorage.getItem('theme');
+          if (!theme) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              theme = 'dark';
+            } else {
+              theme = 'light';
+            }
+          }
+          if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        })();
+      </script>
   </head>
   <body>
     <div class="site">
@@ -54,6 +70,9 @@
             <a href="https://medium.com/@cjcnex" class="footer-link">Medium</a> <span class="separator">&bull;</span>
             <a href="https://www.linkedin.com/in/jiachen-edric-cui/" class="footer-link">LinkedIn</a>
           </span>
+          <button id="dark-mode-toggle" class="footer-link" aria-label="Switch to dark mode">
+            <i class="fas fa-moon"></i> Dark Mode
+          </button>
         </div>
       </div>
 
@@ -61,5 +80,6 @@
 
     </div>
     <script src="{{ site.baseurl }}/scripts/responsive.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/scripts/dark-mode.js" type="text/javascript"></script>
   </body>
 </html>

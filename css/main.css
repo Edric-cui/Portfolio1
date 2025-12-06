@@ -1,5 +1,63 @@
 /*****************************************************************************/
 /*
+/* CSS Variables - Light Mode (Default)
+/*
+/*****************************************************************************/
+
+:root {
+  --bg-primary: #fafbfc;
+  --bg-secondary: #fafafa;
+  --bg-tertiary: #f6f8fa;
+  --bg-code: #eef;
+  --bg-terminal: #333;
+  --text-primary: #2f3033;
+  --text-secondary: #4B4E52;
+  --text-tertiary: #787878;
+  --text-quaternary: #7f7f7f;
+  --text-quinary: #8a8a8a;
+  --text-name: #000000;
+  --text-link: #8085C1;
+  --text-link-hover: #555;
+  --text-posts-link: #444;
+  --text-posts-link-hover: #777;
+  --text-separator: #555;
+  --text-colophon: #777;
+  --text-terminal: #FFF;
+  --border-primary: #e7e7e7;
+  --border-secondary: #dfe2e5;
+  --border-code: #ddd;
+  --border-terminal: #000;
+  --hr-bg: #e1e4e8;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2a2a2a;
+  --bg-tertiary: #2d2d2d;
+  --bg-code: #2a2a2a;
+  --bg-terminal: #1a1a1a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #c0c0c0;
+  --text-tertiary: #a0a0a0;
+  --text-quaternary: #909090;
+  --text-quinary: #888888;
+  --text-name: #ffffff;
+  --text-link: #9d9fd8;
+  --text-link-hover: #b0b0b0;
+  --text-posts-link: #c0c0c0;
+  --text-posts-link-hover: #d0d0d0;
+  --text-separator: #888888;
+  --text-colophon: #999999;
+  --text-terminal: #e0e0e0;
+  --border-primary: #404040;
+  --border-secondary: #4a4a4a;
+  --border-code: #555;
+  --border-terminal: #666;
+  --hr-bg: #4a4a4a;
+}
+
+/*****************************************************************************/
+/*
 /* Common
 /*
 /*****************************************************************************/
@@ -16,18 +74,20 @@ html, body {
 }
 
 body {
-  color: #2f3033;
-  background-color: #fafbfc;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
   font-family: 'Raleway',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1em;
   overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
-  color: #8085C1;
+  color: var(--text-link);
   text-decoration: none;
   border: none;
+  transition: color 0.3s ease;
 }
 
 a img {
@@ -35,23 +95,24 @@ a img {
 }
 
 a:hover {
-  color: #555;
+  color: var(--text-link-hover);
   border: none;
 }
 
 .separator {
-  color: #555;
+  color: var(--text-separator);
 }
 
 blockquote {
-  border-left: .25em solid #dfe2e5;
-  color: #4B4E52;
+  border-left: .25em solid var(--border-secondary);
+  color: var(--text-secondary);
   padding: 0 1.5em;
-  background-color: #fafafa;
+  background-color: var(--bg-secondary);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 hr {
-  background-color: #e1e4e8;
+  background-color: var(--hr-bg);
   border: 0;
   height: .125em;
   margin: 24px 0;
@@ -70,11 +131,11 @@ hr {
 }
 
 .posts a {
-  color: #444;
+  color: var(--text-posts-link);
 }
 
 .posts a:hover {
-  color: #777;
+  color: var(--text-posts-link-hover);
 }
 
 .posts-list {
@@ -106,7 +167,7 @@ hr {
 
 .tagline {
   width: 100%;
-  color: #787878;
+  color: var(--text-tertiary);
   font-weight: 700;
   text-align: center;
   margin-top: 0.5em;
@@ -116,7 +177,7 @@ hr {
 .nameTitle {
   font-size: 1.25em;
   width: 100%;
-  color: #000000;
+  color: var(--text-name);
   font-weight: 300;
   text-align: center;
   margin-top: 0.5em;
@@ -124,19 +185,21 @@ hr {
 }
 
 .posts {
-  border-top: 1px solid #e7e7e7;
+  border-top: 1px solid var(--border-primary);
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 1.25em;
+  transition: border-color 0.3s ease;
 }
 
 .footer {
   font-size: 0.95em;
-  border-top: 1px solid #e7e7e7;
+  border-top: 1px solid var(--border-primary);
   padding-top: 1.25em;
   padding-bottom: 1.5em;
   overflow: hidden;
   text-align: center;
+  transition: border-color 0.3s ease;
 }
 
 .img-responsive {
@@ -166,7 +229,7 @@ hr {
   margin-bottom: 2.5em;
   text-align: center;
   font-size: 0.8em;
-  color: #7f7f7f;
+  color: var(--text-quaternary);
 }
 
 table {
@@ -174,26 +237,26 @@ table {
   border-collapse:collapse;
 }
 table tr {
-  border-top: 1px solid #dfe2e5;
+  border-top: 1px solid var(--border-secondary);
   background-color: none;
   margin: 0;
   padding: 0;
 }
 
 table tr:nth-child(2n) {
-  background-color: #f6f8fa;
+  background-color: var(--bg-tertiary);
 }
 
 table tr th {
   font-weight: bold;
-  border: 1px solid #dfe2e5;
+  border: 1px solid var(--border-secondary);
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
 
 table tr td {
-  border: 1px solid #dfe2e5;
+  border: 1px solid var(--border-secondary);
   text-align: left;
   margin: 0;
   padding: 6px 13px;
@@ -220,7 +283,7 @@ table tr th :last-child, table tr td :last-child {
   margin-bottom: 2em;
   text-transform: uppercase;
   font-weight: 600;
-  color: #787878;
+  color: var(--text-tertiary);
 }
 
 #post-info {
@@ -245,11 +308,10 @@ table tr th :last-child, table tr td :last-child {
 }
 
 #title {
-  color: #2f3033;
+  color: var(--text-primary);
   margin-bottom: 0.35em;
   font-size: 3em;
   line-height: 40px;
-  text-transform: uppercase;
 }
 
 .post {
@@ -279,7 +341,7 @@ table tr th :last-child, table tr td :last-child {
 
 .post a,
 #about a {
-  border-bottom: 1px solid #8085C1;
+  border-bottom: 1px solid var(--text-link);
 }
 
 .post a:hover {
@@ -288,8 +350,8 @@ table tr th :last-child, table tr td :last-child {
 
 /* standard */
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
+  border: 1px solid var(--border-code);
+  background-color: var(--bg-code);
   padding: 0 .4em;
 }
 
@@ -312,8 +374,8 @@ table tr th :last-child, table tr td :last-child {
 
 .post code {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
-  border: 1px solid #ddd;
-  background-color: #eef;
+  border: 1px solid var(--border-code);
+  background-color: var(--bg-code);
   padding: 0.2em;
 }
 
@@ -323,13 +385,13 @@ table tr th :last-child, table tr td :last-child {
 
 /* terminal */
 .post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
+  border: 1px solid var(--border-terminal);
+  background-color: var(--bg-terminal);
+  color: var(--text-terminal);
 }
 
 .post pre.terminal code {
-  background-color: #333;
+  background-color: var(--bg-terminal);
 }
 
 /*****************************************************************************/
@@ -352,7 +414,8 @@ table tr th :last-child, table tr td :last-child {
   width: 14%;
   padding-left: 11em;
   padding-right: 2.125em;
-  border-right: 1px solid #e7e7e7;
+  border-right: 1px solid var(--border-primary);
+  transition: border-color 0.3s ease;
 }
 
 .content {
@@ -376,7 +439,7 @@ table tr th :last-child, table tr td :last-child {
 }
 
 .post-date {
-  color: #8a8a8a;
+  color: var(--text-quinary);
   font-family: Monaco, "Courier New", monospace;
   font-weight: 600;
   font-size: 0.65em;
@@ -390,7 +453,7 @@ table tr th :last-child, table tr td :last-child {
   display: none;
   padding: 15px 5px 0px 0px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid var(--border-primary);
 }
 
 #sidebar-button:active,
@@ -407,11 +470,41 @@ table tr th :last-child, table tr td :last-child {
 .colophon {
   margin-top: 1.5em;
   margin-bottom: 1.45em;
-  border-top: 1px dotted #e7e7e7;
+  border-top: 1px dotted var(--border-primary);
+  transition: border-color 0.3s ease;
 }
 
 .colophon p {
   margin-top: 1.25em;
   font-size: 0.95em;
-  color: #777;
+  color: var(--text-colophon);
+}
+
+/*****************************************************************************/
+/*
+/* Dark Mode Toggle
+/*
+/*****************************************************************************/
+
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  color: var(--text-link);
+  cursor: pointer;
+  font-size: 0.95em;
+  padding: 0;
+  margin: 0.5em 0 0 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#dark-mode-toggle:hover {
+  color: var(--text-link-hover);
+}
+
+#dark-mode-toggle i {
+  margin-right: 0.25em;
 }

@@ -9,3 +9,4 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "jekyll", "~> 3.8"
 gem "kramdown", ">= 2.3.0"
 gem "kramdown-parser-gfm"
+gem "ffi", ">= 1.15.0"
