@@ -462,12 +462,18 @@ table tr th :last-child, table tr td :last-child {
 }
 
 #sidebar-button {
-  height: intrinsic;
   cursor: pointer;
   display: none;
   padding: 15px 5px 0px 0px;
   margin-bottom: 10px;
   border-bottom: 1px solid var(--border-primary);
+  color: var(--text-primary);
+  font-size: 1.5em;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+#sidebar-button i {
+  display: block;
 }
 
 #sidebar-button:active,

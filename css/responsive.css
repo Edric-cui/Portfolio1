@@ -87,11 +87,22 @@
   }
 
   .sidebar {
-    transition: 0.5s;
-    margin-left: -100%;
-    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    z-index: 1000;
     width: 35%;
+    max-width: 300px;
     padding-left: 1.75em;
+    background-color: var(--bg-primary);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .sidebar.slideIn {
+    transform: translateX(0);
   }
 
   .content {
@@ -102,8 +113,9 @@
 
   #sidebar-button {
     display:block;
-    z-index: 2;
+    z-index: 999;
     padding: 24px;
+    position: relative;
   }
 
   .colophon {
@@ -122,10 +134,31 @@
 
 /*****************************************************************************/
 /*
-/* Sidebar responsive animations
+/* Scrim (Backdrop)
 /*
 /*****************************************************************************/
 
-.slideIn {
-  margin-left: 0%;
+.scrim {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+.scrim.active {
+  display: block;
+  opacity: 1;
+}
+
+@media (min-width: 921px) {
+  .scrim {
+    display: none !important;
+  }
 }
