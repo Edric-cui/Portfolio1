@@ -71,15 +71,15 @@
             <a href="https://medium.com/@cjcnex" class="footer-link">Medium</a> <span class="separator">&bull;</span>
             <a href="https://www.linkedin.com/in/jiachen-edric-cui/" class="footer-link">LinkedIn</a>
           </span>
-          <button id="dark-mode-toggle" class="footer-link" aria-label="Switch to dark mode">
-            <i class="fas fa-moon"></i> Dark Mode
-          </button>
         </div>
       </div>
 
         {{ content }}
 
     </div>
+    <button id="dark-mode-toggle" class="floating-toggle" aria-label="Switch to dark mode" data-tooltip="Switch to dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
     <script src="{{ site.baseurl }}/scripts/responsive.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/scripts/dark-mode.js" type="text/javascript"></script>
   </body>

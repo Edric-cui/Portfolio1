@@ -5,7 +5,7 @@
   }
 
   .post {
-    font-size: 0.9em;
+    font-size: 1em;
     margin-left: 8%;
     margin-right: 8%;
   }
@@ -16,7 +16,7 @@
   }
 
   .footer {
-    font-size: 0.85em;
+    font-size: 0.95em;
   }
 }
 
@@ -160,5 +160,16 @@
 @media (min-width: 921px) {
   .scrim {
     display: none !important;
+  }
+}
+
+/* Floating toggle button responsive adjustments */
+@media (max-width: 920px) {
+  .floating-toggle {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 48px;
+    height: 48px;
+    font-size: 1.1em;
   }
 }

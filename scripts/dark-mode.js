@@ -24,7 +24,7 @@
     updateToggleIcon(theme);
   }
 
-  // Update toggle button icon and text
+  // Update toggle button icon and tooltip
   function updateToggleIcon(theme) {
     const toggle = document.getElementById('dark-mode-toggle');
     if (toggle) {
@@ -32,12 +32,12 @@
       if (icon) {
         if (theme === 'dark') {
           icon.className = 'fas fa-sun';
-          toggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
           toggle.setAttribute('aria-label', 'Switch to light mode');
+          toggle.setAttribute('data-tooltip', 'Switch to light mode');
         } else {
           icon.className = 'fas fa-moon';
-          toggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
           toggle.setAttribute('aria-label', 'Switch to dark mode');
+          toggle.setAttribute('data-tooltip', 'Switch to dark mode');
         }
       }
     }
