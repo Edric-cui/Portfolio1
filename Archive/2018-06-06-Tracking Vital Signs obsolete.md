@@ -2,7 +2,7 @@
 layout: post
 title: HUMA - Mobile health app
 cover: medopadcover.jpeg
-date: 2018-06-04 00:00:00
+date: 2018-06-06 00:00:00
 categories: posts
 ---
 
@@ -13,7 +13,6 @@ categories: posts
 
 
 > You can right-click "Open Image in New Tab" for larger images)
-（可以右键“新窗口打开 ”放大图片）
 
 **Note that some designs and documentations cannot be made public due to NDA**
 
