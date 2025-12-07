@@ -1,6 +1,6 @@
 ---
 layout: post
-title: H1 Tech - Agricultural IOT
+title: H1 Tech - Agricultural IOT (archive)
 cover: h1sankey.jpg  
 date: 2018-06-05 00:00:00
 categories: posts
