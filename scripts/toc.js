@@ -149,6 +149,9 @@
     let hoverTimeout;
     const triggerZone = 80; // pixels from right edge
     let isHovering = false;
+    let isTOCVisible = false;
+    let touchStartX = null;
+    let touchStartY = null;
 
     function showTOC() {
       clearTimeout(hoverTimeout);
@@ -157,6 +160,7 @@
         tocIndicator.classList.add('toc-indicator-hidden');
       }
       isHovering = true;
+      isTOCVisible = true;
     }
 
     function hideTOC() {
@@ -166,10 +170,19 @@
           tocIndicator.classList.remove('toc-indicator-hidden');
         }
         isHovering = false;
+        isTOCVisible = false;
       }, 200); // Small delay to prevent flickering
     }
 
-    // Mouse move detection for right edge
+    function toggleTOC() {
+      if (isTOCVisible) {
+        hideTOC();
+      } else {
+        showTOC();
+      }
+    }
+
+    // Mouse move detection for right edge (desktop only)
     document.addEventListener('mousemove', function(e) {
       const windowWidth = window.innerWidth;
       const mouseX = e.clientX;
@@ -203,6 +216,95 @@
         showTOC();
       });
     }
+
+    // Touch event support for mobile
+    // Make indicator tappable to toggle TOC
+    if (tocIndicator) {
+      tocIndicator.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleTOC();
+      }, { passive: false });
+
+      // Also make indicator clickable (for hybrid devices)
+      tocIndicator.addEventListener('click', function(e) {
+        // Only handle click if it's not from a mouse (to avoid double-triggering)
+        if (e.pointerType === 'mouse') {
+          return;
+        }
+        e.preventDefault();
+        e.stopPropagation();
+        toggleTOC();
+      });
+    }
+
+    // Touch detection for right edge swipe
+    document.addEventListener('touchstart', function(e) {
+      const touch = e.touches[0];
+      if (touch) {
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+      }
+    }, { passive: true });
+
+    document.addEventListener('touchend', function(e) {
+      if (touchStartX === null || touchStartY === null) return;
+
+      const touch = e.changedTouches[0];
+      if (!touch) return;
+
+      const windowWidth = window.innerWidth;
+      const touchX = touch.clientX;
+      const touchY = touch.clientY;
+      const deltaX = touchX - touchStartX;
+      const deltaY = touchY - touchStartY;
+
+      // Check if touch started near right edge
+      if (windowWidth - touchStartX <= triggerZone) {
+        // If swiping left (toward center) or just a tap, show TOC
+        if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
+          // It's a tap
+          if (!isTOCVisible) {
+            showTOC();
+          }
+        } else if (deltaX < -30) {
+          // Swipe left - show TOC
+          if (!isTOCVisible) {
+            showTOC();
+          }
+        }
+      }
+
+      touchStartX = null;
+      touchStartY = null;
+    }, { passive: true });
+
+    // Dismiss TOC when tapping outside (on mobile)
+    document.addEventListener('touchstart', function(e) {
+      if (!isTOCVisible) return;
+
+      const target = e.target;
+      // If touch is outside TOC container and indicator, hide TOC
+      if (tocContainer && !tocContainer.contains(target) && 
+          tocIndicator && !tocIndicator.contains(target)) {
+        hideTOC();
+      }
+    }, { passive: true });
+
+    // Also handle click outside for hybrid devices
+    document.addEventListener('click', function(e) {
+      if (!isTOCVisible) return;
+
+      const target = e.target;
+      // If click is outside TOC container and indicator, hide TOC
+      if (tocContainer && !tocContainer.contains(target) && 
+          tocIndicator && !tocIndicator.contains(target)) {
+        // Only hide on mobile viewport
+        if (window.innerWidth <= 920) {
+          hideTOC();
+        }
+      }
+    });
   }
 
   // Build indicator bars based on headings

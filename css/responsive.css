@@ -172,4 +172,48 @@
     height: 48px;
     font-size: 1.1em;
   }
+
+  /* TOC responsive adjustments */
+  .toc-container {
+    width: 200px;
+    max-width: 85vw;
+    padding: 1.25em 1em;
+    font-size: 0.9em;
+    z-index: 1001; /* Above sidebar but below scrim */
+  }
+
+  .toc-container.toc-visible {
+    transform: translateY(-50%) translateX(-12px); /* Slightly less offset on mobile */
+  }
+
+  .toc-indicator {
+    right: 6px;
+    width: 24px; /* Slightly wider for easier tapping */
+    z-index: 1000;
+    pointer-events: auto; /* Enable touch events */
+    padding: 8px 4px; /* Add padding for larger tap target */
+  }
+
+  .toc-indicator-bar {
+    width: 4px; /* Slightly thicker for visibility */
+    height: 18px;
+  }
+
+  .toc-indicator-bar.active {
+    width: 6px;
+  }
+
+  .toc-link {
+    font-size: 0.85em;
+    padding: 0.35em 0;
+  }
+
+  .toc-link-h2 {
+    font-size: 0.9em;
+  }
+
+  .toc-link-h3 {
+    font-size: 0.8em;
+    padding-left: 1.25em;
+  }
 }
