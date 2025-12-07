@@ -231,6 +231,43 @@ hr {
   opacity: 0.08;
 }
 
+/* Add breathing space above images in posts */
+.post .img-responsive {
+  margin-top: 2.5em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post .img-full {
+  margin-top: 2.5em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post .img-fade {
+  margin-top: 2.5em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post img:not(.img-responsive):not(.img-full):not(.img-fade) {
+  margin-top: 2.5em;
+  margin-bottom: 0;
+}
+
+/* Remove top margin from first image in post */
+.post p:first-of-type .img-responsive,
+.post p:first-of-type .img-full,
+.post p:first-of-type .img-fade,
+.post p:first-of-type img,
+.post > img:first-child,
+.post > .img-responsive:first-child {
+  margin-top: 0;
+}
+
 .post #img-caption {
   margin-top: -1.5em;
   margin-bottom: 2.5em;
