@@ -120,13 +120,13 @@ This is also a part I tried to componentize. However, the communication is diffe
 
 ![curve open]({{site.baseurl}}/assets/design_system/curve open.png){:class="img-responsive"}
 
-{:#img-caption}
 A Material Design Example - Incoming Element
+{: #img-caption}
 
 ![curve close]({{site.baseurl}}/assets/design_system/curve close.png){:class="img-responsive"}
 
-{:#img-caption}
 A Material Design Example - Outgoing Element
+{: #img-caption}
 
 I'm also planning on making existing static icon library animatable, so that the transition between vector icons can be automatically drawn by OS. (Work in Progress)
 
@@ -134,5 +134,5 @@ This is what it would probably look like, animation being completely natively dr
 
 ![animated icons]({{site.baseurl}}/assets/design_system/animated icons.gif){:class="img-responsive"}
 
-{:#img-caption}
 A Material Design Example - Animated Icons
+{: #img-caption}

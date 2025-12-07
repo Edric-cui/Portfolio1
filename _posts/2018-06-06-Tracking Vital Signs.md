@@ -58,16 +58,13 @@ I redesigned the glucose module around three ideas.
 
    <!---image: before/after glucose entry screens + success state-->
    ![Glucose Module (Old)]({{site.baseurl}}/assets/medopad/glucose old.png){:class="img-responsive"}
-   {:#img-caption}
    Glucose Module (Old)
+   {: #img-caption}
 
    ![Glucose Module (New)]({{site.baseurl}}/assets/medopad/glucose new.png){:class="img-responsive"}
-   {:#img-caption}
    Glucose Module (New)
+   {: #img-caption}
 
-   ![Glucose completion checkmark animation]({{site.baseurl}}/assets/medopad/checkmark.gif){:class="img-responsive"}
-   {:#img-caption}
-   Completion screen with animated checkmark  
    <!-- CROPPING SUGGESTED: keep only the core success screen if the GIF canvas is large -->
 
 2. **Keyboard-driven input with accessible numerics**
@@ -81,8 +78,9 @@ I redesigned the glucose module around three ideas.
    The keyboard’s action key is set to **Next**, so patients move smoothly through the fields; on the last field, the keyboard collapses and the primary action is ready.
 
    ![Glucose keyboard interaction]({{site.baseurl}}/assets/medopad/keyboard action.png){:class="img-responsive"}
-   {:#img-caption}
-   Keyboard-driven numeric input and “Next” flow
+   Keyboard-driven numeric input and "Next" flow
+   {: #img-caption}
+  
 
 3. **Reviewing shortcuts with domain experts before shipping**
 
@@ -121,8 +119,8 @@ Doctors told us that inconsistent measurement conditions were one of the biggest
    I designed a simple visual sequence and worked with a motion designer to produce a lightweight vector animation that shows the person gradually moving into the correct sitting position. The animation loops slowly so patients can compare their own posture to the target one, even on a small screen.
 
    ![Blood pressure posture guidance and animation]({{site.baseurl}}/assets/medopad/bp hr animation.png){:class="img-responsive"}
-   {:#img-caption}
-   Blood pressure & heart rate posture guidance  
+   Blood pressure & heart rate posture guidance
+   {: #img-caption}
    <!-- CROPPING SUGGESTED: focus on the frames that show posture progression if the composite is very tall/wide -->
 
 2. **Exploring sound as part of the UX**
@@ -175,8 +173,8 @@ Through repeated sessions with our medical experts, I learned:
    - Encourages patients to retake the photo when it clearly doesn’t match the good example.
 
    ![Instructions on how to take photos of X-ray films]({{site.baseurl}}/assets/medopad/instructions.png){:class="img-responsive"}
-   {:#img-caption}
-   Instructions for taking photos of X-ray films  
+   Instructions for taking photos of X-ray films
+   {: #img-caption}
    <!-- CROPPING SUGGESTED: keep 3–4 key screens (intro + best/worst examples) rather than the entire long strip -->
 
 2. **Markup tools for clinicians to teach patients asynchronously**
