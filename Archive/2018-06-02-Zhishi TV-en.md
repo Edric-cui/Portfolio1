@@ -4,6 +4,7 @@ title: Zhishi TV App
 cover: tvapp-cover.jpg
 date: 2018-06-02 00:00:00
 categories: posts
+publsihed:false
 ---
 
 ## Zhishi TV - From Research to Design

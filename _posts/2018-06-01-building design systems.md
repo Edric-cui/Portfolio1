@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collection - Building Design Systems
+title: Collection - Design infrastructure
 cover: dscover.jpg
 date: 2018-06-01 00:00:00
 categories: posts
