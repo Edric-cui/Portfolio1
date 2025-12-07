@@ -1,12 +1,15 @@
 ---
 layout: post
-title: HUMA — Mobile health app
+title: HUMA - Mobile health app
 cover: medopadcover.jpeg
 date: 2018-06-06 00:00:00
 categories: posts
 ---
 
-<!-- HUMA case study v1.6 -->
+## HUMA — Mobile health app
+
+<!---v1.8-->
+
 
 ### TL;DR
 
@@ -56,16 +59,14 @@ I redesigned the glucose module around three ideas.
 
    At the end of the sequence, patients see a short **“Completed, thank you”** state with a checkmark animation. This adds a sense of closure and makes a repetitive medical task feel more like a small win instead of “just another form”. On Android, I chose an animated icon from Google’s native Material symbol set rather than a fully custom animation, so the completion moment feels familiar, lightweight to implement, and aligned with the platform’s motion language.
 
-   <!---image: before/after glucose entry screens + success state-->
+   <!---image: before/after glucose entry screens-->
    ![Glucose Module (Old)]({{site.baseurl}}/assets/medopad/glucose old.png){:class="img-responsive"}
+   {:#img-caption}
    Glucose Module (Old)
-   {: #img-caption}
 
    ![Glucose Module (New)]({{site.baseurl}}/assets/medopad/glucose new.png){:class="img-responsive"}
+   {:#img-caption}
    Glucose Module (New)
-   {: #img-caption}
-
-   <!-- CROPPING SUGGESTED: keep only the core success screen if the GIF canvas is large -->
 
 2. **Keyboard-driven input with accessible numerics**
 
@@ -78,9 +79,8 @@ I redesigned the glucose module around three ideas.
    The keyboard’s action key is set to **Next**, so patients move smoothly through the fields; on the last field, the keyboard collapses and the primary action is ready.
 
    ![Glucose keyboard interaction]({{site.baseurl}}/assets/medopad/keyboard action.png){:class="img-responsive"}
-   Keyboard-driven numeric input and "Next" flow
-   {: #img-caption}
-  
+   {:#img-caption}
+   Keyboard-driven numeric input and “Next” flow
 
 3. **Reviewing shortcuts with domain experts before shipping**
 
@@ -96,6 +96,12 @@ I redesigned the glucose module around three ideas.
 - Clinicians received more explicit entries (time plus eating status) and fed back that trends were easier to interpret over time.  
 - The input pattern, success state, and monospaced numeric style became a reusable template in other vitals flows.
 
+The same emphasis on reducing friction in repetitive data entry also shaped adjacent modules such as the medication tracker, where patients can search, filter, and add multiple medicines at once:
+
+![Medication tracker and search]({{site.baseurl}}/assets/medopad/med tracker.png){:class="img-responsive"}
+{:#img-caption}
+Medication tracker and search using compact list layout and fuzzy search
+
 ---
 
 ## Selected focus 2 — Standardising blood pressure & heart rate
@@ -110,6 +116,12 @@ From discussions with our in-house medical experts, I learned that blood pressur
 
 Doctors told us that inconsistent measurement conditions were one of the biggest sources of “noise” in their dashboards, making it hard to tell whether a change was clinical or just “bad measurement hygiene”.
 
+During a broader rebrand from **Medopad** to **HUMA**, I redesigned the blood pressure module’s UI to bring it in line with the new visual language while keeping the validated interaction patterns and posture guidance intact:
+
+![Blood pressure module overview (rebranded)]({{site.baseurl}}/assets/medopad/blood pressure overview.png){:class="img-responsive"}
+{:#img-caption}
+Blood pressure module overview after the HUMA rebrand
+
 ### Interaction decisions
 
 1. **Sitting-posture animation that turns protocol into a clear mental model**
@@ -119,8 +131,8 @@ Doctors told us that inconsistent measurement conditions were one of the biggest
    I designed a simple visual sequence and worked with a motion designer to produce a lightweight vector animation that shows the person gradually moving into the correct sitting position. The animation loops slowly so patients can compare their own posture to the target one, even on a small screen.
 
    ![Blood pressure posture guidance and animation]({{site.baseurl}}/assets/medopad/bp hr animation.png){:class="img-responsive"}
-   Blood pressure & heart rate posture guidance
-   {: #img-caption}
+   {:#img-caption}
+   Blood pressure & heart rate posture guidance  
    <!-- CROPPING SUGGESTED: focus on the frames that show posture progression if the composite is very tall/wide -->
 
 2. **Exploring sound as part of the UX**
@@ -162,6 +174,13 @@ Through repeated sessions with our medical experts, I learned:
 - Common failure modes included glare on the critical bone area, angles that distorted proportions, and images where part of the bone was cropped out.  
 - Doctors were worried they would receive a large volume of images that were clinically unusable, with no way to educate families on how to improve.
 
+The high-level flow below summarises how we moved from the ideal (direct integration) to a second-best path based on patient-taken photos and in-app guidance:
+
+![X-ray photo capture user flow]({{site.baseurl}}/assets/medopad/xray userflow.png){:class="img-responsive"}
+{:#img-caption}
+User flow for X-ray photo capture, from ideal integration to second-best mobile photo path  
+<!-- CROPPING SUGGESTED: ensure the text in each step remains legible on smaller screens -->
+
 ### Interaction decisions
 
 1. **Guided capture with before/after examples**
@@ -173,8 +192,8 @@ Through repeated sessions with our medical experts, I learned:
    - Encourages patients to retake the photo when it clearly doesn’t match the good example.
 
    ![Instructions on how to take photos of X-ray films]({{site.baseurl}}/assets/medopad/instructions.png){:class="img-responsive"}
-   Instructions for taking photos of X-ray films
-   {: #img-caption}
+   {:#img-caption}
+   Instructions for taking photos of X-ray films  
    <!-- CROPPING SUGGESTED: keep 3–4 key screens (intro + best/worst examples) rather than the entire long strip -->
 
 2. **Markup tools for clinicians to teach patients asynchronously**
@@ -220,13 +239,18 @@ This project sharpened how I design in clinical contexts:
 - **Research doesn’t always mean talking to end users first.**  
   In several cases, medical experts were the most effective proxy for patient behaviour and constraints, especially when real-world patient access was limited.
 
+- **Collaboration across teams is a core design skill.**  
+  Reviewing flows with domain experts, listening carefully when they push back, and translating their concerns into concrete interaction changes helped me avoid mistakes that could have damaged data reliability.
+
 - **Interaction design and data quality are tightly linked.**  
   Small choices — from numeric typography to whether fields auto-update — can be the difference between nice-looking UI and data that doctors can genuinely trust.
 
-- **I’m willing to trade convenience for reliability when stakes are high.**  
+- **The need to trade convenience for reliability when stakes are high.**  
   In both glucose tracking and X-ray uploads, I consciously chose slightly more deliberate steps to protect long-term clinical value.
 
-- **Collaboration with clinicians is a core design skill.**  
-  Reviewing flows with domain experts, listening carefully when they push back, and translating their concerns into concrete interaction changes helped me avoid mistakes that could have damaged data reliability.
 
-This is the story I use when I want to show how I handle UX research, interaction design, and medical collaboration in a high-stakes mobile medical app. System design, telemetry, and detailed documentation from this work live in a separate case study on design systems and infra in health tech.
+This is a project to show how I handle UX research, interaction design, and medical collaboration in a high-stakes mobile medical app. 
+
+System design, telemetry, and detailed documentation from this work live in a separate case study on design systems and infr.
+
+
