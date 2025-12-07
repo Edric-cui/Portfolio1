@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HUMA — Mobile health app UX
+title: HUMA — Mobile health app
 cover: medopadcover.jpeg
 date: 2018-06-06 00:00:00
 categories: posts
