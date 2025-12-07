@@ -54,7 +54,7 @@ The main tensions in this role:
 
 ### Design-system foundations: Fluent 2 and Fabric design system
 
-#### Contributing to Fluent 2 primitives
+### Contributing to Fluent 2 primitives
 
 Fluent 2 underpins many Microsoft products and provides primitives such as Tree, dialogs, drawers, and pickers. I worked with the Fluent design system team and Fabric product teams to ensure these primitives fit complex, real workloads, not just simple examples.
 
@@ -78,7 +78,7 @@ In addition to Tree, I contributed to richer dialogs and drawers and to the beha
 
 ---
 
-#### File explorer: a universal, scalable component
+### File explorer: a universal, scalable component
 
 I owned the file explorer component end to end:
 
@@ -99,7 +99,7 @@ The ability to switch between compact and advanced modes lets users choose betwe
 
 Beyond core components, I work on Fabric-specific patterns that sit on top of Fluent 2 and are used by many workloads across Azure and Fabric.
 
-#### Workspaces, workflows, and folders
+### Workspaces, workflows, and folders
 
 Workspaces are the primary collaboration unit in Fabric: a shared place to create and manage items such as lakehouses, warehouses, pipelines, and reports. Within a workspace, users need to organise artefacts and also understand how they connect to each other in real processes.
 
@@ -139,7 +139,7 @@ In beta testing, the workflow feature received consistently positive feedback an
 
 ---
 
-#### Notifications and Monitoring hub: from small request to shared pattern
+### Notifications and Monitoring hub: from small request to shared pattern
 
 The Monitoring hub is a central place where users can monitor Fabric activities (pipelines, dataflows, warehouses, notebooks, semantic models, Spark jobs, and more) across workspaces.
 
@@ -188,7 +188,7 @@ Result:
 
 ---
 
-#### Contextual menus and settings
+### Contextual menus and settings
 
 I also worked on contextual menus and settings, which appear across many surfaces.
 
