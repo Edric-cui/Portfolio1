@@ -81,8 +81,8 @@ The solutions were not only applied to this module, but to other input modules a
 
 ![Glucose Old]({{site.baseurl}}/assets/medopad/glucose old.png){:class="img-responsive"}
 
-{:#img-caption}
 Glucose Module (Old)
+{:#img-caption}
 <br> To zoom, right-click "Open Image in New Tab"
 
 - The layout used the GutenBerg Diagram as a reference.
@@ -99,8 +99,8 @@ Glucose Module (Old)
 
 ![Glucose New]({{site.baseurl}}/assets/medopad/glucose new.png){:class="img-responsive"}
 
-{:#img-caption}
 Glucose Module (New)
+{:#img-caption}
 <br> To zoom, right-click "Open Image in New Tab"
 
 ### User feedback
@@ -169,19 +169,19 @@ I designed this module as well as the calculation methods and logic behind it. I
 
 ![Z-Score Wireframe]({{site.baseurl}}/assets/medopad/zscore wireframe.png){:class="img-responsive"}
 
-{:#img-caption}
 Height Z-Score Wireframe
+{:#img-caption}
 
 ![Z-score Module]({{site.baseurl}}/assets/medopad/zscore module.png){:class="img-responsive"}
 
-{:#img-caption}
 Height Z-Score Module Screenshots
+{:#img-caption}
 <br> To zoom, right-click "Open Image in New Tab"
 
 ![Z-score BDD]({{site.baseurl}}/assets/medopad/zscore bdd.png){:class="img-responsive"}
 
-{:#img-caption}
 BDD (Behaviour-Driven-Documentation) for Height Z-Score (Part)
+{:#img-caption}
 <br> To zoom, right-click "Open Image in New Tab"
 
 ### 3.2 Photo Module for X-ray films
@@ -220,8 +220,8 @@ connect to hospital's HIS system and acquire source image. This is currently imp
 
 ![module overview]({{site.baseurl}}/assets/medopad/instructions.png){:class="img-responsive"}
 
-{:#img-caption}
 Instructions on how to take photos of X-ray films
+{:#img-caption}
 <br> To zoom, right-click "Open Image in New Tab"
 
 ### 3.3 Medication tracker
@@ -234,8 +234,8 @@ Improvements I designed:
 
 ![medication tracker]({{site.baseurl}}/assets/medopad/med tracker.png){:class="img-responsive"}
 
-{:#img-caption}
 Medication tracker and search
+{:#img-caption}
 <br> To zoom, right-click "Open Image in New Tab"
 
 > **"In other apps, I had to scroll a long list to locate what I'm looking for, but now this needs  only a few characters"**
@@ -263,8 +263,8 @@ In-line reply allow users to complete certain action without opening the app. It
 
 ![Notifications BDD]({{site.baseurl}}/assets/medopad/notification bdd.png){:class="img-responsive"}
 
-{:#img-caption}
 BDD (Behaviour-Driven-Documentation) for Push Notification
+{:#img-caption}
 <br> To zoom, right-click "Open Image in New Tab"
 
 #### Solution I proposed
@@ -275,8 +275,8 @@ If they have taken their meds already, then they can tap "taken" without opening
 
 ![iOS Notifications]({{site.baseurl}}/assets/medopad/ios notifications.jpg){:class="img-responsive"}
 
-{:#img-caption}
 iOS Notifications
+{:#img-caption}
 <br> To zoom, right-click "Open Image in New Tab"
 
 I added in-line reply for users to quickly submit their journal, because most of the time patient only need to write a few words.
@@ -285,8 +285,8 @@ For modules that require external devices, users can snooze the notification. If
 
 ![Android Notifications]({{site.baseurl}}/assets/medopad/android notifications.jpg){:class="img-responsive"}
 
-{:#img-caption}
 Android Notifications
+{:#img-caption}
 <br> To zoom, right-click "Open Image in New Tab"
 
 # Learnings
