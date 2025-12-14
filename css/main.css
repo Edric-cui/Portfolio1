@@ -23,6 +23,8 @@
   --text-separator: #555;
   --text-colophon: #777;
   --text-terminal: #FFF;
+  --text-code: #d97706;
+  --text-table-header: #2f3033;
   --border-primary: #e7e7e7;
   --border-secondary: #dfe2e5;
   --border-code: #ddd;
@@ -49,6 +51,8 @@
   --text-separator: #888888;
   --text-colophon: #999999;
   --text-terminal: #e0e0e0;
+  --text-code: #f59e0b;
+  --text-table-header: #ffffff;
   --border-primary: #404040;
   --border-secondary: #4a4a4a;
   --border-code: #555;
@@ -167,11 +171,19 @@ hr {
 
 .tagline {
   width: 100%;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   font-weight: 500;
-  text-align: center;
-  margin-top: 0.5em;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
   display: block;
+}
+
+.post h2.tagline {
+  font-size: 1.4em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0;
 }
 
 .nameTitle {
@@ -279,6 +291,8 @@ hr {
 table {
   padding: 0;
   border-collapse:collapse;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 table tr {
   border-top: 1px solid var(--border-secondary);
@@ -297,6 +311,8 @@ table tr th {
   text-align: left;
   margin: 0;
   padding: 6px 13px;
+  color: var(--text-table-header);
+  transition: color 0.3s ease;
 }
 
 table tr td {
@@ -420,9 +436,13 @@ table tr th :last-child, table tr td :last-child {
 
 .post code {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 0.9em;
   border: 1px solid var(--border-code);
   background-color: var(--bg-code);
-  padding: 0.2em;
+  color: var(--text-code);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .post pre code {
