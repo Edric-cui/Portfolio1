@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Building Design Infrastructure: Tokens, Components, and Systems
-cover: ds-collection-cover.jpg
-date: 2025-12-14 00:00:00
+title: Design Infrastructure and Systems Works
+cover: dscover.jpg
+date: 2025-12-13 00:00:00
 categories: posts
 ---
 
@@ -22,12 +22,9 @@ categories: posts
 ## Contents
 
 1. Commune Design System (tokens, components, governance, and outcomes)
-
-1. Microsoft Fabric: shared patterns at scale (reuse, constraints, craft)
-
-1. Toolchain: Tokens Studio → Style Dictionary → Storybook, plus AI-assisted prototyping experiments
-
-1. Mobile systems: HUMA and LeetCode (localization and motion strategy)
+2. Microsoft Fabric: shared patterns at scale (reuse, constraints, craft)
+3. Toolchain: Tokens Studio → Style Dictionary → Storybook, plus AI-assisted prototyping experiments
+4. Mobile systems: HUMA and LeetCode (localization and motion strategy)
 
 ---
 
@@ -72,7 +69,7 @@ This is the clearest product-level example I can show today, because it demonstr
 <!---image: Commune homepage navigation redesign — before/after-->
 <!---image: navigation IA change diagram (optional)-->
 
-### 1) Token architecture: 2 layers × 2 modes
+### 1. Token architecture: 2 layers × 2 modes
 
 The foundation is a 2-layer structure:
 
@@ -90,18 +87,18 @@ It supports 2 modes (light/dark) so the same semantic token resolves correctly w
 | --- | --- | --- | --- |
 | Color Primitives | Primitive | Base palette ramps | Light + dark modes |
 | Color Semantics | Semantic | Intent tokens for UI | Light + dark modes |
-| Float Semantics | Semantic | Surface and overlay tokens | Used for menus, dialogs, toasts |
-| Density | Semantic | Spacing density presets | Planned / not in use yet |
-| Typography Primitives | Primitive | Type scales and raw sizes | Light + dark modes |
-| Typography Semantics | Semantic | Intent tokens (body, caption, heading) | Designed with localization in mind |
-| Elevation Floats | Semantic | Elevation and shadow for overlays | Some tokens are design-only |
+| Float Semantics | Semantic | Nemeric intent tokens | Used for spacing, sizing, width, radius, opactity |
+| Density | Semantic | Spacing density presets | To reduce or increase spacing between elements  |
+| Typography Primitives | Primitive | Font family names and raw weight/size values | Latin, CJK and monospace (tabular) |
+| Typography Semantics | Semantic | Intent tokens (body, caption, heading, etc.) | Latin + CJK modes|
+| Elevation Floats | Semantic | Elevation and shadow for overlays | For Z-index visual hierarchy |
 
 #### Naming hygiene (designed for humans and machines)
 
 We keep naming predictable so tokens can be reliably consumed by code and tooling:
 
 - Primitive tokens are value-oriented and contain hard-coded values
-- Semantic tokens reflect intent and are role-based, for example `foreground/brand/onprimary`
+- Semantic tokens reflect intent and are role-based, for example `foreground/brand-on-neutral/rest`
 
 <!---image: token naming examples (primitive vs semantic)-->
 <!---image: example mapping showing semantics resolving to primitives in light and dark modes-->
@@ -115,7 +112,7 @@ Beyond basic theming, I explored role-based color tokens to support controlled c
 
 The key idea: user choices map to roles, then roles map into vetted semantic tokens so customization stays coherent and accessible
 
-### 2) Component library: interactive by default
+### 2. Component library: interactive by default
 
 We built a component library designed to behave like code:
 
@@ -137,7 +134,7 @@ For most components, I designed and documented:
 
 This reduces implementation ambiguity because state behavior becomes a reviewable artifact
 
-### 3) System complexity example: notifications (toast + snackbar)
+### 3. System complexity example: notifications (toast + snackbar)
 
 Button still works as a simple “token → component → code” example, but notifications are where system complexity shows up clearly
 
@@ -161,7 +158,7 @@ The 2 hardest parts of the system, and the ones I intentionally specified, are:
 <!---image: cross-surface behavior examples (page vs pane vs embedded area)-->
 <!---image: Storybook page showing toast/snackbar variants and props-->
 
-### 4) Governance and leadership
+### 4. Governance and leadership
 
 I treat design infrastructure as an organization problem, not only a design problem
 
@@ -200,7 +197,7 @@ What you’ll see here:
 <!---image: Fabric system overview (where patterns show up across hubs)-->
 <!---image: example screens showing shared patterns across different Fabric surfaces-->
 
-### 1) Reuse in the wild: toast as a shared feedback pattern
+### 1. Reuse in the wild: toast as a shared feedback pattern
 
 Toast became one of the most widely used patterns across Fabric because it is versatile and supports real-time feedback without interrupting flow
 
@@ -215,7 +212,7 @@ What I contributed to make it reusable beyond my team:
 <!---image: toast anatomy and token binding-->
 <!---image: examples of toast used across multiple Fabric surfaces-->
 
-### 2) Predictable hierarchy across panes, panels, and navigation
+### 2. Predictable hierarchy across panes, panels, and navigation
 
 Enterprise products often suffer from “same UI, different rules” across pages. I worked on standardizing pane and panel behavior, including clear hierarchy and coverage
 
@@ -223,7 +220,7 @@ Enterprise products often suffer from “same UI, different rules” across page
 <!---image: before/after: inconsistent panel behavior → standardized behavior-->
 <!---image: a11y and keyboard flow expectations for panel patterns-->
 
-### 3) Typography and localization under implementation constraints
+### 3. Typography and localization under implementation constraints
 
 I treat typography as UX plus implementation constraint:
 
@@ -234,7 +231,7 @@ I treat typography as UX plus implementation constraint:
 <!---image: typography spec excerpt with localization examples-->
 <!---image: EN vs JP string expansion in the same component or layout-->
 
-### 4) Motion as a system constraint
+### 4. Motion as a system constraint
 
 Motion is valuable only when it is performant and stable:
 
@@ -245,7 +242,7 @@ Motion is valuable only when it is performant and stable:
 <!---video: Lottie animation example-->
 <!---image: motion rules summary (durations, easing, state transitions)-->
 
-### 5) Precision craft: visually harmonizing corner radius
+### 5. Precision craft: visually harmonizing corner radius
 
 A small example that shows my detail-seeking approach: corner radius is not only a number, it’s perception
 
@@ -265,9 +262,9 @@ Design infrastructure stays healthy when design artifacts and production code st
 
 ### Tokens Studio → Style Dictionary → CSS variables
 
-1) Export Figma variables to JSON using Tokens Studio  
-2) Use Style Dictionary to generate CSS variables for web  
-3) Keep the pipeline platform-ready so the same token source can scale to native iOS and Android in the future
+1. Export Figma variables to JSON using Tokens Studio
+2. Use Style Dictionary to generate CSS variables for web
+3. Keep the pipeline platform-ready so the same token source can scale to native iOS and Android in the future
 
 <!---image: Tokens Studio plugin UI showing export settings-->
 <!---image: exported token JSON sample (sanitized)-->
@@ -293,7 +290,7 @@ We tested connecting Figma MCP to Cursor to quickly build product ideas that fol
 
 To make the system readable to tools and easier for humans, we tightened Figma hygiene:
 
-- Token naming: primitives are values, semantics are role-based, for example `foreground/brand/onprimary`
+- Token naming: primitives are values, semantics are role-based, for example `background/primary/hover`
 - Container naming: no “Frame 11238”, avoid groups, avoid absolute positioning
 - Auto layout and constraints: layout behavior is explicit and predictable
 

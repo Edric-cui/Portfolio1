@@ -6,11 +6,11 @@ date: 2020-01-01 00:00:00
 categories: posts
 ---
 
-## Microsoft Fabric — Shared UX, design systems, and cross-product patterns
-
+## Shared UX, design systems, and cross-product patterns
+{:class="tagline"}
 >Some images are unavailable for general public
 
-### TL;DR
+## TL;DR
 
 - Microsoft Fabric is an end-to-end analytics SaaS platform that unifies data movement, engineering, warehousing, real-time analytics, data science, and BI in a single experience on top of OneLake.
 - On the Shared UX team, I work at the platform layer: cross-product navigation and information architecture, shared patterns, and accessibility, so dozens of teams feel like one coherent product.
@@ -21,7 +21,7 @@ categories: posts
 ![Fabric structure]({{site.baseurl}}/assets/fabric/whatsfabric.jpg){:class="img-responsive"}
 ---
 
-### Context and my role
+## Context and my role
 
 Microsoft Fabric is an enterprise-ready, end-to-end analytics platform that unifies data ingestion, transformation, real-time analytics, warehousing, data science, and business intelligence in a single SaaS experience. All workloads share OneLake, a unified data lake that behaves like “OneDrive for data” across the organisation.
 
@@ -52,7 +52,7 @@ The main tensions in this role:
 
 ---
 
-### Design-system foundations: Fluent 2 and Fabric design system
+## Design-system foundations: Fluent 2 and Fabric design system
 
 ### Contributing to Fluent 2 primitives
 
@@ -78,7 +78,7 @@ In addition to Tree, I contributed to richer dialogs and drawers and to the beha
 
 ---
 
-### File explorer: a universal, scalable component
+## File explorer: a universal, scalable component
 
 I owned the file explorer component end to end:
 
@@ -95,7 +95,7 @@ The ability to switch between compact and advanced modes lets users choose betwe
 
 ---
 
-### Patterns that unblock teams
+## Patterns that unblock teams
 
 Beyond core components, I work on Fabric-specific patterns that sit on top of Fluent 2 and are used by many workloads across Azure and Fabric.
 
@@ -139,7 +139,7 @@ In beta testing, the workflow feature received consistently positive feedback an
 
 ---
 
-### Notifications and Monitoring hub: from small request to shared pattern
+## Notifications and Monitoring hub: from small request to shared pattern
 
 The Monitoring hub is a central place where users can monitor Fabric activities (pipelines, dataflows, warehouses, notebooks, semantic models, Spark jobs, and more) across workspaces.
 
@@ -188,7 +188,7 @@ Result:
 
 ---
 
-### Contextual menus and settings
+## Contextual menus and settings
 
 I also worked on contextual menus and settings, which appear across many surfaces.
 
@@ -205,7 +205,7 @@ For settings, I helped define the information architecture so product teams coul
 
 ---
 
-### Accessibility and responsive guardrails
+## Accessibility and responsive guardrails
 
 Accessibility and responsiveness are core requirements in Fabric.
 
@@ -222,7 +222,7 @@ These guardrails are documented so teams do not have to re-solve accessibility o
 
 ---
 
-### Outcomes and impact
+## Outcomes and impact
 
 Shared UX work is rarely tied to a single feature launch, but it has clear impact across teams and workloads:
 
@@ -243,7 +243,7 @@ Shared UX work is rarely tied to a single feature launch, but it has clear impac
 
 ---
 
-### What I would change and what comes next
+## What I would change and what comes next
 
 Not every decision aged perfectly.
 
@@ -272,7 +272,7 @@ The goal is to move from a centralised dashboard to something closer to a centra
 
 ---
 
-### Self-reflection
+## Self-reflection
 
 **Impact metrics**
 
