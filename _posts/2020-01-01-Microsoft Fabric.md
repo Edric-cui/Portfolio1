@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microsoft Fabric
+title: Microsoft Fabric - Data Analytics SaaS
 cover: fabric cover.jpg
 date: 2020-01-01 00:00:00
 categories: posts
