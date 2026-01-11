@@ -1,2 +1,3 @@
 _site
 vendor/**
+assets/.DS_Store
