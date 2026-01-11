@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-projector",
+  "name": "film-projector-portfolio",
   "type": "module",
   "version": "0.1.0",
   "scripts": {
@@ -10,16 +10,21 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.15.0",
-    "@astrojs/react": "^3.6.0",
+    "@astrojs/react": "^3.3.0",
+    "@astrojs/mdx": "^2.0.0",
     "@astrojs/tailwind": "^5.1.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "astro": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "gsap": "^3.12.0",
+    "framer-motion": "^10.16.0",
+    "howler": "^2.2.4"
   },
   "devDependencies": {
-    "@types/react": "^18.3.5",
-    "@types/react-dom": "^18.3.0",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.5.4"
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/howler": "^2.2.11",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.0"
   }
 }
