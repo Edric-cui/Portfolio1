@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-73sf25f7> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="fabric cover.jpg"><title>Microsoft Fabric - Data Analytics SaaS | Jiachen Portfolio</title><!-- Favicon --><link rel="icon" type="image/png" href="/Portfolio1favicon.png"><!-- Prefers reduced motion check --><script>
+      // Check for reduced motion preference early
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('reduce-motion');
+      }
+    </script><style>.prose[data-astro-cid-pabrlgtt]{color:var(--tw-prose-body)}.prose[data-astro-cid-pabrlgtt] code[data-astro-cid-pabrlgtt]{background-color:#ffffff1a;padding:.125rem .375rem;border-radius:.25rem;font-size:.875em}
+</style>
+<link rel="stylesheet" href="/Portfolio1/_astro/index.CDtG-h5T.css"></head> <body class="min-h-screen bg-stage text-text-primary font-body" data-astro-cid-73sf25f7> <!-- 
+      ATMOSPHERE LAYERS (FX plates go here)
+      These sit BEHIND the projected screen, never over body text.
+      FX plates will be added in future slices; slots ready for integration.
+    --> <div class="atmosphere-layers fixed inset-0 pointer-events-none z-0" aria-hidden="true" data-astro-cid-73sf25f7> <!-- FX plate slot: background grain/texture --> <div class="fx-layer fx-grain" data-astro-cid-73sf25f7></div> <!-- FX plate slot: vignette/edge effects --> <div class="fx-layer fx-vignette" data-astro-cid-73sf25f7></div> <!-- FX plate slot: light leak/projector glow --> <div class="fx-layer fx-glow" data-astro-cid-73sf25f7></div> </div> <!-- 
+      PROJECTED SCREEN (main content area)
+      This is the stable reading zone. NO layout shift allowed here.
+      Headline, subhead, and first paragraph must remain stable.
+      Responsive: mobile-first, centered on desktop.
+    --> <div class="projected-screen relative z-10 mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 min-h-screen" data-astro-cid-73sf25f7> <!-- Main content slot --> <main class="screen-content" data-astro-cid-73sf25f7>  <article class="space-y-8" data-astro-cid-pabrlgtt> <header class="space-y-4" data-astro-cid-pabrlgtt> <h1 class="text-4xl font-bold text-text-primary" data-astro-cid-pabrlgtt>Microsoft Fabric - Data Analytics SaaS</h1> <div class="cover-image mt-4" data-astro-cid-pabrlgtt> <img src="/Portfolio1assets/fabric cover.jpg" alt="Microsoft Fabric - Data Analytics SaaS" class="w-full max-w-2xl rounded-lg" data-astro-cid-pabrlgtt> </div> </header> <!-- Content area --> <div class="prose prose-invert prose-neutral max-w-none 
+                prose-headings:text-text-primary
+                prose-p:text-text-secondary
+                prose-a:text-text-primary prose-a:underline hover:prose-a:text-text-primary
+                prose-strong:text-text-primary
+                prose-code:text-text-primary prose-code:bg-neutral-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+                prose-img:rounded-lg prose-img:my-8" data-astro-cid-pabrlgtt> <h2 id="shared-ux-design-systems-and-cross-product-patterns">Shared UX, design systems, and cross-product patterns</h2>
+<blockquote>
+<p>Some images are unavailable for general public</p>
+</blockquote>
+<h2 id="tldr">TL;DR</h2>
+<ul>
+<li>Microsoft Fabric is an end-to-end analytics SaaS platform that unifies data movement, engineering, warehousing, real-time analytics, data science, and BI in a single experience on top of OneLake.</li>
+<li>On the Shared UX team, I work at the platform layer: cross-product navigation and information architecture, shared patterns, and accessibility, so dozens of teams feel like one coherent product.</li>
+<li>I contribute to Fluent 2 components (Tree, dialogs/drawers, date and time pickers, file explorer) and extend them into Fabric-specific patterns for workspaces, workflows and folders, notifications, monitoring, contextual menus, and settings.</li>
+<li>These patterns are used by more than ten workloads across Azure and Fabric experiences, and several components I worked on are part of Fluent 2 and Fabric’s core design system.</li>
+<li>This work unblocked key features such as the Monitoring hub and workspace workflows/folders, reduced UX inconsistency, and gave teams decision trees and guardrails so they can ship faster with fewer one-off solutions.</li>
+</ul>
+<h2 id=""><img src="/Portfolio1/assets/fabric/whatsfabric.jpg" alt="Fabric structure"></h2>
+<h2 id="context-and-my-role">Context and my role</h2>
+<p>Microsoft Fabric is an enterprise-ready, end-to-end analytics platform that unifies data ingestion, transformation, real-time analytics, warehousing, data science, and business intelligence in a single SaaS experience. All workloads share OneLake, a unified data lake that behaves like “OneDrive for data” across the organisation.</p>
+<p>For users, this means:</p>
+<ul>
+<li>One place to work with data, from raw ingestion to dashboards.</li>
+<li>Persona-optimised workloads in an integrated UI.</li>
+<li>Central governance, monitoring, and security.</li>
+</ul>
+<p>For the Shared UX team, it means:</p>
+<ul>
+<li>We have the chance to make Fabric feel like one product, not a bundle of tools.</li>
+<li>We also carry the risk that if each workload team designs in isolation, UX becomes fragmented and hard to learn.</li>
+</ul>
+<p>In this team, I focus on:</p>
+<ul>
+<li>Cross-product information architecture, navigation, and hierarchy.</li>
+<li>Shared patterns and components built on Fluent 2, Microsoft’s design system.</li>
+<li>Consistency, scalability, and accessibility across workloads.</li>
+</ul>
+<p>The main tensions in this role:</p>
+<ul>
+<li>Keeping UX standards high across many teams with different roadmaps.</li>
+<li>Balancing a single pattern set with the flexibility needed for edge cases.</li>
+<li>Communicating decisions so designers, PMs, and engineers see UX guardrails as an enabler, not a blocker.</li>
+</ul>
+<hr>
+<h2 id="design-system-foundations-fluent-2-and-fabric-design-system">Design-system foundations: Fluent 2 and Fabric design system</h2>
+<h3 id="contributing-to-fluent-2-primitives">Contributing to Fluent 2 primitives</h3>
+<p>Fluent 2 underpins many Microsoft products and provides primitives such as Tree, dialogs, drawers, and pickers. I worked with the Fluent design system team and Fabric product teams to ensure these primitives fit complex, real workloads, not just simple examples.</p>
+<p><strong>Tree and hierarchical structures</strong></p>
+<p>In Fabric, hierarchical data appears everywhere: workspaces, folders, artefact collections, job groups. I helped analyse real usage and define Tree behaviour, including drag and drop and non-editable areas.</p>
+<p>A representative edge case: a user drags a pipeline from a shared, read-only workspace into a personal workspace and tries to drop it between two items that belong to a protected system folder.</p>
+<p>This scenario touches multiple behaviours:</p>
+<ul>
+<li>The drop target must clearly communicate that the source workspace is read-only.</li>
+<li>The Tree must distinguish between valid and invalid drop zones within the same visual list.</li>
+<li>The user must understand what happens when moving an item across workspaces, including any implicit permission changes or limitations.</li>
+</ul>
+<p>By working through cases like this with engineers, I helped define how the Tree component handles valid moves, blocked moves, and disabled drop targets in a way that is predictable for users and reusable for other products.</p>
+<p>This Tree work feeds into Fluent 2’s Tree component, so other products can reuse the same interaction model without re-solving these edge cases.</p>
+<p>In addition to Tree, I contributed to richer dialogs and drawers and to the behaviour and visual refresh of date and time pickers, aligning them with Fluent 2 while keeping them usable in dense enterprise layouts.</p>
+<hr>
+<h2 id="file-explorer-a-universal-scalable-component">File explorer: a universal, scalable component</h2>
+<p>I owned the file explorer component end to end:</p>
+<ul>
+<li>Designed it to be universal across workloads and scalable to large numbers of artefacts.</li>
+<li>Worked closely with engineers across multiple iterations to handle edge cases and performance constraints.</li>
+<li>Defined a dual-mode model:
+<ul>
+<li>Compact mode for quick scanning and simple actions.</li>
+<li>Advanced mode for precise navigation, rich metadata, and complex operations.</li>
+</ul>
+</li>
+</ul>
+<p>The ability to switch between compact and advanced modes lets users choose between speed and control without leaving the component. This reduces the need for separate “simple” and “advanced” tools and gives teams a single, flexible building block.</p>
+<hr>
+<h2 id="patterns-that-unblock-teams">Patterns that unblock teams</h2>
+<p>Beyond core components, I work on Fabric-specific patterns that sit on top of Fluent 2 and are used by many workloads across Azure and Fabric.</p>
+<h3 id="workspaces-workflows-and-folders">Workspaces, workflows, and folders</h3>
+<p>Workspaces are the primary collaboration unit in Fabric: a shared place to create and manage items such as lakehouses, warehouses, pipelines, and reports. Within a workspace, users need to organise artefacts and also understand how they connect to each other in real processes.</p>
+<p>I focused on three related areas:</p>
+<ul>
+<li>Clarifying the role of workspaces as the central organisational layer.</li>
+<li>Designing workflow views that connect artefacts into task flows.</li>
+<li>Introducing folders inside workspaces so users can structure large collections of items and keep workflows readable.</li>
+</ul>
+<p><strong>Before</strong></p>
+<p>A common onboarding story was a new team member trying to understand “how things are organised” in a workspace. To build a mental model, they had to:</p>
+<ul>
+<li>Read through internal documentation where each team described its own storage conventions.</li>
+<li>Jump between multiple files and artefact pages to reconstruct how items related to each other.</li>
+<li>Ask existing team members to confirm whether they were looking at the right versions.</li>
+</ul>
+<p>Even with that effort, people still made mistakes: duplicating artefacts, editing the wrong item, or missing a critical dependency. Items were hard to find, hard to relocate, and the logic behind the structure often lived in people’s heads and private docs.</p>
+<p>We even had internal training sessions specifically on “how to store and name things” in workspaces. New joiners needed a dedicated walkthrough to become productive.</p>
+<p><strong>After</strong></p>
+<p>With workflows and folders, the item organisation and flows are visualised in an interactive view:</p>
+<ul>
+<li>The workflow view shows how artefacts relate to each other along a chain, so users can see where data comes from and where it goes.</li>
+<li>Folders give teams a way to cluster related artefacts, so workflows stay readable even as the number of items grows.</li>
+<li>Users can find and relocate items from the same surface instead of hunting through multiple lists and docs.</li>
+</ul>
+<p>In user sessions and internal pilots, people described this as “the feature we’ve been waiting for.” Teams that previously ran full training sessions on item storage now use the workflow view as a five-minute visual explanation: they open a workspace, walk through the main flows once, and new joiners can explore the details themselves.</p>
+<p>In beta testing, the workflow feature received consistently positive feedback and strong satisfaction scores. Users appreciated being able to see how artefacts relate to each other in a visual, navigable way, instead of keeping that knowledge in separate documents or scripts.</p>
+<hr>
+<h2 id="notifications-and-monitoring-hub-from-small-request-to-shared-pattern">Notifications and Monitoring hub: from small request to shared pattern</h2>
+<p>The Monitoring hub is a central place where users can monitor Fabric activities (pipelines, dataflows, warehouses, notebooks, semantic models, Spark jobs, and more) across workspaces.</p>
+<p>I was initially pulled in for what looked like a small request:</p>
+<blockquote>
+<p>“We need some system feedback for export and import actions.”</p>
+</blockquote>
+<p>Once I started digging, it became clear that the problem was wider.</p>
+<ol>
+<li>
+<p><strong>Audit of existing patterns</strong></p>
+<ul>
+<li>I audited Azure and Fabric experiences and found no consistent notification pattern: different products used different types of toasts, banners, inline messages, and custom solutions.</li>
+<li>This made it hard for users to build reliable mental models about what actions had succeeded, failed, or required attention.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reframing the problem</strong></p>
+<ul>
+<li>Instead of designing a one-off export/import feedback, I proposed a unified notification system for Fabric.</li>
+<li>The goal was to define one set of notification patterns that could be reused by many teams, starting with Monitoring hub.</li>
+</ul>
+</li>
+<li>
+<p><strong>Convincing leadership and securing resources</strong></p>
+<ul>
+<li>I worked with a PM to formalise the problem statement, risks, and potential benefits:
+<ul>
+<li>Clearer feedback across workloads.</li>
+<li>Less custom code for each team.</li>
+<li>Better alignment with accessibility and error-handling standards.</li>
+</ul>
+</li>
+<li>I partnered with an engineering lead to estimate the cost and technical scope.</li>
+<li>Strategically, we bundled the notification work with Monitoring hub, which was already considered a high-priority feature:
+<ul>
+<li>This gave us bargaining power: building a universal pattern would unlock Monitoring hub and benefit other workloads.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Designing the system</strong></p>
+<ul>
+<li>Defined notification types (toast, inline, banner) and when to use each.</li>
+<li>Created a decision tree to help designers and PMs pick the right pattern based on severity, persistence, and required user action.</li>
+<li>Specified placement, timing, and stacking behaviour so users would not be overwhelmed.</li>
+</ul>
+</li>
+</ol>
+<p>Result:</p>
+<ul>
+<li>The Monitoring hub team, which had been blocked by the lack of consistent system feedback, could ship with a clear, reusable notification model.</li>
+<li>Other workloads adopted the same pattern, gradually replacing ad-hoc notification solutions.</li>
+<li>In beta testing, the combined Monitoring and notification experience tested well with users, especially around clarity of “what just happened” after long-running operations.</li>
+</ul>
+<hr>
+<h2 id="contextual-menus-and-settings">Contextual menus and settings</h2>
+<p>I also worked on contextual menus and settings, which appear across many surfaces.</p>
+<p>For contextual menus, I defined guidelines for:</p>
+<ul>
+<li>Grouping actions (navigation, destructive, configuration).</li>
+<li>Structuring secondary menus.</li>
+<li>Handling multi-selection versus single selection.</li>
+</ul>
+<p>For settings, I helped define the information architecture so product teams could plug their settings into a predictable structure rather than inventing their own patterns and pages.</p>
+<hr>
+<h2 id="accessibility-and-responsive-guardrails">Accessibility and responsive guardrails</h2>
+<p>Accessibility and responsiveness are core requirements in Fabric.</p>
+<p>I worked on:</p>
+<ul>
+<li>Defining keyboard navigation patterns (Tab order, focus states, escape routes) and testing them across shared components.</li>
+<li>Ensuring layouts reflow down to small viewports (as low as 320×256 px) while remaining usable.</li>
+<li>Partnering with engineers on ARIA roles, landmarks, and headings so assistive technologies can interpret screens reliably.</li>
+</ul>
+<p>These guardrails are documented so teams do not have to re-solve accessibility or responsive behaviour from scratch each time.</p>
+<hr>
+<h2 id="outcomes-and-impact">Outcomes and impact</h2>
+<p>Shared UX work is rarely tied to a single feature launch, but it has clear impact across teams and workloads:</p>
+<ul>
+<li>
+<p>Adoption across workloads<br>
+Shared components and patterns (Tree, file explorer, navigation, workspaces, notifications, monitoring) are used by over ten workloads across Azure and Fabric experiences.</p>
+</li>
+<li>
+<p>Fluent 2 and Fabric design system integration<br>
+Components I helped shape, such as Tree behaviours, explorer patterns, and dialog/drawer and picker usage, are part of the Fluent 2 library and Fabric’s product-specific design system, making them available to other teams by default.</p>
+</li>
+<li>
+<p>Unblocking Monitoring hub and workflows<br>
+Monitoring hub, which depends on clear system feedback, shipped with a consistent notification model instead of a one-off solution.<br>
+Workspace workflows and folders made it feasible for Power BI users and other heavy users to migrate without being forced into command-line tools or endless manual reorganisation.</p>
+</li>
+<li>
+<p>Faster, more consistent decisions<br>
+Decision trees, component usage guidelines, and accessibility guardrails reduce design churn and “what should we use here?” loops, especially for newer teams.</p>
+</li>
+</ul>
+<blockquote>
+<p>I spend less time redrawing the same patterns, and more time making sure the system behind them helps other teams move faster with fewer surprises.</p>
+</blockquote>
+<hr>
+<h2 id="what-i-would-change-and-what-comes-next">What I would change and what comes next</h2>
+<p>Not every decision aged perfectly.</p>
+<p><strong>Contextual menus</strong></p>
+<p>When we first defined contextual menu patterns, we optimised strongly for cross-product consistency: strict ordering, grouping rules, and secondary menu structure. In practice:</p>
+<ul>
+<li>Many complex real-world scenarios stretched or broke those rules.</li>
+<li>Unlike the file explorer, which is intentionally universal, contextual menus serve many different purposes and surfaces.</li>
+</ul>
+<p>If I were designing this again, I would:</p>
+<ul>
+<li>Be less rigid about cross-product consistency for contextual menus.</li>
+<li>Allow more flexibility per workload while keeping a small set of shared principles, for example for destructive actions and keyboard behaviour.</li>
+</ul>
+<p><strong>Next bets: automation and AI</strong></p>
+<p>Given how fast AI and automation are evolving, my next priorities for Fabric would be:</p>
+<ul>
+<li>Designing more automation into Monitoring hub, so users do not have to manually watch long lists of runs or read long tables of metrics.</li>
+<li>Reducing manual workspace switching and repeated scanning of metrics by surfacing anomalies and recommended actions proactively.</li>
+</ul>
+<p>The goal is to move from a centralised dashboard to something closer to a central, intelligent assistant for data operations.</p>
+<hr>
+<h2 id="self-reflection">Self-reflection</h2>
+<p><strong>Impact metrics</strong></p>
+<p>Before I left Microsoft, I had already started working with my manager on a telemetry template that would help designers better measure the impact of their work. The idea was to standardise how we track the outcomes of shared UX and design system changes, and to make it easier to use those signals to guide future iterations. Even though that project was unfinished when I left, it reflects how I want to be more proactive and structured about connecting design decisions to measurable results.</p>
+<p><strong>Conflict stories</strong></p>
+<p>The notification system story shows how I reframed a narrow request into a shared pattern and secured resources by bundling it with a high-priority feature. There are other conflicts, for example around workspace structure or contextual menus, that I can surface more clearly when I tell this story in person to show how I navigate trade-offs with peers and stakeholders.</p>
+<p><strong>System depth and readability</strong></p>
+<p>Shared UX work naturally invites a lot of detail. When I talk about this project, I focus on a small set of high-leverage areas—Fluent 2 primitives, file explorer, workspaces, workflows and folders, notifications and Monitoring hub—and let other patterns play a supporting role. I want to keep improving how I choose and frame those examples so they stay understandable to people who are not specialists in design systems or Fabric.</p> </div> </article>  </main> </div> <!-- 
+      CONTROLS AREA
+      Sound toggle and other controls go here.
+    --> <div class="controls fixed bottom-4 right-4 z-50" data-astro-cid-73sf25f7> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="ZYllkb" prefix="r1" component-url="/Portfolio1/_astro/Controls.DRD6rz9j.js" component-export="default" renderer-url="/Portfolio1/_astro/client.nc8uITnr.js" props="{&quot;data-astro-cid-73sf25f7&quot;:[0,true]}" ssr client="load" opts="{&quot;name&quot;:&quot;Controls&quot;,&quot;value&quot;:true}" await-children><button class="sound-toggle p-3 bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-600 " aria-label="Enable sound" title="Sound: Off"><svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path></svg></button><!--astro:end--></astro-island> </div> </body></html> 

@@ -10,6 +10,9 @@
  * - Mobile-first responsive design
  */
 
+import Controls from '../components/Controls';
+import '../styles/global.css';
+
 interface Props {
   title: string;
   description?: string;
@@ -28,7 +31,7 @@ const baseUrl = import.meta.env.BASE_URL;
     <title>{title} | Jiachen Portfolio</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href={`${baseUrl}favicon.png`} />
+    <link rel="icon" type="image/png" href={`${baseUrl}/favicon.png`} />
     
     <!-- Prefers reduced motion check -->
     <script is:inline>
@@ -39,11 +42,11 @@ const baseUrl = import.meta.env.BASE_URL;
     </script>
   </head>
   
-  <body class="min-h-screen bg-neutral-950 text-neutral-100">
+  <body class="min-h-screen bg-stage text-text-primary font-body">
     <!-- 
       ATMOSPHERE LAYERS (FX plates go here)
       These sit BEHIND the projected screen, never over body text.
-      Placeholder slots for S1+ implementation.
+      FX plates will be added in future slices; slots ready for integration.
     -->
     <div class="atmosphere-layers fixed inset-0 pointer-events-none z-0" aria-hidden="true">
       <!-- FX plate slot: background grain/texture -->
@@ -60,8 +63,9 @@ const baseUrl = import.meta.env.BASE_URL;
       PROJECTED SCREEN (main content area)
       This is the stable reading zone. NO layout shift allowed here.
       Headline, subhead, and first paragraph must remain stable.
+      Responsive: mobile-first, centered on desktop.
     -->
-    <div class="projected-screen relative z-10 mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <div class="projected-screen relative z-10 mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 min-h-screen">
       <!-- Main content slot -->
       <main class="screen-content">
         <slot />
@@ -70,11 +74,10 @@ const baseUrl = import.meta.env.BASE_URL;
     
     <!-- 
       CONTROLS AREA
-      Sound toggle, skip button, etc. go here in future slices.
-      Placeholder for S5+ implementation.
+      Sound toggle and other controls go here.
     -->
     <div class="controls fixed bottom-4 right-4 z-50">
-      <!-- Control components will be added in S5 -->
+      <Controls client:load />
     </div>
   </body>
 </html>
@@ -85,28 +88,56 @@ const baseUrl = import.meta.env.BASE_URL;
    * Most styling handled by Tailwind, this is for FX-specific utilities
    */
   
+  .atmosphere-layers {
+    isolation: isolate;
+  }
+  
   .fx-layer {
     position: absolute;
     inset: 0;
     pointer-events: none;
+    opacity: 0;
+    /* FX plates will be loaded here in future slices */
   }
   
-  /* Placeholder styles - actual FX plates added in S1+ */
+  /* Placeholder styles - actual FX plates will be added when assets are available
+     For now, these slots are prepared but inactive */
   .fx-grain {
-    /* Background grain texture slot */
+    /* Background grain texture slot - will use background-image when asset ready */
   }
   
   .fx-vignette {
-    /* Vignette/edge darkening slot */
+    /* Vignette/edge darkening slot - will use background-image when asset ready */
   }
   
   .fx-glow {
-    /* Projector light glow slot */
+    /* Projector light glow slot - will use background-image when asset ready */
   }
   
   /* Reduced motion: disable non-essential animations */
   :global(.reduce-motion) .fx-layer {
     animation: none !important;
     transition: none !important;
+  }
+  
+  /* Projected screen - clear visual structure */
+  .projected-screen {
+    /* Center the content area - this is the reading zone */
+    position: relative;
+  }
+  
+  /* Screen content - stable reading zone */
+  .screen-content {
+    /* Prevent layout shift */
+    min-height: 1px;
+    width: 100%;
+  }
+  
+  /* Mobile-first: ensure controls are tappable */
+  @media (max-width: 640px) {
+    .controls {
+      bottom: 1rem;
+      right: 1rem;
+    }
   }
 </style>

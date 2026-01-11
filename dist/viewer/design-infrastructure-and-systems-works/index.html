@@ -1,0 +1,276 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-73sf25f7> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="dscover.jpg"><title>Design Infrastructure and Systems Works | Jiachen Portfolio</title><!-- Favicon --><link rel="icon" type="image/png" href="/Portfolio1favicon.png"><!-- Prefers reduced motion check --><script>
+      // Check for reduced motion preference early
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('reduce-motion');
+      }
+    </script><style>.prose[data-astro-cid-pabrlgtt]{color:var(--tw-prose-body)}.prose[data-astro-cid-pabrlgtt] code[data-astro-cid-pabrlgtt]{background-color:#ffffff1a;padding:.125rem .375rem;border-radius:.25rem;font-size:.875em}
+</style>
+<link rel="stylesheet" href="/Portfolio1/_astro/index.CDtG-h5T.css"></head> <body class="min-h-screen bg-stage text-text-primary font-body" data-astro-cid-73sf25f7> <!-- 
+      ATMOSPHERE LAYERS (FX plates go here)
+      These sit BEHIND the projected screen, never over body text.
+      FX plates will be added in future slices; slots ready for integration.
+    --> <div class="atmosphere-layers fixed inset-0 pointer-events-none z-0" aria-hidden="true" data-astro-cid-73sf25f7> <!-- FX plate slot: background grain/texture --> <div class="fx-layer fx-grain" data-astro-cid-73sf25f7></div> <!-- FX plate slot: vignette/edge effects --> <div class="fx-layer fx-vignette" data-astro-cid-73sf25f7></div> <!-- FX plate slot: light leak/projector glow --> <div class="fx-layer fx-glow" data-astro-cid-73sf25f7></div> </div> <!-- 
+      PROJECTED SCREEN (main content area)
+      This is the stable reading zone. NO layout shift allowed here.
+      Headline, subhead, and first paragraph must remain stable.
+      Responsive: mobile-first, centered on desktop.
+    --> <div class="projected-screen relative z-10 mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 min-h-screen" data-astro-cid-73sf25f7> <!-- Main content slot --> <main class="screen-content" data-astro-cid-73sf25f7>  <article class="space-y-8" data-astro-cid-pabrlgtt> <header class="space-y-4" data-astro-cid-pabrlgtt> <h1 class="text-4xl font-bold text-text-primary" data-astro-cid-pabrlgtt>Design Infrastructure and Systems Works</h1> <div class="cover-image mt-4" data-astro-cid-pabrlgtt> <img src="/Portfolio1assets/dscover.jpg" alt="Design Infrastructure and Systems Works" class="w-full max-w-2xl rounded-lg" data-astro-cid-pabrlgtt> </div> </header> <!-- Content area --> <div class="prose prose-invert prose-neutral max-w-none 
+                prose-headings:text-text-primary
+                prose-p:text-text-secondary
+                prose-a:text-text-primary prose-a:underline hover:prose-a:text-text-primary
+                prose-strong:text-text-primary
+                prose-code:text-text-primary prose-code:bg-neutral-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+                prose-img:rounded-lg prose-img:my-8" data-astro-cid-pabrlgtt> <h2 id="tldr">TL;DR</h2>
+<ul>
+<li>I build design infrastructure that saves teams time, improves UX quality, and keeps multiple products aligned</li>
+<li>Primary examples: Commune DS vNext (rebrand, tokens, interactive components, governance) and Microsoft Fabric (shared patterns at scale, implementation-focused craft)</li>
+<li>I work across tokens, components, and the design→code toolchain, including AI-assisted prototyping experiments to boost iteration speed</li>
+<li>I lead DS work by tutoring designers, aligning with front-end engineers on APIs and structure, and writing durable internal documentation</li>
+</ul>
+<blockquote>
+<p>Note: a few legacy artifacts are in CN/JP. Captions summarize the takeaway, so you don’t need to read the labels</p>
+</blockquote>
+<hr>
+<h2 id="contents">Contents</h2>
+<ol>
+<li>Commune Design System (tokens, components, governance, and outcomes)</li>
+<li>Microsoft Fabric: shared patterns at scale (reuse, constraints, craft)</li>
+<li>Toolchain: Tokens Studio → Style Dictionary → Storybook, plus AI-assisted prototyping experiments</li>
+<li>Mobile systems: HUMA and LeetCode (localization and motion strategy)</li>
+</ol>
+<hr>
+<h2 id="why-i-care-about-design-infrastructure">Why I care about design infrastructure</h2>
+<p>Design infrastructure is valuable when it shifts time from reinvention to real UX improvement:</p>
+<ul>
+<li>Designers stop rebuilding the same patterns and spend more time improving user experience and aligning it to business goals</li>
+<li>Engineers get predictable component APIs and state behavior, which reduces implementation ambiguity</li>
+<li>Consistency, accessibility, and theming become defaults instead of per-team effort</li>
+</ul>
+<hr>
+<h2 id="commune-design-system-vnext">Commune Design System vNext</h2>
+<h3 id="context-and-scope">Context and scope</h3>
+<p>Commune is a multi-product SaaS suite (Community Platform, Admin, User Voice Analytics). As part of a rebrand, we built DS vNext from scratch with the visual design team, then scaled it into reusable product infrastructure</p>
+<p>What changed because of this work:</p>
+<ul>
+<li>A shared token and component foundation that multiple product surfaces can reuse</li>
+<li>Faster, lower-ambiguity reviews because interaction states are encoded, not re-explained each time</li>
+<li>A clearer path to scale design work without scaling design overhead</li>
+</ul>
+<p>What I owned end-to-end as the design lead for DS vNext:</p>
+<ul>
+<li>Token architecture and naming rules, including light and dark modes</li>
+<li>Component library strategy (primitives → composites → systems)</li>
+<li>Interaction patterns and state behavior (rest/hover/pressed/selected/disabled/focus-visible, plus special cases)</li>
+<li>Alignment with front-end engineers on component APIs and implementation constraints</li>
+<li>Mentoring 2 junior designers so component designs map cleanly to production code</li>
+<li>Building an internal knowledge base so decisions remain reusable over time</li>
+</ul>
+<h3 id="before--after-proof-homepage-navigation-redesign">Before → After proof (homepage navigation redesign)</h3>
+<p>This is the clearest product-level example I can show today, because it demonstrates how design infrastructure translates into real UI outcomes</p>
+<h3 id="1-token-architecture-2-layers--2-modes">1. Token architecture: 2 layers × 2 modes</h3>
+<p>The foundation is a 2-layer structure:</p>
+<ul>
+<li><strong>Primitives</strong> define raw values (palette ramps, typography ramps, base elevation, spacing)</li>
+<li><strong>Semantics</strong> map intent to primitives (text-default, bg-surface, border-subtle, action-primary)</li>
+</ul>
+<p>It supports 2 modes (light/dark) so the same semantic token resolves correctly without per-screen manual swapping</p>
+<h4 id="token-collections-current-structure">Token collections (current structure)</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Collection</th><th>Layer</th><th>What it’s for</th><th>Notes</th></tr></thead><tbody><tr><td>Color Primitives</td><td>Primitive</td><td>Base palette ramps</td><td>Light + dark modes</td></tr><tr><td>Color Semantics</td><td>Semantic</td><td>Intent tokens for UI</td><td>Light + dark modes</td></tr><tr><td>Float Semantics</td><td>Semantic</td><td>Nemeric intent tokens</td><td>Used for spacing, sizing, width, radius, opactity</td></tr><tr><td>Density</td><td>Semantic</td><td>Spacing density presets</td><td>To reduce or increase spacing between elements</td></tr><tr><td>Typography Primitives</td><td>Primitive</td><td>Font family names and raw weight/size values</td><td>Latin, CJK and monospace (tabular)</td></tr><tr><td>Typography Semantics</td><td>Semantic</td><td>Intent tokens (body, caption, heading, etc.)</td><td>Latin + CJK modes</td></tr><tr><td>Elevation Floats</td><td>Semantic</td><td>Elevation and shadow for overlays</td><td>For Z-index visual hierarchy</td></tr></tbody></table>
+<h4 id="naming-hygiene-designed-for-humans-and-machines">Naming hygiene (designed for humans and machines)</h4>
+<p>We keep naming predictable so tokens can be reliably consumed by code and tooling:</p>
+<ul>
+<li>Primitive tokens are value-oriented and contain hard-coded values</li>
+<li>Semantic tokens reflect intent and are role-based, for example <code>foreground/brand-on-neutral/rest</code></li>
+</ul>
+<h4 id="advanced-theming-role-based-color-tokens">Advanced theming: role-based color tokens</h4>
+<p>Beyond basic theming, I explored role-based color tokens to support controlled customization without breaking the system</p>
+<p>The key idea: user choices map to roles, then roles map into vetted semantic tokens so customization stays coherent and accessible</p>
+<h3 id="2-component-library-interactive-by-default">2. Component library: interactive by default</h3>
+<p>We built a component library designed to behave like code:</p>
+<ul>
+<li>29 primitive components and 13 composite components (and growing)</li>
+<li>Components are token-bound, so light/dark mode switches reliably without manual overrides</li>
+<li>Most components are animated via prototype-linked variants so states are visible and reviewable in Figma</li>
+</ul>
+<h4 id="what-interactive-by-default-means-in-practice">What “interactive by default” means in practice</h4>
+<p>For most components, I designed and documented:</p>
+<ul>
+<li>rest, hover, pressed, selected</li>
+<li>disabled, focus-visible</li>
+<li>special cases where behavior differs (progressive actions, single vs multi-select menu items, hover-card with disable-focus)</li>
+</ul>
+<p>This reduces implementation ambiguity because state behavior becomes a reviewable artifact</p>
+<h3 id="3-system-complexity-example-notifications-toast--snackbar">3. System complexity example: notifications (toast + snackbar)</h3>
+<p>Button still works as a simple “token → component → code” example, but notifications are where system complexity shows up clearly</p>
+<p>We use both <strong>toasts</strong> and <strong>snackbars</strong> to deliver messages at different priority levels, with different information density, and with different triggers:</p>
+<ul>
+<li><strong>Self-action triggers</strong> (feedback for a user’s direct action)</li>
+<li><strong>System-action triggers</strong> (background events, status updates, or failures)</li>
+</ul>
+<p>The 2 hardest parts of the system, and the ones I intentionally specified, are:</p>
+<ul>
+<li>
+<p><strong>Priority and interruption</strong></p>
+<ul>
+<li>What can interrupt attention vs what must remain passive</li>
+<li>When to use toast vs snackbar based on urgency and user context</li>
+</ul>
+</li>
+<li>
+<p><strong>Consistency across surfaces</strong></p>
+<ul>
+<li>Rules that stay consistent across full pages, panes, and embedded surfaces</li>
+<li>Predictable behavior even when the same system runs inside different UI shells</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-governance-and-leadership">4. Governance and leadership</h3>
+<p>I treat design infrastructure as an organization problem, not only a design problem</p>
+<p>What I led or facilitated:</p>
+<ul>
+<li>Mentored 2 junior designers on designing components with code structure in mind (APIs, prop modeling, state modeling)</li>
+<li>Facilitated designer ↔ front-end engineer conversations to converge on naming, props, and implementation boundaries</li>
+<li>Built internal documentation so teams can reuse decisions instead of re-litigating them</li>
+<li>Ran lightweight review rituals (checklists, office hours) so work stays consistent without slowing teams down</li>
+</ul>
+<h3 id="outcomes">Outcomes</h3>
+<p>Because this is infrastructure work, outcomes show up as speed, consistency, and fewer loops:</p>
+<ul>
+<li>Faster design iteration because teams reuse state-complete components instead of rebuilding</li>
+<li>Less visual drift across Community Platform, Admin, and User Voice Analytics</li>
+<li>Smoother collaboration with front-end engineering because components are designed with implementation structure in mind</li>
+<li>Faster onboarding and fewer repeated debates through internal documentation and shared review rituals</li>
+</ul>
+<hr>
+<h2 id="microsoft-fabric-shared-patterns-at-scale">Microsoft Fabric: shared patterns at scale</h2>
+<p>At Microsoft Fabric, my systems work had a different shape: working within a central design language (Fluent 2) while enabling many teams to ship coherent UX at scale</p>
+<p>What you’ll see here:</p>
+<ul>
+<li>Shared patterns that unblock many teams through reuse</li>
+<li>Craft decisions that survive real constraints (accessibility, performance, localization)</li>
+<li>Implementation-ready guidance, not only visual polish</li>
+</ul>
+<h3 id="1-reuse-in-the-wild-toast-as-a-shared-feedback-pattern">1. Reuse in the wild: toast as a shared feedback pattern</h3>
+<p>Toast became one of the most widely used patterns across Fabric because it is versatile and supports real-time feedback without interrupting flow</p>
+<p>What I contributed to make it reusable beyond my team:</p>
+<ul>
+<li>Clear usage rules (when toast is appropriate vs when a more persistent pattern is required)</li>
+<li>Predictable behavior (timing, stacking, dismissal)</li>
+<li>Accessibility expectations (screen reader and keyboard considerations)</li>
+<li>Visual structure that stays readable across dense enterprise UIs</li>
+</ul>
+<h3 id="2-predictable-hierarchy-across-panes-panels-and-navigation">2. Predictable hierarchy across panes, panels, and navigation</h3>
+<p>Enterprise products often suffer from “same UI, different rules” across pages. I worked on standardizing pane and panel behavior, including clear hierarchy and coverage</p>
+<h3 id="3-typography-and-localization-under-implementation-constraints">3. Typography and localization under implementation constraints</h3>
+<p>I treat typography as UX plus implementation constraint:</p>
+<ul>
+<li>Type ramps that remain readable across dense layouts</li>
+<li>Localization considerations (string expansion, truncation strategies, mixed-script legibility)</li>
+<li>Implementation-friendly rules so engineers don’t guess</li>
+</ul>
+<h3 id="4-motion-as-a-system-constraint">4. Motion as a system constraint</h3>
+<p>Motion is valuable only when it is performant and stable:</p>
+<ul>
+<li>When OS-native motion provides the best stability and performance, I align with platform-native patterns</li>
+<li>When scalable animation assets are needed across contexts, I’ve used Lottie (vector-based) to keep motion consistent and maintainable</li>
+</ul>
+<h3 id="5-precision-craft-visually-harmonizing-corner-radius">5. Precision craft: visually harmonizing corner radius</h3>
+<p>A small example that shows my detail-seeking approach: corner radius is not only a number, it’s perception</p>
+<p>I’ve worked through rules for how radii should feel consistent across components and nesting levels, then translated that into implementable guidance</p>
+<hr>
+<h2 id="toolchain-tokens--code--interactive-documentation">Toolchain: tokens → code → interactive documentation</h2>
+<p>Design infrastructure stays healthy when design artifacts and production code stay aligned. Our toolchain is a small-team-friendly, executable pipeline</p>
+<h3 id="tokens-studio--style-dictionary--css-variables">Tokens Studio → Style Dictionary → CSS variables</h3>
+<ol>
+<li>Export Figma variables to JSON using Tokens Studio</li>
+<li>Use Style Dictionary to generate CSS variables for web</li>
+<li>Keep the pipeline platform-ready so the same token source can scale to native iOS and Android in the future</li>
+</ol>
+<h3 id="storybook-as-an-interactive-source-of-truth">Storybook as an interactive source of truth</h3>
+<p>We document components in Storybook so teams can see and test:</p>
+<ul>
+<li>props and variants</li>
+<li>accessibility expectations</li>
+<li>interactive states and behavior</li>
+</ul>
+<p>It complements Figma: Figma shows design intent and interaction choreography, while Storybook shows executable behavior and code-facing APIs</p>
+<h3 id="ai-assisted-prototyping-figma-mcp--cursor--vercel-tested">AI-assisted prototyping: Figma MCP → Cursor → Vercel (tested)</h3>
+<p>We tested connecting Figma MCP to Cursor to quickly build product ideas that follow our visual identity</p>
+<p>To make the system readable to tools and easier for humans, we tightened Figma hygiene:</p>
+<ul>
+<li>Token naming: primitives are values, semantics are role-based, for example <code>background/primary/hover</code></li>
+<li>Container naming: no “Frame 11238”, avoid groups, avoid absolute positioning</li>
+<li>Auto layout and constraints: layout behavior is explicit and predictable</li>
+</ul>
+<p>We also built a dedicated prompt and <code>.cursorrules</code> guidance for token-related work so AI-assisted code generation stays consistent with our design system</p>
+<p>This workflow is still experimental. We use it to deploy and validate new ideas faster, not to ship production-ready features yet</p>
+<hr>
+<h2 id="mobile-systems-huma-and-leetcode">Mobile systems: HUMA and LeetCode</h2>
+<h3 id="huma-mobile-system-work-shaped-by-localization">HUMA: mobile system work shaped by localization</h3>
+<p>At HUMA, localization shaped system decisions, not just copy. I focused on typography and layout rules that scale across languages, and used Lottie (vector animation) to keep motion scalable and compatible across mobile contexts</p>
+<h3 id="leetcode-os-native-motion-and-precision-craft">LeetCode: OS-native motion and precision craft</h3>
+<p>At LeetCode, I treated dark mode and interaction states as system concerns. For motion, I leaned on OS-native patterns (iOS and Android) for performance and visual stability. This work also reinforced my precision craft, translating visual consistency into rules engineers can implement</p>
+<hr>
+<h2 id="self-reflection">Self-reflection</h2>
+<ul>
+<li>Design infrastructure creates the most value when it buys back time for teams to focus on UX quality and business outcomes</li>
+<li>My highest leverage work is aligning tokens, components, and governance so teams can ship without re-litigating basics</li>
+<li>Interactive component states are a small investment that prevents expensive ambiguity during implementation</li>
+<li>I try to earn trust by making decisions legible, reusable, and easy for both designers and engineers to adopt</li>
+</ul> </div> </article>  </main> </div> <!-- 
+      CONTROLS AREA
+      Sound toggle and other controls go here.
+    --> <div class="controls fixed bottom-4 right-4 z-50" data-astro-cid-73sf25f7> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="ZYllkb" prefix="r1" component-url="/Portfolio1/_astro/Controls.DRD6rz9j.js" component-export="default" renderer-url="/Portfolio1/_astro/client.nc8uITnr.js" props="{&quot;data-astro-cid-73sf25f7&quot;:[0,true]}" ssr client="load" opts="{&quot;name&quot;:&quot;Controls&quot;,&quot;value&quot;:true}" await-children><button class="sound-toggle p-3 bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-600 " aria-label="Enable sound" title="Sound: Off"><svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path></svg></button><!--astro:end--></astro-island> </div> </body></html> 

@@ -1,10 +1,42 @@
 ---
+/**
+ * Home/Index page
+ * 
+ * Entry point for the portfolio.
+ * Enhanced in S3 with boot-up overlay.
+ */
+
 import ProjectorLayout from '../layouts/ProjectorLayout.astro';
+import BootOverlay from '../components/BootOverlay';
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <ProjectorLayout title="Film Projector Portfolio">
-  <main>
-    <h1>Film Projector Portfolio</h1>
-    <p>Welcome to the projector.</p>
-  </main>
+  <div class="space-y-8">
+    <header class="space-y-4">
+      <h1 class="text-4xl font-bold text-text-primary">Film Projector Portfolio</h1>
+      <p class="text-text-secondary text-lg">
+        Welcome to the projector.
+      </p>
+    </header>
+
+    <div class="space-y-4">
+      <p class="text-text-secondary">
+        Select a reel from the library to begin.
+      </p>
+      
+      <div>
+        <a 
+          href={`${baseUrl}/library`}
+          class="inline-block px-6 py-3 bg-neutral-800 hover:bg-neutral-700 text-text-primary rounded-lg transition-colors font-medium"
+        >
+          Go to Library →
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Boot-up overlay -->
+  <BootOverlay client:load />
 </ProjectorLayout>

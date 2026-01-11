@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-73sf25f7> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="medopadcover.jpeg"><title>HUMA - Mobile health app | Jiachen Portfolio</title><!-- Favicon --><link rel="icon" type="image/png" href="/Portfolio1favicon.png"><!-- Prefers reduced motion check --><script>
+      // Check for reduced motion preference early
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('reduce-motion');
+      }
+    </script><style>.prose[data-astro-cid-pabrlgtt]{color:var(--tw-prose-body)}.prose[data-astro-cid-pabrlgtt] code[data-astro-cid-pabrlgtt]{background-color:#ffffff1a;padding:.125rem .375rem;border-radius:.25rem;font-size:.875em}
+</style>
+<link rel="stylesheet" href="/Portfolio1/_astro/index.CDtG-h5T.css"></head> <body class="min-h-screen bg-stage text-text-primary font-body" data-astro-cid-73sf25f7> <!-- 
+      ATMOSPHERE LAYERS (FX plates go here)
+      These sit BEHIND the projected screen, never over body text.
+      FX plates will be added in future slices; slots ready for integration.
+    --> <div class="atmosphere-layers fixed inset-0 pointer-events-none z-0" aria-hidden="true" data-astro-cid-73sf25f7> <!-- FX plate slot: background grain/texture --> <div class="fx-layer fx-grain" data-astro-cid-73sf25f7></div> <!-- FX plate slot: vignette/edge effects --> <div class="fx-layer fx-vignette" data-astro-cid-73sf25f7></div> <!-- FX plate slot: light leak/projector glow --> <div class="fx-layer fx-glow" data-astro-cid-73sf25f7></div> </div> <!-- 
+      PROJECTED SCREEN (main content area)
+      This is the stable reading zone. NO layout shift allowed here.
+      Headline, subhead, and first paragraph must remain stable.
+      Responsive: mobile-first, centered on desktop.
+    --> <div class="projected-screen relative z-10 mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 min-h-screen" data-astro-cid-73sf25f7> <!-- Main content slot --> <main class="screen-content" data-astro-cid-73sf25f7>  <article class="space-y-8" data-astro-cid-pabrlgtt> <header class="space-y-4" data-astro-cid-pabrlgtt> <h1 class="text-4xl font-bold text-text-primary" data-astro-cid-pabrlgtt>HUMA - Mobile health app</h1> <div class="cover-image mt-4" data-astro-cid-pabrlgtt> <img src="/Portfolio1assets/medopadcover.jpeg" alt="HUMA - Mobile health app" class="w-full max-w-2xl rounded-lg" data-astro-cid-pabrlgtt> </div> </header> <!-- Content area --> <div class="prose prose-invert prose-neutral max-w-none 
+                prose-headings:text-text-primary
+                prose-p:text-text-secondary
+                prose-a:text-text-primary prose-a:underline hover:prose-a:text-text-primary
+                prose-strong:text-text-primary
+                prose-code:text-text-primary prose-code:bg-neutral-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+                prose-img:rounded-lg prose-img:my-8" data-astro-cid-pabrlgtt> <h2 id="tldr">TL;DR</h2>
+<ul>
+<li>HUMA is a mobile health app that helps patients record vital signs and treatment data at home so clinicians can adjust care between visits.</li>
+<li>I led UX research and interaction design for key patient flows: glucose, blood pressure/heart rate, and GHD-related tasks, in a regulated medical context.</li>
+<li>This case study focuses on how I combined domain-expert research with detailed interaction design to balance patient effort with clinical data quality.</li>
+<li>Pilot releases showed higher completion for glucose and BP/HR flows and more standardised data that clinicians reported as easier to interpret (exact numbers under NDA).</li>
+</ul>
+<hr>
+<h2 id="context--my-role">Context &#x26; my role</h2>
+<p>HUMA’s patient app is used by people living with chronic conditions to log information such as:</p>
+<ul>
+<li>Vital signs like blood glucose, blood pressure, and heart rate</li>
+<li>Treatment events including medication, injections, and X-ray results</li>
+<li>Symptoms and daily notes that give doctors context between appointments</li>
+</ul>
+<p>Because this is a regulated medical product, we can’t “just ship and tweak later”. Every change can affect adherence and clinical decisions, so each release requires careful research, design, and validation with clinicians.</p>
+<p>In this work, I led interaction design for several key modules, ran lightweight research with medical experts and internal testers, and translated their input into flows and micro-interactions that patients can realistically keep up with.</p>
+<hr>
+<h2 id="selected-focus-1--glucose-tracking-for-daily-life">Selected focus 1 — Glucose tracking for daily life</h2>
+<h3 id="research-inputs">Research inputs</h3>
+<p>From conversations with diabetologists and internal clinical specialists, I learned that:</p>
+<ul>
+<li>Glucose needs to be tracked many times a day, often 4–6.</li>
+<li>A single value is not enough; it needs context like “after breakfast” or “before bed”.</li>
+<li>Some patients use smaller phones, so jumping between multiple screens feels heavy and error-prone.</li>
+</ul>
+<p>Internal focus-group testing with colleagues then surfaced concrete interaction issues:</p>
+<ul>
+<li>The native time picker was easy to overshoot when spun quickly.</li>
+<li>Filling multiple fields didn’t feel like one continuous flow.</li>
+</ul>
+<h3 id="interaction-decisions">Interaction decisions</h3>
+<p>I redesigned the glucose module around three ideas.</p>
+<ol>
+<li>
+<p><strong>One-screen flow with a clear finish and rhythm</strong></p>
+<p>All inputs (value, time, eating status) sit on a single, vertically ordered screen that mirrors how patients describe the event when talking to a nurse: “I measured X, at Y time, after Z meal.”</p>
+<p>At the end of the sequence, patients see a short <strong>“Completed, thank you”</strong> state with a checkmark animation. This adds a sense of closure and makes a repetitive medical task feel more like a small win instead of “just another form”. On Android, I chose an animated icon from Google’s native Material symbol set rather than a fully custom animation, so the completion moment feels familiar, lightweight to implement, and aligned with the platform’s motion language.</p>
+<p>![Glucose Module (Old)](/Portfolio1/assets/medopad/glucose old.png)
+Glucose Module (Old)
+{:#img-caption}</p>
+<p>![Glucose Module (New)](/Portfolio1/assets/medopad/glucose new.png)
+Glucose Module (New)
+{:#img-caption}</p>
+</li>
+<li>
+<p><strong>Keyboard-driven input with accessible numerics</strong></p>
+<p>To reduce time errors and make the flow feel more “typed” than “fiddly”:</p>
+<ul>
+<li>Swapped the spinner for a numeric keypad for time and value input.</li>
+<li>Adopted a <strong>monospaced font</strong> for all numeric entry so similar digits are easier to distinguish and align visually.</li>
+<li>Rolled this typography choice out across other numeric fields in the app as a global pattern to improve accessibility, not just in this module.</li>
+</ul>
+<p>The keyboard’s action key is set to <strong>Next</strong>, so patients move smoothly through the fields; on the last field, the keyboard collapses and the primary action is ready.</p>
+<p>![Glucose keyboard interaction](/Portfolio1/assets/medopad/keyboard action.png)
+Keyboard-driven numeric input and “Next” flow
+{:#img-caption}</p>
+</li>
+<li>
+<p><strong>Reviewing shortcuts with domain experts before shipping</strong></p>
+<p>My first idea was to auto-pair eating status and time of day (for example, selecting “after breakfast” would suggest a morning time) to reduce manual edits.</p>
+<p>In design reviews with clinicians, they flagged a serious risk: they rely on the precise combination of time and eating status to interpret patterns, and any hidden automation could blur that signal.</p>
+<p>Based on their feedback, I removed the automation and required patients to set both fields explicitly. This made the flow a little slower, but it protected data reliability. It also reinforced a habit for me: treat domain experts as core design partners, not just approvers.</p>
+</li>
+</ol>
+<h3 id="result">Result</h3>
+<ul>
+<li>Patients in our pilot found the interaction faster and more straightforward than the previous multi-screen version.</li>
+<li>Clinicians received more explicit entries (time plus eating status) and fed back that trends were easier to interpret over time.</li>
+<li>The input pattern, success state, and monospaced numeric style became a reusable template in other vitals flows.</li>
+</ul>
+<p>The same emphasis on reducing friction in repetitive data entry also shaped adjacent modules such as the medication tracker, where patients can search, filter, and add multiple medicines at once:</p>
+<p>![Medication tracker and search](/Portfolio1/assets/medopad/med tracker.png)
+Medication tracker and search using compact list layout and fuzzy search
+{:#img-caption}</p>
+<hr>
+<h2 id="selected-focus-2--standardising-blood-pressure--heart-rate">Selected focus 2 — Standardising blood pressure &#x26; heart rate</h2>
+<h3 id="research-inputs-1">Research inputs</h3>
+<p>From discussions with our in-house medical experts, I learned that blood pressure and heart rate are extremely sensitive to conditions:</p>
+<ul>
+<li>Time of day, recent activity, and stress levels</li>
+<li>Whether the patient is talking during the measurement</li>
+<li>Posture and level of relaxation</li>
+</ul>
+<p>Doctors told us that inconsistent measurement conditions were one of the biggest sources of “noise” in their dashboards, making it hard to tell whether a change was clinical or just “bad measurement hygiene”.</p>
+<p>During a broader rebrand from <strong>Medopad</strong> to <strong>HUMA</strong>, I redesigned the blood pressure module’s UI to bring it in line with the new visual language while keeping the validated interaction patterns and posture guidance intact:</p>
+<p>![Blood pressure module overview (rebranded)](/Portfolio1/assets/medopad/blood pressure overview.png)
+Blood pressure module overview after the HUMA rebrand
+{:#img-caption}</p>
+<h3 id="interaction-decisions-1">Interaction decisions</h3>
+<ol>
+<li>
+<p><strong>Sitting-posture animation that turns protocol into a clear mental model</strong></p>
+<p>Clinicians defined what “correct posture” means in practice: feet flat on the floor, back supported, arm at heart height, no talking. My role was to turn that protocol into something patients could follow without reading a dense list.</p>
+<p>I designed a simple visual sequence and worked with a motion designer to produce a lightweight vector animation that shows the person gradually moving into the correct sitting position. The animation loops slowly so patients can compare their own posture to the target one, even on a small screen.</p>
+<p>![Blood pressure posture guidance and animation](/Portfolio1/assets/medopad/bp hr animation.png)
+Blood pressure &#x26; heart rate posture guidance
+{:#img-caption}</p>
+</li>
+<li>
+<p><strong>Exploring sound as part of the UX</strong></p>
+<p>Many health apps focus only on what’s on the screen. I wanted to treat <strong>sound design as part of the interaction</strong>, especially for anxious patients who look away while the cuff inflates.</p>
+<p>To introduce voice guidance, I proposed adding spoken prompts even before they were requested, drafted short scripts that matched the clinical protocol in plain language, and started with a text-to-speech implementation to test the idea. Once we saw that the robotic voice felt distracting and cold, I recommended moving to a professional voice actor to make the experience calmer and more human.</p>
+<p>In feedback sessions, patients used phrases like:</p>
+<blockquote>
+<p>“It feels like a nurse guiding me step by step.”<br>
+“The calm voice makes me less worried I’m doing it wrong.”</p>
+</blockquote>
+<p>That was a strong signal that the audio layer was doing real UX work, not just decoration.</p>
+</li>
+</ol>
+<h3 id="result-1">Result</h3>
+<ul>
+<li>Clinicians reported that readings became more consistent between visits, because more patients followed the same posture and rest sequence.</li>
+<li>Patients felt more guided and less afraid of “messing it up”, which is crucial when you’re asking them to keep measuring week after week.</li>
+<li>The project reinforced for the team that motion and sound are legitimate design tools in clinical UX, not just visual extras.</li>
+</ul>
+<hr>
+<h2 id="selected-focus-3--making-x-ray-uploads-workable-in-the-real-world">Selected focus 3 — Making X-ray uploads workable in the real world</h2>
+<p>For children with Growth Hormone Deficiency (GHD), doctors track growth using a combination of height measurements, X-rays, and medication adherence. Ideally, X-rays would flow directly from hospital systems into our platform, but at the time we faced real-world constraints:</p>
+<ul>
+<li>Privacy policies that limited direct integration with hospital imaging systems</li>
+<li>Variable, often low-resolution phone cameras</li>
+<li>Home environments with poor lighting and reflections on the film</li>
+</ul>
+<p>Families were being asked to photograph X-ray films using their phones, and clinicians were understandably sceptical about whether those images would be usable.</p>
+<h3 id="research-inputs-2">Research inputs</h3>
+<p>Through repeated sessions with our medical experts, I learned:</p>
+<ul>
+<li>X-ray films are designed to be read on light boxes, not captured by cameras.</li>
+<li>Common failure modes included glare on the critical bone area, angles that distorted proportions, and images where part of the bone was cropped out.</li>
+<li>Doctors were worried they would receive a large volume of images that were clinically unusable, with no way to educate families on how to improve.</li>
+</ul>
+<p>The high-level flow below summarises how we moved from the ideal (direct integration) to a second-best path based on patient-taken photos and in-app guidance:</p>
+<p>![X-ray photo capture user flow](/Portfolio1/assets/medopad/xray userflow.png)
+User flow for X-ray photo capture, from ideal integration to second-best mobile photo path
+{:#img-caption}</p>
+<h3 id="interaction-decisions-2">Interaction decisions</h3>
+<ol>
+<li>
+<p><strong>Guided capture with before/after examples</strong></p>
+<p>I designed a capture flow that:</p>
+<ul>
+<li>Shows “good” examples next to common “bad” examples such as “too dark”, “cut off at the wrist”, or “reflection across the growth plate”.</li>
+<li>Explains in one line why each type of error is a problem from the doctor’s perspective.</li>
+<li>Encourages patients to retake the photo when it clearly doesn’t match the good example.</li>
+</ul>
+<p><img src="/Portfolio1/assets/medopad/instructions.png" alt="Instructions on how to take photos of X-ray films">
+Instructions for taking photos of X-ray films
+{:#img-caption}</p>
+</li>
+<li>
+<p><strong>Markup tools for clinicians to teach patients asynchronously</strong></p>
+<p>Early pilot results confirmed clinicians’ fears: more than half of the submitted photos were still unusable. Instead of accepting that as a fixed limitation, I proposed a <strong>markup-based feedback loop</strong>:</p>
+<ul>
+<li>Clinicians can circle specific areas on the X-ray that need a clearer zoomed-in shot.</li>
+<li>They can add short comments such as “Too much glare on the bone here” or “Please include the entire wrist joint.”</li>
+<li>The next time the family uploads an image, they see this guidance inside the app, not buried in a phone call or letter.</li>
+</ul>
+<p>The markup concept allowed doctors’ expertise to flow back into the product, even though we still had to respect privacy rules and hardware limitations.</p>
+</li>
+</ol>
+<h3 id="result-2">Result</h3>
+<p>Within the constraints of privacy policy, phone cameras, and home lighting, we moved from “attach a random photo” to a guided and educative process that:</p>
+<ul>
+<li>Helps families understand what a clinically useful X-ray photo looks like</li>
+<li>Gives clinicians a structured way to coach patients over multiple cycles</li>
+<li>Opens a path for future automation (for example, basic image-quality checks before submission) once legal and technical foundations are in place</li>
+</ul>
+<hr>
+<h2 id="outcomes--what-id-change">Outcomes &#x26; what I’d change</h2>
+<p>Across these focus areas we saw:</p>
+<ul>
+<li>Higher completion rates for glucose and BP/HR modules compared with earlier versions.</li>
+<li>More standardised vitals thanks to consistent posture guidance and clear measurement sequences.</li>
+<li>A more realistic yet usable approach to X-ray uploads, with a feedback mechanism that lets clinicians teach families over time.</li>
+</ul>
+<p>If I revisited this work now, I would:</p>
+<ul>
+<li>Define target metrics per module (for example, completion rates and percentage of unusable X-rays) upfront and instrument them earlier.</li>
+<li>Prototype the clinician markup flow sooner, even with low-fidelity tools, to validate both workflow and patient comprehension.</li>
+<li>Explore more personalised patterns for reminders and measurement schedules based on each patient’s habits.</li>
+</ul>
+<hr>
+<h2 id="self-reflection">Self-reflection</h2>
+<p>This project sharpened how I design in clinical contexts:</p>
+<ul>
+<li>
+<p><strong>Research doesn’t always mean talking to end users first.</strong><br>
+In several cases, medical experts were the most effective proxy for patient behaviour and constraints, especially when real-world patient access was limited.</p>
+</li>
+<li>
+<p><strong>Collaboration across teams is a core design skill.</strong><br>
+Reviewing flows with domain experts, listening carefully when they push back, and translating their concerns into concrete interaction changes helped me avoid mistakes that could have damaged data reliability.</p>
+</li>
+<li>
+<p><strong>Interaction design and data quality are tightly linked.</strong><br>
+Small choices — from numeric typography to whether fields auto-update — can be the difference between nice-looking UI and data that doctors can genuinely trust.</p>
+</li>
+<li>
+<p><strong>The need to trade convenience for reliability when stakes are high.</strong><br>
+In both glucose tracking and X-ray uploads, I consciously chose slightly more deliberate steps to protect long-term clinical value.</p>
+</li>
+</ul>
+<p>This is a project to show how I handle UX research, interaction design, and medical collaboration in a high-stakes mobile medical app.</p>
+<p>System design, telemetry, and detailed documentation from this work live in a separate case study on design systems and infr.</p> </div> </article>  </main> </div> <!-- 
+      CONTROLS AREA
+      Sound toggle and other controls go here.
+    --> <div class="controls fixed bottom-4 right-4 z-50" data-astro-cid-73sf25f7> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="ZYllkb" prefix="r1" component-url="/Portfolio1/_astro/Controls.DRD6rz9j.js" component-export="default" renderer-url="/Portfolio1/_astro/client.nc8uITnr.js" props="{&quot;data-astro-cid-73sf25f7&quot;:[0,true]}" ssr client="load" opts="{&quot;name&quot;:&quot;Controls&quot;,&quot;value&quot;:true}" await-children><button class="sound-toggle p-3 bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-600 " aria-label="Enable sound" title="Sound: Off"><svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path></svg></button><!--astro:end--></astro-island> </div> </body></html> 

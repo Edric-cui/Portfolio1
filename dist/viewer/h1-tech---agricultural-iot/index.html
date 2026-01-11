@@ -1,0 +1,258 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-73sf25f7> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="h1sankey.jpg"><title>H1 Tech - Agricultural IOT | Jiachen Portfolio</title><!-- Favicon --><link rel="icon" type="image/png" href="/Portfolio1favicon.png"><!-- Prefers reduced motion check --><script>
+      // Check for reduced motion preference early
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('reduce-motion');
+      }
+    </script><style>.prose[data-astro-cid-pabrlgtt]{color:var(--tw-prose-body)}.prose[data-astro-cid-pabrlgtt] code[data-astro-cid-pabrlgtt]{background-color:#ffffff1a;padding:.125rem .375rem;border-radius:.25rem;font-size:.875em}
+</style>
+<link rel="stylesheet" href="/Portfolio1/_astro/index.CDtG-h5T.css"></head> <body class="min-h-screen bg-stage text-text-primary font-body" data-astro-cid-73sf25f7> <!-- 
+      ATMOSPHERE LAYERS (FX plates go here)
+      These sit BEHIND the projected screen, never over body text.
+      FX plates will be added in future slices; slots ready for integration.
+    --> <div class="atmosphere-layers fixed inset-0 pointer-events-none z-0" aria-hidden="true" data-astro-cid-73sf25f7> <!-- FX plate slot: background grain/texture --> <div class="fx-layer fx-grain" data-astro-cid-73sf25f7></div> <!-- FX plate slot: vignette/edge effects --> <div class="fx-layer fx-vignette" data-astro-cid-73sf25f7></div> <!-- FX plate slot: light leak/projector glow --> <div class="fx-layer fx-glow" data-astro-cid-73sf25f7></div> </div> <!-- 
+      PROJECTED SCREEN (main content area)
+      This is the stable reading zone. NO layout shift allowed here.
+      Headline, subhead, and first paragraph must remain stable.
+      Responsive: mobile-first, centered on desktop.
+    --> <div class="projected-screen relative z-10 mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 min-h-screen" data-astro-cid-73sf25f7> <!-- Main content slot --> <main class="screen-content" data-astro-cid-73sf25f7>  <article class="space-y-8" data-astro-cid-pabrlgtt> <header class="space-y-4" data-astro-cid-pabrlgtt> <h1 class="text-4xl font-bold text-text-primary" data-astro-cid-pabrlgtt>H1 Tech - Agricultural IOT</h1> <div class="cover-image mt-4" data-astro-cid-pabrlgtt> <img src="/Portfolio1assets/h1sankey.jpg" alt="H1 Tech - Agricultural IOT" class="w-full max-w-2xl rounded-lg" data-astro-cid-pabrlgtt> </div> </header> <!-- Content area --> <div class="prose prose-invert prose-neutral max-w-none 
+                prose-headings:text-text-primary
+                prose-p:text-text-secondary
+                prose-a:text-text-primary prose-a:underline hover:prose-a:text-text-primary
+                prose-strong:text-text-primary
+                prose-code:text-text-primary prose-code:bg-neutral-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+                prose-img:rounded-lg prose-img:my-8" data-astro-cid-pabrlgtt> <h2 id="reconstruct-and-visualise-automations">Reconstruct and visualise automations</h2>
+<blockquote>
+<p>You can right-click “Open Image in New Tab” to zoom in<br>
+右键“新窗口打开”可以放大查看图片</p>
+</blockquote>
+<h2 id="tldr">TL;DR</h2>
+<ul>
+<li>Designed a <strong>web-based automation dashboard</strong> for greenhouse IoT devices and their control strategies</li>
+<li>Worked as the product designer, covering information architecture, key flows, and visual design with the founder and firmware team</li>
+<li>Turned a board-level, hardware-centric setup into a <strong>farm-based mental model</strong> (programs/projects/devices) and split expert vs everyday workflows</li>
+<li>Used <strong>system-level flows</strong> and a small set of representative screens to move fast and keep engineers aligned in a short engagement</li>
+<li>Focus of this project in my portfolio is <strong>system-level IA and complex interaction design for a hardware-heavy product</strong></li>
+</ul>
+<blockquote>
+<p><strong>Language note</strong><br>
+UI text in screenshots is in Chinese because the product targeted Chinese-speaking operators. Descriptions and captions explain layout and behaviour in English.</p>
+</blockquote>
+<hr>
+<h2 id="project-background-and-my-role">Project background and my role</h2>
+<p>The client provides agricultural solutions based on IoT devices. Their main product is a control board that connects:</p>
+<ul>
+<li><strong>Sensors</strong> (temperature, humidity, light, etc.)</li>
+<li><strong>Controllers</strong> (heaters, irrigation, film rollers, and more)</li>
+</ul>
+<p>Automation strategies run on top of these devices to keep conditions within range and alert staff when something deviates.</p>
+<p>My role as <strong>product designer</strong> was to:</p>
+<ul>
+<li>Design a <strong>web-based UI</strong> for this automation system</li>
+<li>Create a <strong>dashboard</strong> that integrates information from many control boards across multiple greenhouses</li>
+<li>Work closely with the founder (domain expert) and firmware engineers</li>
+</ul>
+<p>Given the short timeline, we prioritised:</p>
+<ul>
+<li>Getting the <strong>core structure right</strong></li>
+<li>Designing a few <strong>representative flows and screens</strong> that could be extended later</li>
+<li>Documenting key <strong>user journeys as flows</strong> so engineers could implement reliably</li>
+</ul>
+<hr>
+<h2 id="key-constraints-that-shaped-the-design">Key constraints that shaped the design</h2>
+<p>From early conversations and quick UX discovery, several constraints emerged:</p>
+<ul>
+<li>
+<p><strong>Different user groups</strong></p>
+<ul>
+<li>Electronics engineers create presets and strategies</li>
+<li>Farm workers pause, override, or tweak parameters in the field</li>
+</ul>
+</li>
+<li>
+<p><strong>Two levels of complexity</strong></p>
+<ul>
+<li>Engineers need advanced controls</li>
+<li>Farm workers need simple, safe workflows</li>
+</ul>
+</li>
+<li>
+<p><strong>Batch operations</strong></p>
+<ul>
+<li>Devices are deployed in bulk; registration and checks must scale</li>
+</ul>
+</li>
+<li>
+<p><strong>Dashboard as primary monitoring and communication surface</strong></p>
+<ul>
+<li>Used by operators, visitors, and sometimes regulators, mainly for <strong>monitoring and visualising data</strong>, not heavy interaction</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="design-highlights">Design highlights</h2>
+<h3 id="1-clarifying-the-system-mental-model-ia-and-navigation">1. Clarifying the system mental model (IA and navigation)</h3>
+<p><strong>Problem</strong></p>
+<p>The initial model was hardware-centric: devices identified by board IDs, with strategies attached directly to them. This worked for engineers, but not for farm workers who think in terms of <strong>greenhouses, crops, and projects</strong>.</p>
+<p><strong>Design</strong></p>
+<p>I introduced a simple hierarchy:</p>
+<ul>
+<li><strong>Programs</strong> – overall deployments or larger initiatives</li>
+<li><strong>Projects</strong> – specific greenhouses, crops, or experiments</li>
+<li><strong>Devices</strong> – the boards and sensors installed within each project</li>
+</ul>
+<p>![Program and project structure flow](/Portfolio1/assets/h1tech/flow program and project.jpg)
+System-level flow diagram showing how programs, projects, and devices map to real farms and greenhouses
+{: #img-caption}</p>
+<p>To make this concrete, I designed a <strong>tree view</strong> that mirrors this hierarchy:</p>
+<p>![Program and project tree views](/Portfolio1/assets/h1tech/program tree view.png)
+Application tree view that lets users browse from farms and projects down to individual devices and strategies
+{: #img-caption}</p>
+<p>This gave everyone a shared mental model:</p>
+<ul>
+<li>Engineers can still see devices and strategies</li>
+<li>Farm staff can start from “Greenhouse A – Tomatoes” rather than “Device #0321”</li>
+</ul>
+<hr>
+<h3 id="2-scaling-device-onboarding-single-and-batch">2. Scaling device onboarding (single and batch)</h3>
+<p><strong>Problem</strong></p>
+<p>New deployments often involve <strong>dozens of devices</strong>. Doing everything manually for each board is slow and error-prone.</p>
+<p><strong>Design</strong></p>
+<p>I designed two flows:</p>
+<ul>
+<li><strong>Single-device registration</strong> for small setups and quick tests</li>
+<li><strong>Batch registration</strong> for larger rollouts</li>
+</ul>
+<p>![Device registration (single device)](/Portfolio1/assets/h1tech/device reg single.png)
+Single-device registration screen with clear fields, validation, and tags so devices stay searchable later
+{: #img-caption}</p>
+<p>![Device registration (batch operations)](/Portfolio1/assets/h1tech/device reg batch.png)
+Batch registration screen for importing multiple device IDs, running self-checks, and applying naming and tagging rules at once
+{: #img-caption}</p>
+<p>Key decisions I made:</p>
+<ul>
+<li>Encourage <strong>consistent naming and tagging</strong> so devices are easier to find in the tree</li>
+<li>Add <strong>batch self-checks</strong> so operators can verify connectivity in one go</li>
+<li>Make it clear where each device will appear in the program/project structure</li>
+</ul>
+<p><strong>Result (qualitative)</strong></p>
+<ul>
+<li>New greenhouses could be brought online with fewer manual steps</li>
+<li>The device list became cleaner and easier to navigate, which helped later when assigning strategies</li>
+</ul>
+<hr>
+<h3 id="3-strategies-for-experts-and-everyday-operators">3. Strategies for experts and everyday operators</h3>
+<p><strong>Problem</strong></p>
+<p>Strategies are the core of the system (“if temperature > X and humidity &#x3C; Y, then open vents and start irrigation”). But:</p>
+<ul>
+<li>Engineers need <strong>full control</strong> over logic</li>
+<li>Farm workers just need to <strong>run safe presets</strong> and adjust a few parameters</li>
+</ul>
+<p>Mixing these needs in one UI risked misconfiguration.</p>
+<p><strong>Design</strong></p>
+<p>I separated authoring vs usage into a few focused screens:</p>
+<ol>
+<li>
+<p><strong>Creating basic strategies</strong> for common scenarios, with guided fields and safe defaults</p>
+<p>![Create a basic strategy](/Portfolio1/assets/h1tech/create strategy basic.png)
+Basic strategy editor with predefined inputs and safe defaults aimed at non-expert users
+{: #img-caption}</p>
+</li>
+<li>
+<p><strong>Creating advanced strategies</strong> for engineers with more complex logic and variables</p>
+<p>![Create an advanced strategy](/Portfolio1/assets/h1tech/create strategy advanced.png)
+Advanced strategy editor for engineers to build more complex automations with custom logic
+{: #img-caption}</p>
+</li>
+<li>
+<p><strong>Invoking strategies in projects</strong>, where farm workers attach presets to a real greenhouse or project and tweak only the allowed parameters</p>
+<p>![Invoke preset strategy in projects](/Portfolio1/assets/h1tech/strategy invoke.png)
+Invoke screen for attaching a predefined strategy to a project while exposing only safe parameters for day-to-day adjustments
+{: #img-caption}</p>
+</li>
+</ol>
+<p>Design choices I led:</p>
+<ul>
+<li>Use <strong>basic vs advanced</strong> editors instead of a single, overloaded screen</li>
+<li>Keep structural logic read-only in the “invoke” step for non-experts</li>
+<li>Highlight which values are safe to change (e.g. thresholds) and which are locked</li>
+</ul>
+<hr>
+<h3 id="4-dashboards-for-monitoring-and-communication">4. Dashboards for monitoring and communication</h3>
+<p><strong>Problem</strong></p>
+<p>The dashboard has to work for:</p>
+<ul>
+<li>Operators in a control room</li>
+<li>Visitors and stakeholders walking past large displays</li>
+<li>Sometimes regulators looking at how conditions are tracked</li>
+</ul>
+<p><strong>Design</strong></p>
+<p>I created a modular dashboard with variants for different views:</p>
+<p>![Dashboard with component variants](/Portfolio1/assets/h1tech/dashboard var.jpg)
+Dashboard layout concepts exploring different arrangements of status, alerts, and trend components
+{: #img-caption}</p>
+<p>For control rooms, we designed a <strong>fullscreen mode</strong>:</p>
+<p>![Dashboard in fullscreen view mode](/Portfolio1/assets/h1tech/fullscreen mode.jpg)
+Fullscreen monitoring view optimised for large displays, emphasising alerts and overall system state
+{: #img-caption}</p>
+<p>The visual design aimed to:</p>
+<ul>
+<li>Use a <strong>neutral, low-noise appearance</strong> in normal conditions, so that alerts clearly stand out when something is wrong</li>
+<li>Use typography and layout that remain legible from a distance</li>
+<li>Avoid unnecessary controls on this screen, since it is mostly for <strong>monitoring</strong> rather than frequent action</li>
+</ul>
+<hr>
+<h2 id="design-workflow-and-system-flows">Design workflow and system flows</h2>
+<p>Even though the project was relatively small and fast, I still needed a clear way to <strong>align with engineers</strong> on how the system should behave end to end.</p>
+<p>I created a set of <strong>system flows</strong> that:</p>
+<ul>
+<li>Describe the <strong>user journeys</strong> behind the main screens (device management, strategy management)</li>
+<li>Capture edge cases and state transitions that are hard to see from static mocks</li>
+<li>Help engineers and the founder confirm we had the same understanding before implementation</li>
+</ul>
+<p>![Device registration and management flow](/Portfolio1/assets/h1tech/flow device mgmt.jpg)
+User flow diagram for device registration and management, used to align on end-to-end behaviour and edge cases
+{: #img-caption}</p>
+<p>![Automation strategy management flow](/Portfolio1/assets/h1tech/flow strategy mgmt.jpg)
+User flow diagram for strategy lifecycle, showing how strategies are created, applied, updated, and retired across projects
+{: #img-caption}</p>
+<p>These flows were part of my <strong>design workflow</strong>: start from the IA, map real user journeys, and then design screens that fit into that bigger picture</p>
+<hr>
+<h2 id="outcomes-qualitative">Outcomes (qualitative)</h2>
+<p>Because this was a relatively small, quick project, we didn’t set up full analytics. But from client feedback and rollout, we saw:</p>
+<ul>
+<li>
+<p><strong>Clearer mental model</strong></p>
+<ul>
+<li>People started referring to programs and projects (greenhouses, crops) rather than only board IDs</li>
+</ul>
+</li>
+<li>
+<p><strong>Smoother onboarding</strong></p>
+<ul>
+<li>Operators used batch registration flows for new deployments instead of copying settings device by device</li>
+</ul>
+</li>
+<li>
+<p><strong>Safer daily operations</strong></p>
+<ul>
+<li>Engineers created strategies once; farm staff used presets and invoke screens to work within safe ranges</li>
+</ul>
+</li>
+<li>
+<p><strong>More convincing demos</strong></p>
+<ul>
+<li>The dashboard and fullscreen view made it easier for the client to explain the system to visitors and potential partners</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="self-reflection">Self-reflection</h2>
+<ul>
+<li>The clearest strengths of this project are the information architecture and the split between expert workflows and everyday operation</li>
+<li>If I revisited it, I would add basic telemetry and better strategy simulation so impact and safety are easier to validate</li>
+<li>Lightweight system flows were an effective way to communicate my design workflow and keep implementation aligned with engineers</li>
+<li>Next time I would bring measurement and mobile-friendly alert experiences into scope earlier, especially for on-site operators</li>
+</ul> </div> </article>  </main> </div> <!-- 
+      CONTROLS AREA
+      Sound toggle and other controls go here.
+    --> <div class="controls fixed bottom-4 right-4 z-50" data-astro-cid-73sf25f7> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="ZYllkb" prefix="r1" component-url="/Portfolio1/_astro/Controls.DRD6rz9j.js" component-export="default" renderer-url="/Portfolio1/_astro/client.nc8uITnr.js" props="{&quot;data-astro-cid-73sf25f7&quot;:[0,true]}" ssr client="load" opts="{&quot;name&quot;:&quot;Controls&quot;,&quot;value&quot;:true}" await-children><button class="sound-toggle p-3 bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-600 " aria-label="Enable sound" title="Sound: Off"><svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path></svg></button><!--astro:end--></astro-island> </div> </body></html> 
