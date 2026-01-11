@@ -1,0 +1,112 @@
+---
+/**
+ * ProjectorLayout.astro
+ * 
+ * The main layout shell for the film projector-themed portfolio.
+ * 
+ * Structure:
+ * - Atmosphere layers (FX plates) sit OUTSIDE/BEHIND the projected screen
+ * - Projected screen is the stable reading zone (no FX over text)
+ * - Mobile-first responsive design
+ */
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Jiachen's Design Portfolio" } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} | Jiachen Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href={`${baseUrl}favicon.png`} />
+    
+    <!-- Prefers reduced motion check -->
+    <script is:inline>
+      // Check for reduced motion preference early
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('reduce-motion');
+      }
+    </script>
+  </head>
+  
+  <body class="min-h-screen bg-neutral-950 text-neutral-100">
+    <!-- 
+      ATMOSPHERE LAYERS (FX plates go here)
+      These sit BEHIND the projected screen, never over body text.
+      Placeholder slots for S1+ implementation.
+    -->
+    <div class="atmosphere-layers fixed inset-0 pointer-events-none z-0" aria-hidden="true">
+      <!-- FX plate slot: background grain/texture -->
+      <div class="fx-layer fx-grain"></div>
+      
+      <!-- FX plate slot: vignette/edge effects -->
+      <div class="fx-layer fx-vignette"></div>
+      
+      <!-- FX plate slot: light leak/projector glow -->
+      <div class="fx-layer fx-glow"></div>
+    </div>
+    
+    <!-- 
+      PROJECTED SCREEN (main content area)
+      This is the stable reading zone. NO layout shift allowed here.
+      Headline, subhead, and first paragraph must remain stable.
+    -->
+    <div class="projected-screen relative z-10 mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+      <!-- Main content slot -->
+      <main class="screen-content">
+        <slot />
+      </main>
+    </div>
+    
+    <!-- 
+      CONTROLS AREA
+      Sound toggle, skip button, etc. go here in future slices.
+      Placeholder for S5+ implementation.
+    -->
+    <div class="controls fixed bottom-4 right-4 z-50">
+      <!-- Control components will be added in S5 -->
+    </div>
+  </body>
+</html>
+
+<style>
+  /* 
+   * Base styles for the projector layout
+   * Most styling handled by Tailwind, this is for FX-specific utilities
+   */
+  
+  .fx-layer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  
+  /* Placeholder styles - actual FX plates added in S1+ */
+  .fx-grain {
+    /* Background grain texture slot */
+  }
+  
+  .fx-vignette {
+    /* Vignette/edge darkening slot */
+  }
+  
+  .fx-glow {
+    /* Projector light glow slot */
+  }
+  
+  /* Reduced motion: disable non-essential animations */
+  :global(.reduce-motion) .fx-layer {
+    animation: none !important;
+    transition: none !important;
+  }
+</style>
