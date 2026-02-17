@@ -48,7 +48,7 @@ The main tensions in this role:
 - Balancing a single pattern set with the flexibility needed for edge cases.
 - Communicating decisions so designers, PMs, and engineers see UX guardrails as an enabler, not a blocker.
 
-<!---image: Fabric home or overview screen with global navigation and workspaces-->
+![Fabric home with global navigation and workspace surfaces]({{site.baseurl}}/assets/fabric/fabric-home.png){:class="img-responsive"}
 
 ---
 
@@ -76,6 +76,8 @@ This Tree work feeds into Fluent 2’s Tree component, so other products can reu
 
 In addition to Tree, I contributed to richer dialogs and drawers and to the behaviour and visual refresh of date and time pickers, aligning them with Fluent 2 while keeping them usable in dense enterprise layouts.
 
+![Cross-workspace move dialog behavior]({{site.baseurl}}/assets/fabric/move-to-dialog-cross-workspace.png){:class="img-responsive"}
+
 ---
 
 ## File explorer: a universal, scalable component
@@ -90,7 +92,11 @@ I owned the file explorer component end to end:
 
 The ability to switch between compact and advanced modes lets users choose between speed and control without leaving the component. This reduces the need for separate “simple” and “advanced” tools and gives teams a single, flexible building block.
 
-<!---image: side-by-side screenshot of compact vs advanced file explorer views-->
+![File explorer in compact mode]({{site.baseurl}}/assets/fabric/file-explorer-compact.png){:class="img-responsive"}
+![File explorer in advanced/expanded mode]({{site.baseurl}}/assets/fabric/file-explorer-expanded.png){:class="img-responsive"}
+![Move a single item via file explorer]({{site.baseurl}}/assets/fabric/file-explorer-move-one-item.png){:class="img-responsive"}
+![Move a single item to an empty folder via file explorer]({{site.baseurl}}/assets/fabric/file-explorer-move-one-item-empty-folder.png){:class="img-responsive"}
+![Move multiple items via file explorer]({{site.baseurl}}/assets/fabric/file-explorer-move-two-items.png){:class="img-responsive"}
 <!---video: recording of switching between compact and advanced modes and performing common tasks-->
 
 ---
@@ -109,7 +115,12 @@ I focused on three related areas:
 - Designing workflow views that connect artefacts into task flows.
 - Introducing folders inside workspaces so users can structure large collections of items and keep workflows readable.
 
-<!---image: workspace view showing task flows, folders, and filter controls-->
+![Workspace task flow view]({{site.baseurl}}/assets/fabric/workspace-task-flow.png){:class="img-responsive"}
+![Workspace task flow variant]({{site.baseurl}}/assets/fabric/workspace-task-flow-alt.png){:class="img-responsive"}
+![Workspace task flow filter menu]({{site.baseurl}}/assets/fabric/workspace-taskflow-filter-menu.png){:class="img-responsive"}
+![Workspace task flow filter menu variant]({{site.baseurl}}/assets/fabric/workspace-taskflow-filter-menu-2.png){:class="img-responsive"}
+![Workspace task flow filter menu variant with additional options]({{site.baseurl}}/assets/fabric/workspace-taskflow-filter-menu-3.png){:class="img-responsive"}
+![Workspace task flow with filters applied]({{site.baseurl}}/assets/fabric/workspace-taskflow-filters-applied.png){:class="img-responsive"}
 
 **Before**
 
@@ -175,8 +186,9 @@ Once I started digging, it became clear that the problem was wider.
    - Created a decision tree to help designers and PMs pick the right pattern based on severity, persistence, and required user action.
    - Specified placement, timing, and stacking behaviour so users would not be overwhelmed.
 
-<!---image: gallery of notification examples used in Fabric (toast, inline, banner)-->
-<!---image: decision tree diagram for choosing notification types-->
+![System feedback toast after move action in workspace]({{site.baseurl}}/assets/fabric/workspace-toast-moved-item.png){:class="img-responsive"}
+![Notification component gallery (toast, inline, message bar and related patterns)]({{site.baseurl}}/assets/fabric/fabric-notification-component-stickers.png){:class="img-responsive"}
+![Decision tree for choosing notification types]({{site.baseurl}}/assets/fabric/fabric-notification-decision-tree.jpg){:class="img-responsive"}
 
 Result:
 
@@ -200,8 +212,11 @@ For contextual menus, I defined guidelines for:
 
 For settings, I helped define the information architecture so product teams could plug their settings into a predictable structure rather than inventing their own patterns and pages.
 
-<!---image: contextual menu examples for single item vs multi-select, with grouping annotations-->
-<!---image: settings overview page showing top-level categories-->
+![Contextual menu in workspace main view]({{site.baseurl}}/assets/fabric/workspace-contextual-menu.png){:class="img-responsive"}
+![Multi-select in workspace before moving items]({{site.baseurl}}/assets/fabric/workspace-multi-select-before-move.png){:class="img-responsive"}
+![Multi-select with contextual menu actions]({{site.baseurl}}/assets/fabric/workspace-multi-select-contextual-menu.png){:class="img-responsive"}
+![Item creation side panel pattern]({{site.baseurl}}/assets/fabric/workspace-item-creation-side-panel.png){:class="img-responsive"}
+![Save as dialog pattern]({{site.baseurl}}/assets/fabric/workspace-save-as-dialog.png){:class="img-responsive"}
 
 ---
 
@@ -215,8 +230,8 @@ I worked on:
 - Ensuring layouts reflow down to small viewports (as low as 320×256 px) while remaining usable.
 - Partnering with engineers on ARIA roles, landmarks, and headings so assistive technologies can interpret screens reliably.
 
-<!---image: side-by-side screenshot of a key page at full width vs small width, showing reflow-->
-<!---image: screenshot with focus outlines and ARIA landmarks annotated-->
+![Taskflow reflow model with scroll behavior on constrained layouts]({{site.baseurl}}/assets/fabric/taskflow-reflow-scroll-model.png){:class="img-responsive"}
+![Item explorer tab order and focus flow annotations]({{site.baseurl}}/assets/fabric/item-explorer-tab-order.png){:class="img-responsive"}
 
 These guardrails are documented so teams do not have to re-solve accessibility or responsive behaviour from scratch each time.
 

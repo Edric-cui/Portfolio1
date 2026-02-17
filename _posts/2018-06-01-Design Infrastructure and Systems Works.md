@@ -59,15 +59,15 @@ What I owned end-to-end as the design lead for DS vNext:
 - Mentoring 2 junior designers so component designs map cleanly to production code
 - Building an internal knowledge base so decisions remain reusable over time
 
-<!---image: Commune DS vNext overview (tokens + component coverage map)-->
-<!---image: DS vNext rebrand before/after (high-level UI contrast)-->
+![Commune DS vNext system overview chart]({{site.baseurl}}/assets/design_system/commune-design-system-center-chart.png){:class="img-responsive"}
+![Commune app feed redesign before and after]({{site.baseurl}}/assets/design_system/commune-app-feed-before-after.png){:class="img-responsive"}
 
 ### Before → After proof (homepage navigation redesign)
 
 This is the clearest product-level example I can show today, because it demonstrates how design infrastructure translates into real UI outcomes
 
-<!---image: Commune homepage navigation redesign — before/after-->
-<!---image: navigation IA change diagram (optional)-->
+![Commune homepage navigation redesign before and after]({{site.baseurl}}/assets/design_system/commune-app-navigation-before-after.png){:class="img-responsive"}
+![Commune navigation IA and post-redesign patterns]({{site.baseurl}}/assets/design_system/commune-app-navigation-after-examples.png){:class="img-responsive"}
 
 ### 1. Token architecture: 2 layers × 2 modes
 
@@ -78,8 +78,8 @@ The foundation is a 2-layer structure:
 
 It supports 2 modes (light/dark) so the same semantic token resolves correctly without per-screen manual swapping
 
-<!---image: Figma Variables panel showing token collections-->
-<!---image: token architecture diagram (primitive → semantic → component usage)-->
+![Figma Variables panel with token collections]({{site.baseurl}}/assets/design_system/commune-figma-variables.png){:class="img-responsive"}
+![Token architecture visualizer (primitive to semantic mapping)]({{site.baseurl}}/assets/design_system/commune-ds-token-visualizer.png){:class="img-responsive"}
 
 #### Token collections (current structure)
 
@@ -100,8 +100,8 @@ We keep naming predictable so tokens can be reliably consumed by code and toolin
 - Primitive tokens are value-oriented and contain hard-coded values
 - Semantic tokens reflect intent and are role-based, for example `foreground/brand-on-neutral/rest`
 
-<!---image: token naming examples (primitive vs semantic)-->
-<!---image: example mapping showing semantics resolving to primitives in light and dark modes-->
+![Float semantics token naming examples]({{site.baseurl}}/assets/design_system/commune-float-tokens.png){:class="img-responsive"}
+![Tokens Studio mapping across primitives and semantic sets]({{site.baseurl}}/assets/design_system/commune-token-studio-plugin.png){:class="img-responsive"}
 
 #### Advanced theming: role-based color tokens
 
@@ -120,9 +120,14 @@ We built a component library designed to behave like code:
 - Components are token-bound, so light/dark mode switches reliably without manual overrides
 - Most components are animated via prototype-linked variants so states are visible and reviewable in Figma
 
-<!---image: component library overview (primitives + composites)-->
-<!---video: state transitions demo (rest → hover → pressed → focus-visible → disabled)-->
-<!---image: variant property schema example (how states are encoded)-->
+![Interactive component library prototype in Figma]({{site.baseurl}}/assets/design_system/commune-figma-make-prototype.png){:class="img-responsive"}
+<video controls class="img-responsive">
+  <source src="{{site.baseurl}}/assets/design_system/commune-component-stickers-light.mov" type="video/quicktime">
+</video>
+<video controls class="img-responsive">
+  <source src="{{site.baseurl}}/assets/design_system/commune-component-stickers-dark.mov" type="video/quicktime">
+</video>
+![Accordion component variant and state schema]({{site.baseurl}}/assets/design_system/commune-accordion-spec-03.png){:class="img-responsive"}
 
 #### What “interactive by default” means in practice
 
@@ -153,8 +158,8 @@ The 2 hardest parts of the system, and the ones I intentionally specified, are:
   - Rules that stay consistent across full pages, panes, and embedded surfaces
   - Predictable behavior even when the same system runs inside different UI shells
 
-<!---image: notification system decision tree-->
-<!---image: toast vs snackbar usage rules and anatomy-->
+![Notification decision tree used to select feedback patterns]({{site.baseurl}}/assets/fabric/fabric-notification-decision-tree.jpg){:class="img-responsive"}
+![Notification anatomy and component sticker set]({{site.baseurl}}/assets/fabric/fabric-notification-component-stickers.png){:class="img-responsive"}
 <!---image: cross-surface behavior examples (page vs pane vs embedded area)-->
 <!---image: Storybook page showing toast/snackbar variants and props-->
 
@@ -169,9 +174,9 @@ What I led or facilitated:
 - Built internal documentation so teams can reuse decisions instead of re-litigating them
 - Ran lightweight review rituals (checklists, office hours) so work stays consistent without slowing teams down
 
-<!---image: internal knowledge base snapshot (structure and key pages)-->
-<!---image: component review checklist or rubric-->
-<!---image: mentorship example (before/after of a component designed by junior designer)-->
+![Design system delivery and implementation timeline]({{site.baseurl}}/assets/design_system/commune-design-system-timeline.png){:class="img-responsive"}
+![Component best-practice review sheet example]({{site.baseurl}}/assets/design_system/commune-accordion-spec-02.png){:class="img-responsive"}
+![Create-post flow redesign before and after]({{site.baseurl}}/assets/design_system/commune-app-create-post-before-after.png){:class="img-responsive"}
 
 ### Outcomes
 
@@ -194,8 +199,8 @@ What you’ll see here:
 - Craft decisions that survive real constraints (accessibility, performance, localization)
 - Implementation-ready guidance, not only visual polish
 
-<!---image: Fabric system overview (where patterns show up across hubs)-->
-<!---image: example screens showing shared patterns across different Fabric surfaces-->
+![Fabric system overview surface]({{site.baseurl}}/assets/fabric/fabric-home.png){:class="img-responsive"}
+![Fabric taskflow surface showing shared patterns]({{site.baseurl}}/assets/fabric/workspace-task-flow.png){:class="img-responsive"}
 
 ### 1. Reuse in the wild: toast as a shared feedback pattern
 
@@ -208,17 +213,17 @@ What I contributed to make it reusable beyond my team:
 - Accessibility expectations (screen reader and keyboard considerations)
 - Visual structure that stays readable across dense enterprise UIs
 
-<!---image: toast usage guidance excerpt-->
-<!---image: toast anatomy and token binding-->
-<!---image: examples of toast used across multiple Fabric surfaces-->
+![Toast and related notification components guidance]({{site.baseurl}}/assets/fabric/fabric-notification-component-stickers.png){:class="img-responsive"}
+![Notification decision logic and usage constraints]({{site.baseurl}}/assets/fabric/fabric-notification-decision-tree.jpg){:class="img-responsive"}
+![Toast example in a production Fabric workflow]({{site.baseurl}}/assets/fabric/workspace-toast-moved-item.png){:class="img-responsive"}
 
 ### 2. Predictable hierarchy across panes, panels, and navigation
 
 Enterprise products often suffer from “same UI, different rules” across pages. I worked on standardizing pane and panel behavior, including clear hierarchy and coverage
 
-<!---image: pane switcher hierarchy diagram (global vs page level)-->
-<!---image: before/after: inconsistent panel behavior → standardized behavior-->
-<!---image: a11y and keyboard flow expectations for panel patterns-->
+![Cross-workspace pane and move-dialog hierarchy behavior]({{site.baseurl}}/assets/fabric/move-to-dialog-cross-workspace.png){:class="img-responsive"}
+![Filter and interaction behavior redesign before and after]({{site.baseurl}}/assets/design_system/commune-app-filter-before-after.png){:class="img-responsive"}
+![Keyboard and tab order expectations for panel interactions]({{site.baseurl}}/assets/fabric/item-explorer-tab-order.png){:class="img-responsive"}
 
 ### 3. Typography and localization under implementation constraints
 
@@ -257,7 +262,7 @@ I’ve worked through rules for how radii should feel consistent across componen
 
 Design infrastructure stays healthy when design artifacts and production code stay aligned. Our toolchain is a small-team-friendly, executable pipeline
 
-<!---image: pipeline diagram (Figma variables → token JSON → Style Dictionary → CSS vars → Storybook → product)-->
+![Design system implementation timeline from design to delivery]({{site.baseurl}}/assets/design_system/commune-design-system-timeline.png){:class="img-responsive"}
 <!---image: example repo structure screenshot (optional, sanitized)-->
 
 ### Tokens Studio → Style Dictionary → CSS variables
@@ -266,7 +271,7 @@ Design infrastructure stays healthy when design artifacts and production code st
 2. Use Style Dictionary to generate CSS variables for web
 3. Keep the pipeline platform-ready so the same token source can scale to native iOS and Android in the future
 
-<!---image: Tokens Studio plugin UI showing export settings-->
+![Tokens Studio plugin UI and export setup]({{site.baseurl}}/assets/design_system/commune-token-studio-plugin.png){:class="img-responsive"}
 <!---image: exported token JSON sample (sanitized)-->
 <!---image: Style Dictionary build config snippet (sanitized)-->
 <!---image: generated CSS variables excerpt (light and dark)-->
@@ -281,7 +286,7 @@ We document components in Storybook so teams can see and test:
 
 It complements Figma: Figma shows design intent and interaction choreography, while Storybook shows executable behavior and code-facing APIs
 
-<!---image: Storybook page with controls and states for Button-->
+![Accordion design spec showing controls, states, and behavior]({{site.baseurl}}/assets/design_system/commune-accordion-spec-04.png){:class="img-responsive"}
 <!---image: Storybook docs page for notification components (toast + snackbar)-->
 
 ### AI-assisted prototyping: Figma MCP → Cursor → Vercel (tested)
@@ -300,7 +305,7 @@ This workflow is still experimental. We use it to deploy and validate new ideas 
 
 <!---image: Cursor workspace showing `.cursorrules` for token handling-->
 <!---image: example prompt used for token-consistent UI generation-->
-<!---image: Vercel preview deployment screenshot-->
+![AI-assisted interactive prototype output (Figma Make)]({{site.baseurl}}/assets/design_system/commune-figma-make-prototype.png){:class="img-responsive"}
 
 ---
 
