@@ -236,12 +236,13 @@ I treat typography as UX plus implementation constraint:
 <!---image: typography spec excerpt with localization examples-->
 <!---image: EN vs JP string expansion in the same component or layout-->
 
-### 4. Motion as a system constraint
+### 4. Interaction stability as a system constraint
 
-Motion is valuable only when it is performant and stable:
+For Fabric, I focused on interaction stability rather than motion design:
 
-- When OS-native motion provides the best stability and performance, I align with platform-native patterns
-- When scalable animation assets are needed across contexts, I’ve used Lottie (vector-based) to keep motion consistent and maintainable
+- Predictable transition behavior so users keep context while navigating dense enterprise surfaces
+- Performance-safe interactions that avoid visual noise and reduce cognitive load
+- Clear state changes for loading, feedback, and completion without relying on decorative animation
 
 <!---video: OS-native motion example-->
 <!---video: Lottie animation example-->
@@ -299,11 +300,11 @@ To make the system readable to tools and easier for humans, we tightened Figma h
 - Container naming: no “Frame 11238”, avoid groups, avoid absolute positioning
 - Auto layout and constraints: layout behavior is explicit and predictable
 
-We also built a dedicated prompt and `.cursorrules` guidance for token-related work so AI-assisted code generation stays consistent with our design system
+We now use dedicated agent skills and long-term memory patterns for token-related work, so AI assistants produce outputs that are more predictable, reliable, and consistent with our design system principles
 
 This workflow is still experimental. We use it to deploy and validate new ideas faster, not to ship production-ready features yet
 
-<!---image: Cursor workspace showing `.cursorrules` for token handling-->
+<!---image: Agent skill and memory setup for token-consistent output-->
 <!---image: example prompt used for token-consistent UI generation-->
 ![AI-assisted interactive prototype output (Figma Make)]({{site.baseurl}}/assets/design_system/commune-figma-make-prototype.png){:class="img-responsive"}
 
@@ -320,7 +321,7 @@ At HUMA, localization shaped system decisions, not just copy. I focused on typog
 
 ### LeetCode: OS-native motion and precision craft
 
-At LeetCode, I treated dark mode and interaction states as system concerns. For motion, I leaned on OS-native patterns (iOS and Android) for performance and visual stability. This work also reinforced my precision craft, translating visual consistency into rules engineers can implement
+At LeetCode, I treated dark mode and interaction states as system concerns. Motion design ownership in this portfolio belongs here: I leaned on OS-native patterns (iOS and Android) for performance and visual stability, and translated those decisions into implementable rules. This work also reinforced my precision craft, translating visual consistency into rules engineers can implement
 
 <!---image: LeetCode OS-native motion example-->
 <!---image: LeetCode precision craft example (radius or spacing)-->
